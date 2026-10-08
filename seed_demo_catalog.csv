@@ -1,0 +1,15 @@
+id,name,category,benchmark_cost,retail_price_30_margin,unit,source_type,source_url,research_status
+p001,ESP32 DevKit V1,Electronics,75000,107500,unit,shopee,https://shopee.co.id/ESP32-DEVKIT-V1-USB-Development-Board-Wifi-Bluetooth-4MB-Flash-i.1242367.44609217298,researched
+p002,ESP32 DevKit V1 98k variant,Electronics,98000,140000,unit,shopee,https://shopee.co.id/ESP32-DEVKIT-V1-ESP-32-i.102820752.43328738796,researched
+p003,TDS Sensor V1,Electronics,70000,100000,unit,shopee,https://shopee.co.id/search?keyword=tds%20meter%20arduino,researched
+p004,pH+TDS/EC Meter Set,Tools,118000,169000,set,shopee,https://shopee.co.id/HARGA-TERMURAH%21.-pH-Meter-TDS-EC-Meter-%28PH-009-EZ-1%29-Paket-Alat-Ukur-Hidroponik-i.348233961.22076615755,researched
+p005,DS18B20 Waterproof Sensor,Electronics,20000,29000,unit,shopee,https://shopee.co.id/Sensor-Suhu-Waterproof-DS18B20-Digital-temperature-sensor-Kit-i.39683264.15283599530,researched
+p006,PVC Hydroponic Pipe 2in 50cm,Plumbing,36100,52000,unit,shopee,https://shopee.co.id/Pipa-Hidroponik-Paralon-PVC-2%E2%80%9D-2.5%E2%80%9D-3%E2%80%9D-4%E2%80%9D-Panjang-50cm-1-Meter-%E2%80%93-Lubang-Tanam-Netpot-5cm-Siap-Pakai-Sistem-NFT-DFT-pot-tower-hidroponik-pot-hidroponik-i.1515669251.53008542732,researched
+p007,Netpot 5cm Single,Hydroponic Core,500,800,unit,shopee,https://shopee.co.id/Netpot-Hidroponik-Ukuran-5cm-%28Untuk-Gully-Hidroponik-NFT%29-i.243795382.5227141379,researched
+p008,Netpot 5cm 50pcs,Hydroponic Core,25000,36000,pack,shopee,https://shopee.co.id/Netpot-Hidroponik-isi-50-Ukuran-5cm-untuk-sistem-NFT-dan-DFT-i.243795382.7327134559,researched
+p009,Hydroponic Pump 8W,Water System,30000,43000,unit,shopee,https://shopee.co.id/greenv.e.r.d.e,researched
+p010,AB Mix 1L,Nutrients,25000,36000,bottle,shopee,https://shopee.co.id/NUTRISI-AB-MIX-HIDROPONIK-1-LITER-i.233282073.8510422102,researched
+p011,Mini Valve / Check Valve,Plumbing,13473,19500,unit,shopee,https://shopee.co.id/stop-faucet-check-valve-DRAT-LUAR-1-2-ke-SELANG-AIR-1-2-atau-5-8-hose-5-16-3-8-sambungan-ulir-paralon-pipa-PVC-sock-sok-sambung-joint-join-keran-kran-hidroponik-selang-rumah-rumahan-bening-benang-akuarium-aquarium-siram-tanaman-pekarangan-semprot-tumbuhan-i.16653843.8130292961,researched
+p012,NFT/DFT Starter Installation,Starter Bundle,330000,471500,set,shopee,https://shopee.co.id/greenv.e.r.d.e,researched
+p013,Hydroponic Seed Bundle,Seeds,3000,4500,pack,shopee,https://shopee.co.id/Benih-Sayur-Sayuran-Halaman-Rumah-Mudah-di-Tanam-Paket-Lengkap-Tanaman-Hidroponik-Kangkung-Bayam-Brokoli-Cabe-Rawit-Daun-Bawang-Kol-Sawi-Pakcoy-Caisim-Terong-Ungu-Tomat-Sayur-Selada-Wortel-i.384112164.20675929498,researched
+p014,Garden Hose 5/8 20m,Plumbing,180000,257500,roll,shopee,https://shopee.co.id/EELIC-GAH-A20M-GARDEN-HOSE-SELANG-TAMAN-20-METER-DAN-DIAMETER-SELANG-5-8-SELANG-AIR-MULTIFUNGSI-i.2798689.1644755652,researched
