@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-primary-container": "#f7fff2", "primary-fixed-dim": "#62df7d", "on-primary-fixed": "#002109", "tertiary-fixed-dim": "#b4c5ff", "primary": "#006b2c", "on-surface-variant": "#3e4a3d", "surface-bright": "#f8f9ff", "on-error-container": "#93000a", "on-tertiary-container": "#fefcff", "on-error": "#ffffff", "surface-container-highest": "#d3e4fe", "inverse-surface": "#213145", "on-tertiary-fixed": "#00174b", "surface-container-high": "#dce9ff", "error": "#ba1a1a", "on-primary": "#ffffff", "outline-variant": "#bdcaba", "primary-container": "#00873a", "background": "#f8f9ff", "surface-dim": "#cbdbf5", "on-tertiary": "#ffffff", "secondary": "#545f73", "surface-variant": "#d3e4fe", "secondary-fixed": "#d8e3fb", "secondary-fixed-dim": "#bcc7de", "surface-container-low": "#eff4ff", "on-secondary-fixed-variant": "#3c475a", "on-primary-fixed-variant": "#005320", "tertiary": "#0051d5", "on-tertiary-fixed-variant": "#003ea8", "secondary-container": "#d5e0f8", "error-container": "#ffdad6", "inverse-primary": "#62df7d", "on-surface": "#0b1c30", "tertiary-fixed": "#dbe1ff", "outline": "#6e7b6c", "surface-container": "#e5eeff", "on-secondary-container": "#586377", "inverse-on-surface": "#eaf1ff", "on-secondary-fixed": "#111c2d", "surface": "#f8f9ff", "on-secondary": "#ffffff", "primary-fixed": "#7ffc97", "surface-tint": "#006e2d", "on-background": "#0b1c30", "surface-container-lowest": "#ffffff", "tertiary-container": "#316bf3" }, borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" }, spacing: { "space-sm": "0.5rem", "margin-mobile": "1rem", "space-xl": "2.5rem", "margin": "2rem", "space-xs": "0.25rem", "space-md": "1rem", "gutter-mobile": "1rem", "gutter": "1.5rem", "space-lg": "1.5rem" }, fontFamily: { "kpi-display": ["Inter"], "label-sm": ["Inter"], "body-sm": ["Inter"], "headline-xl-mobile": ["Inter"], "body-lg": ["Inter"], "headline-lg": ["Inter"], "headline-xl": ["Inter"], "label-md": ["Inter"], "body-md": ["Inter"], "headline-lg-mobile": ["Inter"], "headline-md": ["Inter"] }, fontSize: { "kpi-display": ["32px", { lineHeight: "38px", letterSpacing: "-0.03em", fontWeight: "700" }], "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.04em", fontWeight: "600" }], "body-sm": ["12px", { lineHeight: "16px", fontWeight: "400" }], "headline-xl-mobile": ["28px", { lineHeight: "36px", letterSpacing: "-0.01em", fontWeight: "700" }], "body-lg": ["16px", { lineHeight: "24px", fontWeight: "400" }], "headline-lg": ["28px", { lineHeight: "36px", letterSpacing: "-0.02em", fontWeight: "600" }], "headline-xl": ["36px", { lineHeight: "44px", letterSpacing: "-0.02em", fontWeight: "700" }], "label-md": ["13px", { lineHeight: "18px", letterSpacing: "0.01em", fontWeight: "500" }], "body-md": ["14px", { lineHeight: "20px", fontWeight: "400" }], "headline-lg-mobile": ["22px", { lineHeight: "30px", letterSpacing: "-0.01em", fontWeight: "600" }], "headline-md": ["20px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "600" }] } } } };</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"><aside class="fixed left-0 top-0 h-full w-[250px] bg-surface-container-lowest z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col flex-1 min-h-0"><div class="h-16 px-space-md flex items-center gap-space-sm bg-surface-container-lowest"><img alt="HYCANE Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3L21UVH924VPcz5w4_EBOU1inRo072yec9dsK24gBFGqkWxy6qtF5fJRomTxQwLbyX2_n5ToxSaYcGwtv5jFTjzWPMUXE1U08qa-TB-0KCos0HjJtdY8l8KDFFquLyCgst2GL2oc9o9YnStxELWiofYdVkoANwsTinPFdlXufRlJpbUTVFrJ4mjbJDhi6Jf1qg7Vyo6CFVmK8Sq_xin7LywUUQZRt210fjiXhbtM"/><div class="flex flex-col min-w-0 leading-tight"><span class="font-headline-md text-headline-md text-primary tracking-tight truncate">HYCANE</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Smart Hydroponic</span></div></div><div class="flex-1 overflow-y-auto px-space-sm py-space-sm"><nav class="space-y-space-sm" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-xl"><div class="px-space-sm pt-space-xs pb-space-xs"><span class="font-label-sm text-label-sm uppercase text-outline tracking-wider">Main</span></div><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-label-md text-label-md">Dashboard</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="live-monitoring" href="#"><span class="material-symbols-outlined text-[20px]">sensors</span><span class="font-label-md text-label-md">Live Monitoring</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="my-crops" href="#"><span class="material-symbols-outlined text-[20px]">potted_plant</span><span class="font-label-md text-label-md">My Crops</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="ai-recommendation" href="#"><span class="material-symbols-outlined text-[20px]">psychology</span><span class="font-label-md text-label-md">AI Recommendation</span></a><div class="px-space-sm pt-space-sm pb-space-xs"><span class="font-label-sm text-label-sm uppercase text-outline tracking-wider">Explore</span></div><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="marketplace" href="#"><span class="material-symbols-outlined text-[20px]">storefront</span><span class="font-label-md text-label-md">Marketplace</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="education" href="#"><span class="material-symbols-outlined text-[20px]">school</span><span class="font-label-md text-label-md">Education</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="community" href="#"><span class="material-symbols-outlined text-[20px]">forum</span><span class="font-label-md text-label-md">Community</span></a><div class="px-space-sm pt-space-sm pb-space-xs"><span class="font-label-sm text-label-sm uppercase text-outline tracking-wider">Activity</span></div><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="orders" href="#"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span class="font-label-md text-label-md">Orders</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="notifications" href="#"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="font-label-md text-label-md">Notifications</span></a><div class="px-space-sm pt-space-sm pb-space-xs"><span class="font-label-sm text-label-sm uppercase text-outline tracking-wider">Account</span></div><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="profile" href="#"><span class="material-symbols-outlined text-[20px]">person</span><span class="font-label-md text-label-md">Profile</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span class="font-label-md text-label-md">Settings</span></a></nav></div></div><div class="p-space-sm bg-surface-container-lowest flex flex-col gap-space-sm"><div class="bg-surface-container-low px-space-sm py-2 rounded-xl flex items-center justify-between"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span><span class="font-label-sm text-label-sm text-primary">Demo Mode: FESTAFORA 2026</span></div></div><div class="flex items-center justify-between px-space-xs pt-1"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="flex flex-col min-w-0"><span class="font-label-md text-label-md text-on-surface truncate">AgriOperator</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Smart Farm A</span></div></div><a class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container-low hover:text-error transition-colors" data-path="login" href="#" title="Logout"><span class="material-symbols-outlined text-[20px]">logout</span></a></div></div></aside><div class="pl-[250px]"><header class="fixed top-0 left-[250px] right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-md z-40 px-space-lg flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-sm"><img alt="HYCANE Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3L21UVH924VPcz5w4_EBOU1inRo072yec9dsK24gBFGqkWxy6qtF5fJRomTxQwLbyX2_n5ToxSaYcGwtv5jFTjzWPMUXE1U08qa-TB-0KCos0HjJtdY8l8KDFFquLyCgst2GL2oc9o9YnStxELWiofYdVkoANwsTinPFdlXufRlJpbUTVFrJ4mjbJDhi6Jf1qg7Vyo6CFVmK8Sq_xin7LywUUQZRt210fjiXhbtM"/><nav class="flex items-center gap-space-xs text-on-surface-variant"><a class="font-label-md text-label-md hover:text-on-surface transition-colors" data-path="dashboard" href="#">HYCANE</a><span class="material-symbols-outlined text-[16px] text-outline">chevron_right</span><span class="font-label-md text-label-md text-on-surface">Ecosystem Control</span></nav></div><div class="hidden md:flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-low"><span class="w-2 h-2 rounded-full bg-primary"></span><span class="font-label-sm text-label-sm text-primary">Sistem Terhubung • Real-Time</span></div><div class="flex items-center gap-space-sm"><div class="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary-fixed/30"><span class="material-symbols-outlined text-[16px] text-primary">eco</span><span class="font-label-sm text-label-sm text-primary">15/18 Tanaman Sehat</span></div><a class="relative p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="notifications" href="#"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 bg-error rounded-full"></span></a><button class="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md" type="button"><span class="material-symbols-outlined text-[18px] text-primary">tune</span><span>Demo Tools</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 w-full min-h-screen bg-background"><div class="flex flex-col w-full">
+<!-- Top Utility Bar: Search, Notification & Cart Pill -->
+<div class="px-margin pt-space-lg pb-space-sm flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="font-label-md text-label-md">HYCANE</span>
+<span class="material-symbols-outlined text-[16px] text-outline">chevron_right</span>
+<span class="font-label-md text-label-md text-primary font-semibold">Marketplace Terpadu</span>
+<span class="ml-2 px-2 py-0.5 rounded-full bg-primary-fixed/40 text-on-primary-fixed font-label-sm text-label-sm">FESTAFORA 2026</span>
+</div>
+<!-- Live Search & Active Cart Quick Action -->
+<div class="flex items-center gap-space-sm w-full lg:w-auto">
+<div class="relative flex-1 lg:w-96">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[20px] text-outline">search</span>
+<input class="w-full h-11 pl-10 pr-4 rounded-xl bg-surface-container-lowest text-on-surface placeholder:text-outline text-body-md focus:outline-none focus:bg-surface-container-low transition-colors shadow-sm" placeholder="Cari kebutuhan hidroponik, media tanam, nutrisi..." type="text"/>
+</div>
+<button class="relative flex items-center gap-2 h-11 px-4 rounded-xl bg-surface-container-lowest text-on-surface hover:bg-surface-container-low transition-colors shadow-sm shrink-0" id="cartQuickTrigger">
+<span class="material-symbols-outlined text-[20px] text-primary">shopping_bag</span>
+<span class="hidden sm:inline font-label-md text-label-md font-semibold">Keranjang</span>
+<span class="flex items-center justify-center w-5 h-5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm">2</span>
+</button>
+</div>
+</div>
+<!-- Hero Highlight Section: Bundle Builder & Circular Agri Proposition -->
+<div class="px-margin py-space-sm">
+<div class="relative overflow-hidden rounded-xl bg-gradient-to-br from-surface-container via-surface-container-low to-surface-bright p-space-lg lg:p-space-xl shadow-sm">
+<div class="relative z-10 max-w-3xl flex flex-col gap-space-sm">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-fixed/60 text-on-primary-fixed w-fit">
+<span class="material-symbols-outlined text-[16px]">compost</span>
+<span class="font-label-sm text-label-sm font-semibold tracking-wide uppercase">Ekosistem Sirkular Berbasis Ampas Tebu</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">
+          Semua kebutuhan hidroponikmu dalam satu tempat.
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+          Komponen plug-and-play yang terkalibrasi presisi dengan platform monitoring HYCANE. Didesain ramah pemula, transparan biaya berkala, dan berkelanjutan.
+        </p>
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+<a class="inline-flex items-center gap-2 h-11 px-5 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-semibold shadow hover:bg-primary-container transition-colors" href="#bundle-builder">
+<span>Buka Bundle Builder</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+<span>Garansi kompatibilitas 100% dengan ESP32</span>
+</div>
+</div>
+</div>
+<!-- Subtle Graphical Illustration Accent -->
+<div class="absolute -right-8 -bottom-10 opacity-15 pointer-events-none hidden md:block">
+<svg fill="none" height="340" viewbox="0 0 200 200" width="340">
+<circle class="text-primary" cx="100" cy="100" r="80" stroke="currentColor" stroke-dasharray="8 8" stroke-width="4"></circle>
+<circle class="text-primary-fixed" cx="100" cy="100" fill="currentColor" r="50"></circle>
+<path class="text-primary" d="M70 130 C70 90, 130 90, 130 130" stroke="currentColor" stroke-linecap="round" stroke-width="6"></path>
+</svg>
+</div>
+</div>
+</div>
+<!-- Interactive Category Navigation Bar -->
+<div class="px-margin py-space-sm overflow-x-auto no-scrollbar">
+<div class="flex items-center gap-space-xs min-w-max pb-1">
+<button class="category-btn flex items-center gap-2 px-4 py-2 rounded-full bg-primary text-on-primary font-label-md text-label-md font-semibold shadow-sm transition-all">
+<span class="material-symbols-outlined text-[18px]">apps</span>
+<span>Semua Produk</span>
+</button>
+<button class="category-btn flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-md text-label-md transition-all shadow-sm">
+<span class="material-symbols-outlined text-[18px] text-primary">developer_board</span>
+<span>HYCANE Kit (Smart &amp; Starter)</span>
+</button>
+<button class="category-btn flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-md text-label-md transition-all shadow-sm">
+<span class="material-symbols-outlined text-[18px] text-primary">recycling</span>
+<span>Media Ampas Tebu (Bagasse)</span>
+</button>
+<button class="category-btn flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-md text-label-md transition-all shadow-sm">
+<span class="material-symbols-outlined text-[18px] text-primary">science</span>
+<span>Nutrisi &amp; pH Balancer</span>
+</button>
+<button class="category-btn flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-md text-label-md transition-all shadow-sm">
+<span class="material-symbols-outlined text-[18px] text-primary">psychiatry</span>
+<span>Benih Berkualitas</span>
+</button>
+<button class="category-btn flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-md text-label-md transition-all shadow-sm">
+<span class="material-symbols-outlined text-[18px] text-primary">plumbing</span>
+<span>Pipa &amp; Plumbing</span>
+</button>
+<button class="category-btn flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-md text-label-md transition-all shadow-sm">
+<span class="material-symbols-outlined text-[18px] text-primary">memory</span>
+<span>Elektronik &amp; IoT Probes</span>
+</button>
+<button class="category-btn flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-md text-label-md transition-all shadow-sm">
+<span class="material-symbols-outlined text-[18px] text-primary">handyman</span>
+<span>Alat &amp; Aksesoris</span>
+</button>
+</div>
+</div>
+<!-- SECTION 1: Integrated Starter Kits -->
+<section class="px-margin pt-space-lg pb-space-sm flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-space-xs">
+<div>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Paket Siap Pakai</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Paket Kit Unggulan (Integrated Starter)</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">
+        Sistem tersertifikasi untuk panen konsisten. Dikonfigurasi langsung untuk terhubung dengan aplikasi pemantauan.
+      </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Card 1: HYCANE Smart Kit 18-Plant (Hero item) -->
+<div class="flex flex-col rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all overflow-hidden relative">
+<div class="absolute top-3 left-3 z-10 flex flex-wrap gap-1">
+<span class="px-2.5 py-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-semibold shadow">
+            Rekomendasi Pemula • Paling Lengkap
+          </span>
+</div>
+<div class="relative w-full h-56 bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-300 hover:scale-105" data-alt="Modern indoor vertical hydroponic growing unit featuring 18 plant holes with vibrant green pak choi leaves, integrated transparent water reservoir, sleek white control module with digital status LEDs, and sustainable sugarcane bagasse substrate cubes glowing softly under natural clean studio daylight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCR2R7br6_S2qXddgzVrw0a-XIxrMxpKOx2DxbCMUx9-FRn8Gy52HQxQR52swNwFl6wXpW_ZyheenC0hJBo9a33jwq8PqL_HXvcId71laHnVmoTlwPd2lxWvIVeWI5ZHHQlXUlatW2Lcxg9la6A9rAu6SOA-FGg3gVVTUG23Xfx3ebmLE7yEdXR15HCb8Bz_1UWUf8XTypqtGgFWfU6doJVIdTj8wztNSC2H_kmY8"/>
+<div class="absolute bottom-2 right-2 px-2 py-1 rounded-lg bg-surface-container-lowest/90 backdrop-blur font-label-sm text-label-sm text-on-surface">
+            IoT Powered
+          </div>
+</div>
+<div class="p-space-lg flex flex-col flex-1 justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-md text-headline-md text-on-surface">HYCANE Smart Kit 18-Plant Edition</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+              Modul IoT ESP32, 4 sensor terintegrasi (pH, TDS, Suhu Air, Level Tangki), reservoir 20L, pompa DC efisien, 18 media ampas tebu, dan lisensi monitoring selamanya.
+            </p>
+<div class="mt-2 flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">bolt</span>
+<span>Daya: 12W hemat energi</span>
+<span class="mx-1">•</span>
+<span class="material-symbols-outlined text-[16px] text-primary">wifi</span>
+<span>Wi-Fi + BLE Setup</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<div class="flex items-baseline justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-outline">Harga Terpadu</span>
+<div class="font-kpi-display text-kpi-display text-primary">Rp 1.450.000</div>
+</div>
+<span class="font-label-sm text-label-sm text-primary bg-primary-fixed/40 px-2 py-0.5 rounded-full font-medium">Stok Ready</span>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<button class="h-11 rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high font-label-md text-label-md transition-colors flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+<span>Detail</span>
+</button>
+<button class="h-11 rounded-xl bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md font-semibold transition-colors flex items-center justify-center gap-1 shadow-sm" onclick="addToCart('HYCANE Smart Kit 18-Plant', 1450000)">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+<span>Beli Kit</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 2: HYCANE Starter Kit Non-IoT -->
+<div class="flex flex-col rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all overflow-hidden relative">
+<div class="absolute top-3 left-3 z-10">
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold shadow">
+            Ramah Budget
+          </span>
+</div>
+<div class="relative w-full h-56 bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-300 hover:scale-105" data-alt="Compact modular beginner hydroponic nursery rack with clean PVC pipes, water distribution lines, 12 cultivation spots embedded with organic brown sugarcane bagasse plugs, set in a cozy sunny terrace garden." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCz9LZjABhn_7oQUvLMNj6yJcKvxu5FtwO-wUAv78VyLLqTyg9dwGa2Yzh4nwx5nfwqwEH6waEwp_hyCQITCx5UPHRp1YzvC0HPU9tpfxtV18i1YPq5Fs4UHg4cl6B49QSBVrDUbM0O1MEcYvZHZuj8k3b-bQmXGEIweFbeG7c8fBc6qRk_VTVY23-6lZ4T2ASCRIoVK3phAn1824-ouNZe2QUp0v7YCOFcVv-B8Ic"/>
+</div>
+<div class="p-space-lg flex flex-col flex-1 justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-md text-headline-md text-on-surface">HYCANE Starter Kit Non-IoT</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+              Sistem hidroponik modular kokoh dengan media tanam ampas tebu biodegradable tanpa sensor digital. Pilihan ideal untuk pengenalan praktis berkebun urban mandiri.
+            </p>
+<div class="mt-2 flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-outline">upgrade</span>
+<span>Dapat diupgrade modul IoT kapan saja</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<div class="flex items-baseline justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-outline">Harga Terpadu</span>
+<div class="font-kpi-display text-kpi-display text-on-surface">Rp 680.000</div>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Sisa 8 unit</span>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<button class="h-11 rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high font-label-md text-label-md transition-colors flex items-center justify-center gap-1">
+<span>Detail</span>
+</button>
+<button class="h-11 rounded-xl bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md font-semibold transition-colors flex items-center justify-center gap-1 shadow-sm" onclick="addToCart('HYCANE Starter Non-IoT', 680000)">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+<span>Beli Kit</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 3: IoT Sensor Upgrade Pack -->
+<div class="flex flex-col rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all overflow-hidden relative">
+<div class="absolute top-3 left-3 z-10">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-highest text-tertiary font-label-sm text-label-sm font-semibold shadow">
+            Upgrade Kit
+          </span>
+</div>
+<div class="relative w-full h-56 bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-300 hover:scale-105" data-alt="Industrial-grade IoT hydroponic telemetry kit with ESP32 microcontroller in water-resistant enclosure, laboratory pH glass probe, analog TDS sensor, waterproof DS18B20 temperature probe, and ultrasonic depth sensor neatly organized on a clean dark slate workbench." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuzceKhvfN6bPxVbzh0R2zdu1bxC18_3dZsSe8tKjdAAsJ6t-kS6rl9IAEhV7dy_r-fLn2XUtFVseBbWFOEA1P_34ok6R0QMNAIgTngHQJ8YxMqOZC4O59TVslyVGv8CFH9J7OE_RtFyMPZQHaDmH7ykWfxx2IzoA6IVgnXuMEEhfRESTz8BUAI9nRCU9DcB2iyzyaACe29PjGkAWNBgKsInNNcdum1PqmjrLunjw"/>
+</div>
+<div class="p-space-lg flex flex-col flex-1 justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-md text-headline-md text-on-surface">IoT Sensor Upgrade Pack</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+              Tingkatkan rak hidroponik konvensionalmu. Berisi sensor pH presisi tinggi, TDS meter, sensor suhu air terkalibrasi, ultrasonic reservoir depth, dan ESP32 controller.
+            </p>
+<div class="mt-2 flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary">cloud_sync</span>
+<span>Sinkronisasi otomatis ke akun HYCANE</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<div class="flex items-baseline justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-outline">Harga Terpadu</span>
+<div class="font-kpi-display text-kpi-display text-on-surface">Rp 820.000</div>
+</div>
+<span class="font-label-sm text-label-sm text-primary bg-primary-fixed/40 px-2 py-0.5 rounded-full font-medium">Tersedia</span>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<button class="h-11 rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high font-label-md text-label-md transition-colors flex items-center justify-center gap-1">
+<span>Detail</span>
+</button>
+<button class="h-11 rounded-xl bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md font-semibold transition-colors flex items-center justify-center gap-1 shadow-sm" onclick="addToCart('IoT Sensor Upgrade Pack', 820000)">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+<span>Beli Pack</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: Bagasse Media & Consumables (Recurring Needs) -->
+<section class="px-margin pt-space-lg pb-space-sm flex flex-col gap-space-md">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm">
+<div>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Sirkularitas Tebu Lokal</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Isi Ulang Berkala &amp; Media Tanam</h2>
+</div>
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-surface-container-low text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">autorenew</span>
+<span>Hemat 10% dengan fitur Langganan Rutin</span>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Media Tebu Refill 18 -->
+<div class="flex flex-col rounded-xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-md transition-all justify-between">
+<div class="flex flex-col gap-space-sm">
+<div class="w-full h-40 rounded-lg bg-surface-container overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="Pack of 18 cylindrical organic hydroponic growth plugs made from upcycled brown sugarcane bagasse fiber, stacked neatly in biodegradable kraft paper packaging on a wooden surface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiybk5PN6vCwnSxn-NfsxpNLa1z7nYDdIkva7T1lVlobMjWB_mNwN9QCHZpVTfaXThom8t9E8xpox767vnFqFSNLNqYhUP7kS1FvOFErE3M69UV5Wo0m-MZ5QCkoXa7rCE3kdPqsFoLsphj2m3drgiz1HjcPpm7e4z6fE531CUwAf_q1fuNtEmdlPVB0zK7DpW4_Xhh712A06K8MA2PYbqwvVJIWFZYLKGS9SsuvM"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-surface-container-lowest font-label-sm text-label-sm text-primary font-semibold">1 Siklus Panen</span>
+</div>
+<div class="flex flex-col gap-1">
+<h4 class="font-label-md text-label-md font-semibold text-on-surface">Bagasse Media Refill - 18 Plugs</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              Ampas tebu lokal Jawa Timur. Biodegradable, porositas tinggi, menjaga oksigen akar.
+            </p>
+</div>
+</div>
+<div class="flex flex-col gap-2 pt-3">
+<div class="flex items-baseline justify-between">
+<span class="font-headline-md text-headline-md text-primary font-bold">Rp 45.000</span>
+<span class="font-label-sm text-label-sm text-outline">Langganan: Rp 40.500</span>
+</div>
+<button class="w-full h-10 rounded-xl bg-surface-container text-on-surface hover:bg-primary hover:text-on-primary transition-colors font-label-md text-label-md font-medium flex items-center justify-center gap-1" onclick="addToCart('Bagasse Media 18 Plugs', 45000)">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>Tambah</span>
+</button>
+</div>
+</div>
+<!-- Media Tebu Refill 36 -->
+<div class="flex flex-col rounded-xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-md transition-all justify-between">
+<div class="flex flex-col gap-space-sm">
+<div class="w-full h-40 rounded-lg bg-surface-container overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="Eco-friendly bulk package containing 36 molded sugarcane bagasse plugs for vertical vegetable cultivation, natural texture and earthy warm fiber color." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXQVxdPwoagSmN4q9kJS7AjYuQr-ecbiSqN73Cf8DwdlSiD7WMG2XGQWzrkJ8646sonOCguDYysbEswWno39Fk1Mu8ntLYoBMG17rfhIpFY-OhOtsxiXO0YyOQ4H6QN_CG__DyXJtAaaxmruJDry_N6J90ZxPD-lYKydsQx3uq7VM3q2OJLZ40TWFO0STgwYzM9dD4WhKWdrRFKIjR1AchB8nZEzmIdlT60wdSRQ0"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold">2 Siklus Hemat</span>
+</div>
+<div class="flex flex-col gap-1">
+<h4 class="font-label-md text-label-md font-semibold text-on-surface">Bagasse Media Refill - 36 Plugs</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              Paket hemat untuk 2 kali siklus panen. Mengurangi limbah rockwool sintetis secara total.
+            </p>
+</div>
+</div>
+<div class="flex flex-col gap-2 pt-3">
+<div class="flex items-baseline justify-between">
+<span class="font-headline-md text-headline-md text-primary font-bold">Rp 82.000</span>
+<span class="font-label-sm text-label-sm text-outline">Langganan: Rp 73.800</span>
+</div>
+<button class="w-full h-10 rounded-xl bg-surface-container text-on-surface hover:bg-primary hover:text-on-primary transition-colors font-label-md text-label-md font-medium flex items-center justify-center gap-1" onclick="addToCart('Bagasse Media 36 Plugs', 82000)">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>Tambah</span>
+</button>
+</div>
+</div>
+<!-- Nutrisi AB Mix 500ml -->
+<div class="flex flex-col rounded-xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-md transition-all justify-between">
+<div class="flex flex-col gap-space-sm">
+<div class="w-full h-40 rounded-lg bg-surface-container overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="Twin bottles of hydroponic concentrated liquid nutrients AB Mix labeled for leafy greens with clear measuring indicators on a clean botanical counter." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSvsnZ6IPvK9Resl6JRNC_7XoOwCWNJY4DQSa67F9gvgN7TI0pnlDtL9OnXw3OPntVLshIH4S2AZHyIGHABzkcY43f0iYRpMYgRmeIMQyOUf9ilDBm95L1cZseuSYE2ryu4bBo0K_j4qvURPPWu1mbW0w2m-ZBFuqCgEo3DV37CZu-bE6dBYYii5V2aQRGDe1Uhsgb-po1DBuW87KOcWYndPV7UHoMhzf51dPXm9Y"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-surface-container-lowest font-label-sm text-label-sm text-primary font-semibold">Sayuran Daun</span>
+</div>
+<div class="flex flex-col gap-1">
+<h4 class="font-label-md text-label-md font-semibold text-on-surface">Nutrisi AB Mix Daun 500ml</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              Formula pekat hara makro &amp; mikro lengkap, stabil pada pH 5.8-6.5, presisi tinggi.
+            </p>
+</div>
+</div>
+<div class="flex flex-col gap-2 pt-3">
+<div class="flex items-baseline justify-between">
+<span class="font-headline-md text-headline-md text-primary font-bold">Rp 35.000</span>
+<span class="font-label-sm text-label-sm text-outline">Formula Premium</span>
+</div>
+<button class="w-full h-10 rounded-xl bg-surface-container text-on-surface hover:bg-primary hover:text-on-primary transition-colors font-label-md text-label-md font-medium flex items-center justify-center gap-1" onclick="addToCart('AB Mix Daun 500ml', 35000)">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>Tambah</span>
+</button>
+</div>
+</div>
+<!-- pH Balancer Pack -->
+<div class="flex flex-col rounded-xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-md transition-all justify-between">
+<div class="flex flex-col gap-space-sm">
+<div class="w-full h-40 rounded-lg bg-surface-container overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="Laboratory quality hydroponic pH Up and pH Down regulating chemical solution bottles with dropper caps positioned beside a modern digital testing device." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEBlAOweiy-jzg4hnOScmtBzFVOaDy8ZUtWcdq7YmbD17I62RNg2afy0xrEkPwrH1630P-yCu9IJBn88WJsgailcymHM38EpFvt0RtFRwhnG8LXmM6bbISqXczxnzwOVlKIH2taG0mWd3tyLtXyVSHxIFdRBJw133ZBzFC1ItziNFRzf1XaU7ExO1LQBNzb6v5Cyc2aP1F1u55sPvq6PY13oaQVHdEczhFqqg8qHg"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-surface-container-lowest font-label-sm text-label-sm text-tertiary font-semibold">Kit Kontrol pH</span>
+</div>
+<div class="flex flex-col gap-1">
+<h4 class="font-label-md text-label-md font-semibold text-on-surface">pH Balancer Pack (Up + Down)</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              Paket 250ml pH Up &amp; 250ml pH Down untuk penyesuaian cepat reservoir air mandiri.
+            </p>
+</div>
+</div>
+<div class="flex flex-col gap-2 pt-3">
+<div class="flex items-baseline justify-between">
+<span class="font-headline-md text-headline-md text-primary font-bold">Rp 48.000</span>
+<span class="font-label-sm text-label-sm text-outline">Isi 2 Botol</span>
+</div>
+<button class="w-full h-10 rounded-xl bg-surface-container text-on-surface hover:bg-primary hover:text-on-primary transition-colors font-label-md text-label-md font-medium flex items-center justify-center gap-1" onclick="addToCart('pH Balancer Pack', 48000)">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>Tambah</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: Curated Seeds with Difficulty Levels -->
+<section class="px-margin pt-space-lg pb-space-sm flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-space-xs">
+<div>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Tingkat Keberhasilan Tinggi</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Katalog Benih Terkurasi</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">
+        Daya kecambah &gt; 85%. Dilengkapi panduan target EC &amp; waktu penyemaian di ampas tebu.
+      </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Seed 1: Pakcoy Nauli F1 -->
+<div class="flex flex-col rounded-xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-md transition-all">
+<div class="flex items-start justify-between">
+<span class="px-2.5 py-0.5 rounded-full bg-primary-fixed/40 text-on-primary-fixed font-label-sm text-label-sm font-semibold">
+            Tingkat: Mudah
+          </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">calendar_today</span> 25-30 Hari
+          </span>
+</div>
+<div class="my-3 flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-primary-fixed/30 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[24px]">eco</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md font-semibold text-on-surface">Pakcoy Nauli F1</h4>
+<p class="font-body-sm text-body-sm text-outline">Isi: ~150 butir</p>
+</div>
+</div>
+<div class="bg-surface-container-low p-2 rounded-lg text-body-sm text-on-surface-variant mb-3">
+          Target EC: 1.5 - 2.0 mS/cm • Sangat tahan panas dataran rendah.
+        </div>
+<div class="flex items-center justify-between mt-auto pt-2">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">Rp 15.000</span>
+<button class="h-9 px-3 rounded-lg bg-primary text-on-primary hover:bg-primary-container transition-colors font-label-sm text-label-sm font-semibold flex items-center gap-1" onclick="addToCart('Benih Pakcoy Nauli F1', 15000)">
+<span class="material-symbols-outlined text-[16px]">add</span> Beli
+          </button>
+</div>
+</div>
+<!-- Seed 2: Selada Keriting Grand Rapids -->
+<div class="flex flex-col rounded-xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-md transition-all">
+<div class="flex items-start justify-between">
+<span class="px-2.5 py-0.5 rounded-full bg-primary-fixed/40 text-on-primary-fixed font-label-sm text-label-sm font-semibold">
+            Tingkat: Mudah
+          </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">calendar_today</span> 35-40 Hari
+          </span>
+</div>
+<div class="my-3 flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-primary-fixed/30 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[24px]">grass</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md font-semibold text-on-surface">Selada Grand Rapids</h4>
+<p class="font-body-sm text-body-sm text-outline">Isi: ~200 butir</p>
+</div>
+</div>
+<div class="bg-surface-container-low p-2 rounded-lg text-body-sm text-on-surface-variant mb-3">
+          Target EC: 1.2 - 1.6 mS/cm • Tekstur renyah, daun bergelombang.
+        </div>
+<div class="flex items-center justify-between mt-auto pt-2">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">Rp 18.000</span>
+<button class="h-9 px-3 rounded-lg bg-primary text-on-primary hover:bg-primary-container transition-colors font-label-sm text-label-sm font-semibold flex items-center gap-1" onclick="addToCart('Benih Selada Grand Rapids', 18000)">
+<span class="material-symbols-outlined text-[16px]">add</span> Beli
+          </button>
+</div>
+</div>
+<!-- Seed 3: Kangkung Bangkok -->
+<div class="flex flex-col rounded-xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-md transition-all">
+<div class="flex items-start justify-between">
+<span class="px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold">
+            Tingkat: Sangat Mudah
+          </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">calendar_today</span> 20-25 Hari
+          </span>
+</div>
+<div class="my-3 flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-primary-fixed/30 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[24px]">forest</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md font-semibold text-on-surface">Kangkung Bangkok</h4>
+<p class="font-body-sm text-body-sm text-outline">Isi: ~300 butir</p>
+</div>
+</div>
+<div class="bg-surface-container-low p-2 rounded-lg text-body-sm text-on-surface-variant mb-3">
+          Target EC: 1.8 - 2.2 mS/cm • Pertumbuhan serempak &amp; minim hama.
+        </div>
+<div class="flex items-center justify-between mt-auto pt-2">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">Rp 12.000</span>
+<button class="h-9 px-3 rounded-lg bg-primary text-on-primary hover:bg-primary-container transition-colors font-label-sm text-label-sm font-semibold flex items-center gap-1" onclick="addToCart('Benih Kangkung Bangkok', 12000)">
+<span class="material-symbols-outlined text-[16px]">add</span> Beli
+          </button>
+</div>
+</div>
+<!-- Seed 4: Tomat Cherry Red Ruby -->
+<div class="flex flex-col rounded-xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-md transition-all">
+<div class="flex items-start justify-between">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">
+            Tingkat: Menengah
+          </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">calendar_today</span> 60-70 Hari
+          </span>
+</div>
+<div class="my-3 flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-error-container flex items-center justify-center text-error shrink-0">
+<span class="material-symbols-outlined text-[24px]">nutrition</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md font-semibold text-on-surface">Tomat Cherry Red Ruby</h4>
+<p class="font-body-sm text-body-sm text-outline">Isi: ~30 butir</p>
+</div>
+</div>
+<div class="bg-surface-container-low p-2 rounded-lg text-body-sm text-on-surface-variant mb-3">
+          Target EC: 2.2 - 2.8 mS/cm • Butuh penopang &amp; nutrisi fase generatif.
+        </div>
+<div class="flex items-center justify-between mt-auto pt-2">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">Rp 22.000</span>
+<button class="h-9 px-3 rounded-lg bg-primary text-on-primary hover:bg-primary-container transition-colors font-label-sm text-label-sm font-semibold flex items-center gap-1" onclick="addToCart('Benih Tomat Cherry Ruby', 22000)">
+<span class="material-symbols-outlined text-[16px]">add</span> Beli
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Bundle Builder Anchor Section -->
+<section class="px-margin py-space-lg" id="bundle-builder">
+<div class="rounded-xl bg-surface-container p-space-lg lg:p-space-xl flex flex-col lg:flex-row items-center justify-between gap-space-lg">
+<div class="flex flex-col gap-space-xs max-w-xl">
+<div class="flex items-center gap-2 text-primary font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-[20px]">build_circle</span>
+<span>Kustomisasi Mandiri</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface">HYCANE Custom Bundle Builder</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Punya dimensi rak atau kebutuhan lubang tanam khusus? Rancang konfigurasi tangki, sensor, dan jumlah lubang tanam sesuai lahan rumahmu dalam hitungan menit.
+        </p>
+<div class="flex flex-wrap gap-2 pt-2">
+<span class="px-3 py-1 rounded-full bg-surface-container-lowest text-on-surface font-label-sm text-label-sm">Hitung otomatis daya pompa</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-lowest text-on-surface font-label-sm text-label-sm">Estimasi stok media ampas tebu</span>
+</div>
+</div>
+<div class="w-full lg:w-auto flex flex-col sm:flex-row items-center gap-3">
+<button class="w-full sm:w-auto h-12 px-6 rounded-xl bg-surface-container-lowest text-on-surface hover:bg-surface-bright font-label-md text-label-md font-semibold transition-colors shadow-sm">
+          Simulasi Ukuran Lahan
+        </button>
+<button class="w-full sm:w-auto h-12 px-6 rounded-xl bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md font-semibold transition-colors shadow flex items-center justify-center gap-2">
+<span>Mulai Konfigurasi</span>
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Transparency & Value Proposition Footer Section -->
+<section class="px-margin pb-space-xl">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Feature 1: Compatibility Guarantee -->
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary-fixed/40 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[26px]">verified</span>
+</div>
+<div class="flex flex-col gap-1">
+<h4 class="font-headline-md text-headline-md text-on-surface">Jaminan Kualitas Kompatibel 100%</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Semua komponen pipa, fitting, pompa, dan probe sensor dijamin plug-and-play langsung dengan firmware controller HYCANE tanpa kalibrasi rumit.
+          </p>
+</div>
+</div>
+<!-- Feature 2: More than shopping -->
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed shrink-0">
+<span class="material-symbols-outlined text-[26px]">hub</span>
+</div>
+<div class="flex flex-col gap-1">
+<h4 class="font-headline-md text-headline-md text-on-surface">Bukan Sekadar Belanja</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Setiap pembelian item otomatis mengaktifkan petunjuk perawatan langkah demi langkah dan profil nutrisi cerdas di modul monitoring akun Anda.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Floating Sticky Mini Cart Bar (Dynamic Summary) -->
+<div class="sticky bottom-4 mx-margin p-space-md rounded-xl bg-surface-container-lowest/95 backdrop-blur-md shadow-xl flex items-center justify-between gap-space-md z-30 transition-transform" id="stickyCartBar">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-on-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">shopping_cart</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md font-semibold text-on-surface" id="cartItemCount">2 Item Terpilih</span>
+<span class="text-outline text-body-sm">•</span>
+<span class="font-label-sm text-label-sm text-primary font-medium">Bebas Ongkir Regional Jatim</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-body-sm text-body-sm text-outline">Total Sementara:</span>
+<span class="font-label-md text-label-md font-bold text-on-surface" id="cartTotalPrice">Rp 127.000</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="h-10 px-4 rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md font-medium" onclick="toggleCartDrawer()">
+        Rincian
+      </button>
+<button class="h-10 px-5 rounded-xl bg-primary text-on-primary hover:bg-primary-container transition-colors font-label-md text-label-md font-semibold flex items-center gap-1 shadow-sm">
+<span>Checkout Sekarang</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Cart Modal / Flyout Overlay (Hidden initially, toggled by JS) -->
+<div class="fixed inset-0 bg-inverse-surface/40 backdrop-blur-sm z-50 hidden items-center justify-center p-4" id="cartModal">
+<div class="bg-surface-container-lowest rounded-xl max-w-lg w-full p-space-lg flex flex-col gap-space-md shadow-2xl">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[24px]">shopping_bag</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Keranjang Belanja</h3>
+</div>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container" onclick="toggleCartDrawer()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Item list inside cart -->
+<div class="flex flex-col gap-space-sm max-h-72 overflow-y-auto" id="cartItemList">
+<div class="flex items-center justify-between p-3 rounded-lg bg-surface-container-low">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Bagasse Media Refill - 18 Plugs</span>
+<span class="font-body-sm text-body-sm text-outline">1 x Rp 45.000</span>
+</div>
+<span class="font-label-md text-label-md font-bold text-on-surface">Rp 45.000</span>
+</div>
+<div class="flex items-center justify-between p-3 rounded-lg bg-surface-container-low">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Bagasse Media Refill - 36 Plugs</span>
+<span class="font-body-sm text-body-sm text-outline">1 x Rp 82.000</span>
+</div>
+<span class="font-label-md text-label-md font-bold text-on-surface">Rp 82.000</span>
+</div>
+</div>
+<div class="pt-space-xs flex flex-col gap-space-xs">
+<div class="flex justify-between text-body-md text-on-surface-variant">
+<span>Subtotal</span>
+<span class="font-semibold text-on-surface" id="modalSubtotal">Rp 127.000</span>
+</div>
+<div class="flex justify-between text-body-sm text-primary">
+<span>Diskon Komunitas FESTAFORA</span>
+<span>- Rp 0</span>
+</div>
+</div>
+<button class="w-full h-11 rounded-xl bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md font-semibold transition-colors flex items-center justify-center gap-2" onclick="toggleCartDrawer()">
+<span>Lanjut ke Pengiriman</span>
+<span class="material-symbols-outlined text-[18px]">local_shipping</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  // Simple Cart State & Interaction Logic
+  let currentTotal = 127000;
+  let itemCount = 2;
+
+  function formatIDR(value) {
+    return 'Rp ' + value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+  }
+
+  function addToCart(title, price) {
+    itemCount++;
+    currentTotal += price;
+
+    // Update bottom sticky bar
+    document.getElementById('cartItemCount').innerText = itemCount + ' Item Terpilih';
+    document.getElementById('cartTotalPrice').innerText = formatIDR(currentTotal);
+    
+    // Add to flyout list
+    const cartList = document.getElementById('cartItemList');
+    const newItem = document.createElement('div');
+    newItem.className = 'flex items-center justify-between p-3 rounded-lg bg-surface-container-low animate-fade-in';
+    newItem.innerHTML = `
+      <div class="flex flex-col">
+        <span class="font-label-md text-label-md font-semibold text-on-surface">${title}</span>
+        <span class="font-body-sm text-body-sm text-outline">1 x ${formatIDR(price)}</span>
+      </div>
+      <span class="font-label-md text-label-md font-bold text-on-surface">${formatIDR(price)}</span>
+    `;
+    cartList.appendChild(newItem);
+
+    // Update modal subtotal
+    document.getElementById('modalSubtotal').innerText = formatIDR(currentTotal);
+
+    // Provide friendly micro-feedback
+    const trigger = document.getElementById('cartQuickTrigger');
+    trigger.classList.add('bg-primary-fixed/50');
+    setTimeout(() => {
+      trigger.classList.remove('bg-primary-fixed/50');
+    }, 400);
+  }
+
+  function toggleCartDrawer() {
+    const modal = document.getElementById('cartModal');
+    if (modal.classList.contains('hidden')) {
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    } else {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+  }
+
+  // Bind quick cart trigger from utility top
+  document.getElementById('cartQuickTrigger').addEventListener('click', toggleCartDrawer);
+
+  // Category navigation active states
+  const categoryButtons = document.querySelectorAll('.category-btn');
+  categoryButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      categoryButtons.forEach(b => {
+        b.className = 'category-btn flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-md text-label-md transition-all shadow-sm';
+      });
+      btn.className = 'category-btn flex items-center gap-2 px-4 py-2 rounded-full bg-primary text-on-primary font-label-md text-label-md font-semibold shadow-sm transition-all';
+    });
+  });
+</script></main></div></body></html>
