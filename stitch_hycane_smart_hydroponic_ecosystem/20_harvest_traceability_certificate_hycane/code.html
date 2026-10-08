@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-primary-container": "#f7fff2", "primary-fixed-dim": "#62df7d", "on-primary-fixed": "#002109", "tertiary-fixed-dim": "#b4c5ff", "primary": "#006b2c", "on-surface-variant": "#3e4a3d", "surface-bright": "#f8f9ff", "on-error-container": "#93000a", "on-tertiary-container": "#fefcff", "on-error": "#ffffff", "surface-container-highest": "#d3e4fe", "inverse-surface": "#213145", "on-tertiary-fixed": "#00174b", "surface-container-high": "#dce9ff", "error": "#ba1a1a", "on-primary": "#ffffff", "outline-variant": "#bdcaba", "primary-container": "#00873a", "background": "#f8f9ff", "surface-dim": "#cbdbf5", "on-tertiary": "#ffffff", "secondary": "#545f73", "surface-variant": "#d3e4fe", "secondary-fixed": "#d8e3fb", "secondary-fixed-dim": "#bcc7de", "surface-container-low": "#eff4ff", "on-secondary-fixed-variant": "#3c475a", "on-primary-fixed-variant": "#005320", "tertiary": "#0051d5", "on-tertiary-fixed-variant": "#003ea8", "secondary-container": "#d5e0f8", "error-container": "#ffdad6", "inverse-primary": "#62df7d", "on-surface": "#0b1c30", "tertiary-fixed": "#dbe1ff", "outline": "#6e7b6c", "surface-container": "#e5eeff", "on-secondary-container": "#586377", "inverse-on-surface": "#eaf1ff", "on-secondary-fixed": "#111c2d", "surface": "#f8f9ff", "on-secondary": "#ffffff", "primary-fixed": "#7ffc97", "surface-tint": "#006e2d", "on-background": "#0b1c30", "surface-container-lowest": "#ffffff", "tertiary-container": "#316bf3" }, borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" }, spacing: { "space-sm": "0.5rem", "margin-mobile": "1rem", "space-xl": "2.5rem", "margin": "2rem", "space-xs": "0.25rem", "space-md": "1rem", "gutter-mobile": "1rem", "gutter": "1.5rem", "space-lg": "1.5rem" }, fontFamily: { "kpi-display": ["Inter"], "label-sm": ["Inter"], "body-sm": ["Inter"], "headline-xl-mobile": ["Inter"], "body-lg": ["Inter"], "headline-lg": ["Inter"], "headline-xl": ["Inter"], "label-md": ["Inter"], "body-md": ["Inter"], "headline-lg-mobile": ["Inter"], "headline-md": ["Inter"] }, fontSize: { "kpi-display": ["32px", { lineHeight: "38px", letterSpacing: "-0.03em", fontWeight: "700" }], "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.04em", fontWeight: "600" }], "body-sm": ["12px", { lineHeight: "16px", fontWeight: "400" }], "headline-xl-mobile": ["28px", { lineHeight: "36px", letterSpacing: "-0.01em", fontWeight: "700" }], "body-lg": ["16px", { lineHeight: "24px", fontWeight: "400" }], "headline-lg": ["28px", { lineHeight: "36px", letterSpacing: "-0.02em", fontWeight: "600" }], "headline-xl": ["36px", { lineHeight: "44px", letterSpacing: "-0.02em", fontWeight: "700" }], "label-md": ["13px", { lineHeight: "18px", letterSpacing: "0.01em", fontWeight: "500" }], "body-md": ["14px", { lineHeight: "20px", fontWeight: "400" }], "headline-lg-mobile": ["22px", { lineHeight: "30px", letterSpacing: "-0.01em", fontWeight: "600" }], "headline-md": ["20px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "600" }] } } } };</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"><aside class="fixed left-0 top-0 h-full w-[250px] bg-surface-container-lowest z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col flex-1 min-h-0"><div class="h-16 px-space-md flex items-center gap-space-sm bg-surface-container-lowest"><img alt="HYCANE Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3L21UVH924VPcz5w4_EBOU1inRo072yec9dsK24gBFGqkWxy6qtF5fJRomTxQwLbyX2_n5ToxSaYcGwtv5jFTjzWPMUXE1U08qa-TB-0KCos0HjJtdY8l8KDFFquLyCgst2GL2oc9o9YnStxELWiofYdVkoANwsTinPFdlXufRlJpbUTVFrJ4mjbJDhi6Jf1qg7Vyo6CFVmK8Sq_xin7LywUUQZRt210fjiXhbtM"/><div class="flex flex-col min-w-0 leading-tight"><span class="font-headline-md text-headline-md text-primary tracking-tight truncate">HYCANE</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Smart Hydroponic</span></div></div><div class="flex-1 overflow-y-auto px-space-sm py-space-sm"><nav class="space-y-space-sm" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-xl"><div class="px-space-sm pt-space-xs pb-space-xs"><span class="font-label-sm text-label-sm uppercase text-outline tracking-wider">Main</span></div><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-label-md text-label-md">Dashboard</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="live-monitoring" href="#"><span class="material-symbols-outlined text-[20px]">sensors</span><span class="font-label-md text-label-md">Live Monitoring</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="my-crops" href="#"><span class="material-symbols-outlined text-[20px]">potted_plant</span><span class="font-label-md text-label-md">My Crops</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="ai-recommendation" href="#"><span class="material-symbols-outlined text-[20px]">psychology</span><span class="font-label-md text-label-md">AI Recommendation</span></a><div class="px-space-sm pt-space-sm pb-space-xs"><span class="font-label-sm text-label-sm uppercase text-outline tracking-wider">Explore</span></div><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="marketplace" href="#"><span class="material-symbols-outlined text-[20px]">storefront</span><span class="font-label-md text-label-md">Marketplace</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="education" href="#"><span class="material-symbols-outlined text-[20px]">school</span><span class="font-label-md text-label-md">Education</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="community" href="#"><span class="material-symbols-outlined text-[20px]">forum</span><span class="font-label-md text-label-md">Community</span></a><div class="px-space-sm pt-space-sm pb-space-xs"><span class="font-label-sm text-label-sm uppercase text-outline tracking-wider">Activity</span></div><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="orders" href="#"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span class="font-label-md text-label-md">Orders</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="notifications" href="#"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="font-label-md text-label-md">Notifications</span></a><div class="px-space-sm pt-space-sm pb-space-xs"><span class="font-label-sm text-label-sm uppercase text-outline tracking-wider">Account</span></div><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="profile" href="#"><span class="material-symbols-outlined text-[20px]">person</span><span class="font-label-md text-label-md">Profile</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span class="font-label-md text-label-md">Settings</span></a></nav></div></div><div class="p-space-sm bg-surface-container-lowest flex flex-col gap-space-sm"><div class="bg-surface-container-low px-space-sm py-2 rounded-xl flex items-center justify-between"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span><span class="font-label-sm text-label-sm text-primary">Demo Mode: FESTAFORA 2026</span></div></div><div class="flex items-center justify-between px-space-xs pt-1"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="flex flex-col min-w-0"><span class="font-label-md text-label-md text-on-surface truncate">AgriOperator</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Smart Farm A</span></div></div><a class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container-low hover:text-error transition-colors" data-path="login" href="#" title="Logout"><span class="material-symbols-outlined text-[20px]">logout</span></a></div></div></aside><div class="pl-[250px]"><header class="fixed top-0 left-[250px] right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-md z-40 px-space-lg flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-sm"><img alt="HYCANE Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3L21UVH924VPcz5w4_EBOU1inRo072yec9dsK24gBFGqkWxy6qtF5fJRomTxQwLbyX2_n5ToxSaYcGwtv5jFTjzWPMUXE1U08qa-TB-0KCos0HjJtdY8l8KDFFquLyCgst2GL2oc9o9YnStxELWiofYdVkoANwsTinPFdlXufRlJpbUTVFrJ4mjbJDhi6Jf1qg7Vyo6CFVmK8Sq_xin7LywUUQZRt210fjiXhbtM"/><nav class="flex items-center gap-space-xs text-on-surface-variant"><a class="font-label-md text-label-md hover:text-on-surface transition-colors" data-path="dashboard" href="#">HYCANE</a><span class="material-symbols-outlined text-[16px] text-outline">chevron_right</span><span class="font-label-md text-label-md text-on-surface">Ecosystem Control</span></nav></div><div class="hidden md:flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-low"><span class="w-2 h-2 rounded-full bg-primary"></span><span class="font-label-sm text-label-sm text-primary">Sistem Terhubung • Real-Time</span></div><div class="flex items-center gap-space-sm"><div class="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary-fixed/30"><span class="material-symbols-outlined text-[16px] text-primary">eco</span><span class="font-label-sm text-label-sm text-primary">15/18 Tanaman Sehat</span></div><a class="relative p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="notifications" href="#"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 bg-error rounded-full"></span></a><button class="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md" type="button"><span class="material-symbols-outlined text-[18px] text-primary">tune</span><span>Demo Tools</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 w-full min-h-screen bg-background"><div class="flex flex-col w-full">
+<!-- Top Command & Breadcrumb Context Bar -->
+<section class="w-full px-space-lg py-space-md bg-surface-container-lowest shadow-sm flex flex-col md:flex-row md:items-center md:justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs min-w-0">
+<div class="flex flex-wrap items-center gap-2 text-label-sm font-label-sm text-outline">
+<span class="hover:text-primary cursor-pointer transition-colors">HYCANE</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="hover:text-primary cursor-pointer transition-colors">Budidaya Cerdas</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="hover:text-primary cursor-pointer transition-colors">Batch #01: Pakcoy Nauli F1</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-on-surface font-semibold">Sertifikat Ketertelusuran Digital</span>
+</div>
+<div class="flex flex-wrap items-center gap-3">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Sertifikat Paspor Digital #CERT-HYC-2026-FESTA01</h1>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary-fixed/40 text-on-primary-fixed text-label-sm font-label-sm">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+          Terverifikasi Kriptografis / IoT Blockchain-Ready
+        </span>
+</div>
+</div>
+<!-- Action Toolbar -->
+<div class="flex flex-wrap items-center gap-2">
+<button class="px-3.5 py-2 rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md flex items-center gap-1.5 shadow-sm" id="btn-reverify">
+<span class="material-symbols-outlined text-[18px] text-primary">verified_user</span>
+<span>Verifikasi Ulang Hash</span>
+</button>
+<button class="px-3.5 py-2 rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md flex items-center gap-1.5 shadow-sm" id="btn-copy-link">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+<span id="copy-text">Salin Tautan Publik</span>
+</button>
+<button class="px-3.5 py-2 rounded-xl bg-surface-container-highest text-tertiary hover:bg-surface-container-high transition-colors font-label-md text-label-md flex items-center gap-1.5 shadow-sm" id="btn-toggle-consumer">
+<span class="material-symbols-outlined text-[18px]">phone_iphone</span>
+<span>Pratinjau Mobile Konsumen</span>
+</button>
+<button class="px-4 py-2 rounded-xl bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md flex items-center gap-1.5 shadow-sm transition-all hover:scale-[1.02] active:scale-[0.98]" onclick="window.print()">
+<span class="material-symbols-outlined text-[18px]">print</span>
+<span>Cetak Label Kemasan (PDF)</span>
+</button>
+</div>
+</section>
+<!-- Notification Toast for Hash Re-verification -->
+<div class="hidden mx-space-lg mt-space-md p-space-sm bg-primary text-on-primary rounded-xl shadow-md flex items-center justify-between transition-all" id="verify-toast">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+<span class="font-body-md text-body-md">Integritas Hash SHA-256 Terverifikasi Valid pada Ledger IoT Node Kebonagung (Node #4-Surabaya). Timestamp sinkron: 30 Okt 2026 06:45:12 WIB.</span>
+</div>
+<button class="text-on-primary/80 hover:text-on-primary" onclick="document.getElementById('verify-toast').classList.add('hidden')">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<!-- Main Grid Workspace -->
+<div class="px-space-lg py-space-lg grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT & CENTER (8 Cols): The Official Clean & Circular Produce Certificate -->
+<div class="xl:col-span-8 flex flex-col gap-space-lg">
+<!-- The Official Digital Certificate Sheet -->
+<article class="bg-surface-container-lowest rounded-2xl shadow-xl overflow-hidden p-6 md:p-8 relative">
+<!-- Botanical Subtle Watermark Layer -->
+<div class="absolute -top-12 -right-12 w-64 h-64 bg-primary-fixed/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-16 -left-16 w-80 h-80 bg-tertiary-fixed/30 rounded-full blur-3xl pointer-events-none"></div>
+<!-- Certificate Header Band -->
+<div class="relative flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md pb-space-lg bg-surface-container-low/50 -mx-6 -mt-6 p-6 md:-mx-8 md:-mt-8 md:p-8 rounded-t-2xl">
+<div class="flex items-center gap-4">
+<div class="w-16 h-16 rounded-2xl bg-surface-container-lowest shadow-md flex items-center justify-center p-2 shrink-0">
+<span class="material-symbols-outlined text-[38px] text-primary" style="font-variation-settings: 'FILL' 1;">eco</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest font-bold">HYCANE Clean Agro Ledger • FESTAFORA 2026</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">PASPOR KETERTELUSURAN SAYUR HIDROPONIK</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Standar Mutu Supermarket Premium &amp; Keamanan Pangan Berkelanjutan</span>
+</div>
+</div>
+<div class="flex md:flex-col items-center md:items-end justify-between w-full md:w-auto gap-1">
+<span class="px-3 py-1 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md font-semibold tracking-wide shadow-sm">
+              GRADE A SUPER PREMIUM
+            </span>
+<span class="font-label-sm text-label-sm text-outline">ID: #CERT-HYC-2026-FESTA01</span>
+</div>
+</div>
+<!-- Identity Bar (Lot & Farm Specs) -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 py-space-lg">
+<div class="bg-surface-container-low p-3.5 rounded-xl">
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Komoditas &amp; Kultivar</span>
+<span class="font-headline-md text-headline-md text-on-surface font-bold">Pakcoy Nauli F1</span>
+<span class="font-body-sm text-body-sm text-primary font-medium block mt-0.5">Brassica rapa chinensis</span>
+</div>
+<div class="bg-surface-container-low p-3.5 rounded-xl">
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Waktu &amp; Tanggal Panen</span>
+<span class="font-headline-md text-headline-md text-on-surface font-bold">30 Okt 2026</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block mt-0.5">06:45 WIB (Panen Pagi Dingin)</span>
+</div>
+<div class="bg-surface-container-low p-3.5 rounded-xl">
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Fasilitas / Lokasi Produksi</span>
+<span class="font-headline-md text-headline-md text-on-surface font-bold">Smart Farm A</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block mt-0.5">Rungkut, Surabaya, Jawa Timur</span>
+</div>
+<div class="bg-surface-container-low p-3.5 rounded-xl">
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Volume Panen Lolos Seleksi</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">3.15 kg Netto</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block mt-0.5">18 Bonggol Berseragam Fisik</span>
+</div>
+</div>
+<!-- Visual Hero Crop Display Mosaic -->
+<div class="relative w-full h-56 rounded-2xl overflow-hidden shadow-md my-space-xs">
+<img class="w-full h-full object-cover" data-alt="A clean top-down agricultural macro photo of fresh crisp organic Pakcoy Nauli green leafy vegetables with dewdrops harvested sustainably from a high-tech hydroponic farm. Bright morning daylight, lush vibrant emerald green leaves, perfectly pristine clean white stalks, displaying biological freshness and premium farm-to-table supermarket standards." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAe8xBtDADy7OEgkdFOukFSwQjMMwYHXmEpfnOMIv_WjQahKzxO6r24haxzcJzhQ5J38-F606wwprOczNChCFEarlmfNmg5kXhLU4YelsyGOfs1a2le0UIg_5xvtcwq-m9C8VFWcD8uzaY7EEIE6eoYsmTPcA0LZRdMCkUgzcqeGA9jDfNI-vG3AmufNTIqzQeZcDxxDX66XhWmTJrYQujHiJczGoWubC4AcxdYIlw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/85 via-inverse-surface/30 to-transparent flex items-end justify-between p-6">
+<div class="flex flex-col text-on-primary">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary-fixed">Kondisi Turgor Sel Pasca-Panen</span>
+<span class="font-headline-md text-headline-md font-bold">100% Sel Turgid Segar • Suhu Simpan Dingin 14°C</span>
+</div>
+<div class="hidden sm:flex items-center gap-2 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1.5 rounded-full text-on-surface shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">verified</span>
+<span class="font-label-sm text-label-sm font-semibold">Bebas Cuci Kimiawi</span>
+</div>
+</div>
+</div>
+<!-- The 4 Pillars of Consumer Trust (Bento Grid) -->
+<div class="mt-space-lg flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">4 Pilar Jaminan Mutu &amp; Keberlanjutan</h3>
+<span class="font-label-sm text-label-sm text-primary uppercase font-semibold">Hasil Verifikasi Sensoris &amp; Lab</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md pt-2">
+<!-- Pillar 1: 100% Bebas Pestisida Sintetis & Nitrat Rendah -->
+<div class="p-space-md bg-surface-container-low rounded-2xl flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-9 h-9 rounded-xl bg-primary-fixed/40 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">pest_control</span>
+</div>
+<span class="font-label-md text-label-md font-bold text-on-surface">100% Bebas Pestisida Kimia</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">Optimal Aman</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+                  Tanpa insektisida sintetis, fungisida sistemik, atau herbisida. Hanya proteksi bio-agensia alami dan perangkap mekanis UV.
+                </p>
+</div>
+<div class="mt-4 pt-3 bg-surface-container-lowest p-3 rounded-xl">
+<div class="flex justify-between items-center mb-1">
+<span class="font-label-sm text-label-sm text-outline">Kadar Residu Nitrat Daun:</span>
+<span class="font-label-md text-label-md font-bold text-primary">48 mg/kg</span>
+</div>
+<!-- Progress benchmark Bar -->
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden flex">
+<div class="bg-primary h-full w-[4%]" title="48 mg/kg (HYCANE)"></div>
+<div class="bg-outline-variant h-full w-[96%]" title="Ambang Batas WHO/EU: 2.500 mg/kg"></div>
+</div>
+<div class="flex justify-between text-label-sm font-label-sm text-outline mt-1.5">
+<span>HYCANE: 48 mg/kg</span>
+<span>Batas Aman Uni Eropa: 2.500 mg/kg (98% Lebih Rendah)</span>
+</div>
+</div>
+</div>
+<!-- Pillar 2: Sirkularitas Ampas Tebu (Bebas Rockwool) -->
+<div class="p-space-md bg-surface-container-low rounded-2xl flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-9 h-9 rounded-xl bg-secondary-fixed flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">recycling</span>
+</div>
+<span class="font-label-md text-label-md font-bold text-on-surface">Media Tanam Ampas Tebu (Bagasse)</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">Zero Rockwool</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+                  Akar ditopang oleh substrat cetak limbah tebu PG Kebonagung. 100% biodegradable alami tanpa sampah serat mikroplastik atau serat sintetis silika karsinogenik.
+                </p>
+</div>
+<div class="mt-4 bg-surface-container-lowest p-3 rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-primary">compost</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Emisi Karbon Substrat Terpangkas:</span>
+</div>
+<span class="font-label-md text-label-md font-bold text-on-surface">-74% vs Media Impor</span>
+</div>
+</div>
+<!-- Pillar 3: Telemetri Presisi 720 Jam (30 Hari) -->
+<div class="p-space-md bg-surface-container-low rounded-2xl flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-9 h-9 rounded-xl bg-tertiary-fixed flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">sensors</span>
+</div>
+<span class="font-label-md text-label-md font-bold text-on-surface">720 Jam Telemetri Mikro-IoT</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm">Uptime 99.8%</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+                  Nutrisi dan lingkungan dipantau otomatis setiap 30 detik via ESP32. Suhu akar dijaga sejuk untuk mencegah layu batang dan pemicu penyakit fisiologis tipburn.
+                </p>
+</div>
+<div class="mt-4 grid grid-cols-2 gap-2">
+<div class="bg-surface-container-lowest p-2.5 rounded-xl text-center">
+<span class="font-label-sm text-label-sm text-outline block">Rata-rata pH 30 Hari</span>
+<span class="font-kpi-display text-kpi-display text-on-surface">6.12</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Toleransi Ideal (5.8-6.5)</span>
+</div>
+<div class="bg-surface-container-lowest p-2.5 rounded-xl text-center">
+<span class="font-label-sm text-label-sm text-outline block">Suhu Reservoir Rata-rata</span>
+<span class="font-kpi-display text-kpi-display text-on-surface">25.8°C</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Sejuk &amp; Stabil</span>
+</div>
+</div>
+</div>
+<!-- Pillar 4: Flushing Air Murni 48 Jam Bebas Pahit -->
+<div class="p-space-md bg-surface-container-low rounded-2xl flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-9 h-9 rounded-xl bg-primary-fixed/40 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">water_drop</span>
+</div>
+<span class="font-label-md text-label-md font-bold text-on-surface">Flushing Air Murni 48 Jam</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">Tekstur Renyah</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+                  Dua hari sebelum panen, nutrisi AB-Mix diganti 100% air filtrasi terionisasi. Membilas garam pupuk pekat sehingga cita rasa sayur renyah alami tanpa sisa rasa pahit.
+                </p>
+</div>
+<div class="mt-4 bg-surface-container-lowest p-3 rounded-xl flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-outline block">EC Akhir Sebelum Petik</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">120 ppm (0.24 mS/cm)</span>
+</div>
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span class="font-label-sm text-label-sm font-semibold">Lolos Uji Sensorik</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 30-Day Lifecycle Sensor Audit Timeline -->
+<div class="mt-space-xl pt-space-lg bg-surface-container-low/40 rounded-2xl p-6">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between pb-4 gap-2">
+<div>
+<h4 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">Audit Kronologi Pertumbuhan (30 Hari)</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Data sensor IoT tercatat kontinu di server edge lokal &amp; Cloud Gateway</span>
+</div>
+<span class="font-label-sm text-label-sm px-3 py-1 bg-surface-container-lowest rounded-full text-outline">5 Titik Verifikasi Kunci</span>
+</div>
+<div class="relative mt-4 space-y-6 before:absolute before:inset-0 before:left-3.5 before:w-0.5 before:bg-primary-fixed-dim">
+<!-- Event 1 -->
+<div class="relative flex items-start gap-4">
+<div class="w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-sm text-label-sm z-10 shadow-sm">
+                01
+              </div>
+<div class="bg-surface-container-lowest p-3.5 rounded-xl shadow-sm flex-1 flex flex-col md:flex-row md:items-center justify-between gap-2">
+<div>
+<span class="font-label-sm text-label-sm text-primary font-semibold">01 Oktober 2026 • 08:00 WIB</span>
+<h5 class="font-headline-sm text-on-surface font-bold text-label-md">Penyemaian Benih pada Plug Ampas Tebu (Bagasse)</h5>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Daya kecambah 98%, disemprot air steril RO bebas klorin.</p>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 bg-surface-container-low rounded-lg text-outline">EC 0 ppm • Suhu 26°C</span>
+</div>
+</div>
+<!-- Event 2 -->
+<div class="relative flex items-start gap-4">
+<div class="w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-sm text-label-sm z-10 shadow-sm">
+                12
+              </div>
+<div class="bg-surface-container-lowest p-3.5 rounded-xl shadow-sm flex-1 flex flex-col md:flex-row md:items-center justify-between gap-2">
+<div>
+<span class="font-label-sm text-label-sm text-primary font-semibold">12 Oktober 2026 • 15:30 WIB</span>
+<h5 class="font-headline-sm text-on-surface font-bold text-label-md">Pindah Tanam (Transplanting) ke NFT Gully Modular</h5>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Akar putih sehat menembus plug tebu. Formula vegetatif aktif.</p>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 bg-surface-container-low rounded-lg text-outline">EC 850 ppm • pH 6.05</span>
+</div>
+</div>
+<!-- Event 3 -->
+<div class="relative flex items-start gap-4">
+<div class="w-7 h-7 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-label-sm text-label-sm z-10 shadow-sm">
+                22
+              </div>
+<div class="bg-surface-container-lowest p-3.5 rounded-xl shadow-sm flex-1 flex flex-col md:flex-row md:items-center justify-between gap-2">
+<div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">22 Oktober 2026 • 02:14 WIB</span>
+<h5 class="font-headline-sm text-on-surface font-bold text-label-md">Koreksi Asiditas pH Otomatis oleh HYCANE Dosing Node</h5>
+<p class="font-body-sm text-body-sm text-on-surface-variant">pH sempat drop ke 5.61; pompa doser injeksi 20ml buffer kalium otomatis terpicu dalam 3 menit.</p>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 bg-surface-container-low rounded-lg text-outline">pH 6.18 Pulih Cepat</span>
+</div>
+</div>
+<!-- Event 4 -->
+<div class="relative flex items-start gap-4">
+<div class="w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-sm text-label-sm z-10 shadow-sm">
+                28
+              </div>
+<div class="bg-surface-container-lowest p-3.5 rounded-xl shadow-sm flex-1 flex flex-col md:flex-row md:items-center justify-between gap-2">
+<div>
+<span class="font-label-sm text-label-sm text-primary font-semibold">28 Oktober 2026 • 07:00 WIB</span>
+<h5 class="font-headline-sm text-on-surface font-bold text-label-md">Inisiasi Protokol Flushing Air Murni 48 Jam (Washout)</h5>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Pengosongan tandon utama, pengisian air filtrasi RO untuk pengurasan akumulasi garam.</p>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 bg-surface-container-low rounded-lg text-outline">EC 1.150 → 120 ppm</span>
+</div>
+</div>
+<!-- Event 5 -->
+<div class="relative flex items-start gap-4">
+<div class="w-7 h-7 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-label-sm text-label-sm z-10 shadow-sm">
+                30
+              </div>
+<div class="bg-primary-fixed/30 p-3.5 rounded-xl shadow-sm flex-1 flex flex-col md:flex-row md:items-center justify-between gap-2">
+<div>
+<span class="font-label-sm text-label-sm text-primary font-bold">30 Oktober 2026 • 06:45 WIB</span>
+<h5 class="font-headline-sm text-on-surface font-bold text-label-md">Pemanenan Pagi Bersertifikat &amp; Hashing Kriptografis</h5>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Kualitas fisik Grade A (100% turgor, daun mulus, bobot per pohon ~175 gram).</p>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 bg-surface-container-lowest rounded-lg font-bold text-primary">Status: SIAP KONSUMSI</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Official Signatures & Integrity Stamp Seal -->
+<div class="mt-space-xl pt-space-lg bg-surface-container-lowest flex flex-col sm:flex-row items-center justify-between gap-6">
+<div class="flex items-center gap-4">
+<div class="w-16 h-16 rounded-full bg-surface-container-low flex items-center justify-center relative">
+<span class="material-symbols-outlined text-[36px] text-primary">workspace_premium</span>
+<div class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-primary text-on-primary flex items-center justify-center text-[10px]">
+<span class="material-symbols-outlined text-[12px]">check</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase">Otorisasi Agronomis Terverifikasi</span>
+<span class="font-headline-md text-headline-md text-on-surface font-bold">Ir. Hendra Setiawan, M.P.</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Kepala Penjamin Mutu Hortikultura • HYCANE</span>
+</div>
+</div>
+<div class="flex flex-col sm:items-end text-left sm:text-right bg-surface-container-low px-4 py-3 rounded-xl max-w-sm">
+<span class="font-label-sm text-label-sm text-outline uppercase">IoT Signature Hash (SHA-256)</span>
+<code class="font-mono text-body-sm text-on-surface font-bold tracking-wider break-all select-all">8f4c2e19a4d87b029e71f9812cc11e03</code>
+<span class="font-label-sm text-label-sm text-primary font-semibold mt-1">Status: Unaltered &amp; Tamper-Proof</span>
+</div>
+</div>
+</article>
+<!-- Supermarket & Farm-to-Table Assurance Guarantee -->
+<section class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm flex flex-col sm:flex-row items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed flex items-center justify-center text-tertiary shrink-0">
+<span class="material-symbols-outlined text-[26px]">storefront</span>
+</div>
+<div class="flex flex-col flex-1">
+<h4 class="font-headline-sm text-on-surface font-bold text-headline-md">Jaminan Mutu untuk Mitra Ritel &amp; Restoran</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Sertifikat ini diakui oleh mitra ritel modern (Superindo, Ranch Market) &amp; restoran Farm-to-Table sebagai bukti sayur bebas nitrat tinggi, bebas cemaran tanah, dan ramah lingkungan.
+          </p>
+</div>
+<button class="px-4 py-2.5 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center gap-1 shrink-0">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Unduh CoA Lab (PDF)</span>
+</button>
+</section>
+</div>
+<!-- RIGHT COLUMN (4 Cols): Packaging Label Preview & Smartphone Consumer Simulator -->
+<div class="xl:col-span-4 flex flex-col gap-space-lg">
+<!-- Label Kemasan Fisik Sticker Generator (Ready to print) -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl shadow-md flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">label</span>
+<h3 class="font-headline-sm text-headline-md text-on-surface font-bold">Stiker Label Kemasan</h3>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 bg-surface-container rounded-full text-outline">Ukuran 7x5 cm</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Pratinjau label berperekat tahan air untuk ditempelkan pada kemasan plastik biodegradable/kantung sayur segar.
+        </p>
+<!-- The Physical Sticker Mockup -->
+<div class="p-4 rounded-xl bg-surface-container-lowest shadow-xl flex flex-col gap-3 relative overflow-hidden bg-gradient-to-br from-surface-container-lowest via-surface-bright to-surface-container-low">
+<!-- Subtle top badge -->
+<div class="flex items-center justify-between pb-2">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[20px] text-primary" style="font-variation-settings: 'FILL' 1;">eco</span>
+<span class="font-label-md text-label-md font-bold text-on-surface tracking-tight">HYCANE FRESH</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-primary text-on-primary font-label-sm text-[10px] uppercase font-bold tracking-wide">
+              SUPERGRADE A
+            </span>
+</div>
+<div class="flex items-center gap-3">
+<!-- Simulated High-Precision QR Code Graphic -->
+<div class="w-24 h-24 bg-surface-container-lowest p-1.5 rounded-lg shadow-sm flex items-center justify-center shrink-0">
+<svg class="w-full h-full text-on-surface" fill="currentColor" viewbox="0 0 100 100">
+<!-- QR Corner 1 -->
+<rect fill="none" height="28" rx="2" stroke="currentColor" stroke-width="5" width="28" x="5" y="5"></rect>
+<rect height="14" rx="1" width="14" x="12" y="12"></rect>
+<!-- QR Corner 2 -->
+<rect fill="none" height="28" rx="2" stroke="currentColor" stroke-width="5" width="28" x="67" y="5"></rect>
+<rect height="14" rx="1" width="14" x="74" y="12"></rect>
+<!-- QR Corner 3 -->
+<rect fill="none" height="28" rx="2" stroke="currentColor" stroke-width="5" width="28" x="5" y="67"></rect>
+<rect height="14" rx="1" width="14" x="12" y="74"></rect>
+<!-- QR Data Matrix Pixels -->
+<rect height="8" width="8" x="38" y="8"></rect>
+<rect height="8" width="8" x="50" y="8"></rect>
+<rect height="8" width="8" x="38" y="22"></rect>
+<rect height="6" width="10" x="50" y="24"></rect>
+<rect height="8" width="8" x="8" y="38"></rect>
+<rect height="8" width="10" x="22" y="44"></rect>
+<rect class="text-primary" height="24" rx="4" width="24" x="38" y="38"></rect>
+<rect height="8" width="10" x="68" y="42"></rect>
+<rect height="10" width="10" x="82" y="38"></rect>
+<rect height="14" width="8" x="38" y="68"></rect>
+<rect height="8" width="14" x="52" y="72"></rect>
+<rect height="8" width="18" x="72" y="68"></rect>
+<rect height="10" width="14" x="74" y="82"></rect>
+</svg>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-on-surface font-bold text-label-md truncate">Pakcoy Nauli F1</span>
+<span class="font-body-sm text-body-sm text-primary font-medium">Bebas Residu • Media Tebu</span>
+<span class="font-label-sm text-label-sm text-outline mt-1">Panen: 30 Okt 2026</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant font-mono">ID: FESTA01-3.15KG</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-2 rounded-lg text-center">
+<span class="font-label-sm text-label-sm text-primary font-bold flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[14px]">qr_code_scanner</span>
+              Scan Kamera HP untuk Cek Histori Sensor
+            </span>
+</div>
+</div>
+<button class="w-full py-2.5 rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+<span>Kustomisasi Format Cetak Label</span>
+</button>
+</div>
+<!-- Consumer Smartphone Simulation Viewport -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl shadow-md flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[22px]">smartphone</span>
+<h3 class="font-headline-sm text-headline-md text-on-surface font-bold">Simulasi Layar Konsumen</h3>
+</div>
+<span class="font-label-sm text-label-sm text-primary flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+            Live Render
+          </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Inilah tampilan responsif elegan yang dilihat pembeli di supermarket saat memindai QR code via browser ponsel:
+        </p>
+<!-- Smartphone Frame Container -->
+<div class="mx-auto w-full max-w-[320px] bg-inverse-surface p-3 rounded-[36px] shadow-2xl">
+<!-- Speaker & Notch -->
+<div class="w-24 h-4 bg-inverse-surface rounded-full mx-auto mb-2 flex items-center justify-center gap-1.5">
+<div class="w-2 h-2 rounded-full bg-inverse-on-surface/20"></div>
+<div class="w-8 h-1.5 rounded-full bg-inverse-on-surface/20"></div>
+</div>
+<!-- Smartphone Screen Contents -->
+<div class="bg-background rounded-[24px] overflow-hidden flex flex-col text-on-surface pb-4 shadow-inner">
+<!-- Mobile App Bar -->
+<div class="bg-primary px-4 py-3 text-on-primary flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">eco</span>
+<span class="font-label-sm text-label-sm font-bold tracking-tight">HYCANE PASPOR</span>
+</div>
+<span class="material-symbols-outlined text-[16px]">share</span>
+</div>
+<!-- Mobile Banner Card -->
+<div class="p-4 flex flex-col gap-3">
+<div class="bg-surface-container-lowest p-3 rounded-xl shadow-sm flex items-center gap-3">
+<div class="w-12 h-12 rounded-lg overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Fresh pakcoy close up showing crispy emerald leaves and clean white roots in hydroponic greenhouse setting with clean morning sun." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvq-L03QqbvQLckL-G5cgEJW8ivBvQHJja-slbAs7F-fAs4ZqZBMg_fzrrtLpWheMFlmktWBiYfcZDlogcxdyiwHEnm5N0xyEap7X9VBr2s_cZuLUeF-XhhTU3VcMjojMKCWhR2tUx9GroDFbXlvcjpZ84egFgiq05mbKjExbLe8cTRmVmK0KCaLgb9mTHXiKVWmv1DspM5BFVS11C-Rd2brXk6PrBsK-ov4_mMzA"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-primary font-bold">TERVERIFIKASI ASLI</span>
+<span class="font-headline-sm text-headline-md font-bold text-on-surface truncate">Pakcoy Nauli Super</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Dipanen Hari Ini • 06:45 WIB</span>
+</div>
+</div>
+<!-- Quick Consumer Bullet Cards -->
+<div class="space-y-2">
+<div class="bg-surface-container-low p-2.5 rounded-xl flex items-center gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Residu Pestisida: 0%</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Tidak menggunakan pestisida beracun</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-2.5 rounded-xl flex items-center gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px]">water</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Flushed 48 Jam</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Rasa manis segar, tidak pahit di lidah</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-2.5 rounded-xl flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[20px]">recycling</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Substrat Ramah Lingkungan</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">100% ampas tebu daur ulang Jatim</span>
+</div>
+</div>
+</div>
+<!-- Farmer Greeting & Photo -->
+<div class="bg-primary-fixed/30 p-3 rounded-xl flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-on-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">agriculture</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-primary-fixed font-bold">Ditanam dengan Kasih &amp; AI</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">AgriOperator Smart Farm A, Surabaya</span>
+</div>
+</div>
+<!-- Interactive Feedback CTA -->
+<button class="w-full py-2 bg-primary text-on-primary rounded-xl font-label-sm text-label-sm font-semibold shadow-sm text-center">
+                Beri Ulasan Petani &amp; Dapatkan Poin
+              </button>
+</div>
+<!-- Home indicator bar -->
+<div class="w-20 h-1 bg-on-surface/20 rounded-full mx-auto mt-2"></div>
+</div>
+</div>
+<div class="text-center pt-2">
+<span class="font-body-sm text-body-sm text-outline">Konsumen dapat mengakses tanpa perlu login atau instal aplikasi apapun.</span>
+</div>
+</div>
+<!-- Raw Ledger Metadata Inspector Card -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm flex flex-col gap-3">
+<h4 class="font-headline-sm text-headline-md text-on-surface font-bold">Metadata Ledger IoT</h4>
+<div class="space-y-2 text-body-sm font-body-sm">
+<div class="flex justify-between py-1 bg-surface-container-low px-3 rounded-lg">
+<span class="text-outline">Block Height:</span>
+<span class="font-mono font-bold text-on-surface">#14,892-FESTA</span>
+</div>
+<div class="flex justify-between py-1 bg-surface-container-low px-3 rounded-lg">
+<span class="text-outline">Node ID:</span>
+<span class="font-mono font-bold text-on-surface">ESP32-SUB-04A</span>
+</div>
+<div class="flex justify-between py-1 bg-surface-container-low px-3 rounded-lg">
+<span class="text-outline">Protokol:</span>
+<span class="font-mono font-bold text-primary">MQTT • TLS 1.3</span>
+</div>
+<div class="flex justify-between py-1 bg-surface-container-low px-3 rounded-lg">
+<span class="text-outline">Konsensus:</span>
+<span class="font-mono font-bold text-on-surface">PoA (Proof of Agriculture)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Micro-interaction scripts for the interactive certificate
+  const copyBtn = document.getElementById('btn-copy-link');
+  const copyText = document.getElementById('copy-text');
+  const reverifyBtn = document.getElementById('btn-reverify');
+  const verifyToast = document.getElementById('verify-toast');
+  const toggleConsumerBtn = document.getElementById('btn-toggle-consumer');
+
+  if (copyBtn) {
+    copyBtn.addEventListener('click', () => {
+      const dummyUrl = 'https://hycane.agrismart.id/verify/CERT-HYC-2026-FESTA01';
+      navigator.clipboard?.writeText(dummyUrl).catch(() => {});
+      copyText.textContent = 'Tautan Tersalin!';
+      setTimeout(() => {
+        copyText.textContent = 'Salin Tautan Publik';
+      }, 2500);
+    });
+  }
+
+  if (reverifyBtn && verifyToast) {
+    reverifyBtn.addEventListener('click', () => {
+      verifyToast.classList.remove('hidden');
+      setTimeout(() => {
+        verifyToast.classList.add('hidden');
+      }, 6000);
+    });
+  }
+
+  if (toggleConsumerBtn) {
+    toggleConsumerBtn.addEventListener('click', () => {
+      window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: 'smooth'
+      });
+    });
+  }
+</script></main></div></body></html>
