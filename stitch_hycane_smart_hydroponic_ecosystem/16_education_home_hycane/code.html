@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-primary-container": "#f7fff2", "primary-fixed-dim": "#62df7d", "on-primary-fixed": "#002109", "tertiary-fixed-dim": "#b4c5ff", "primary": "#006b2c", "on-surface-variant": "#3e4a3d", "surface-bright": "#f8f9ff", "on-error-container": "#93000a", "on-tertiary-container": "#fefcff", "on-error": "#ffffff", "surface-container-highest": "#d3e4fe", "inverse-surface": "#213145", "on-tertiary-fixed": "#00174b", "surface-container-high": "#dce9ff", "error": "#ba1a1a", "on-primary": "#ffffff", "outline-variant": "#bdcaba", "primary-container": "#00873a", "background": "#f8f9ff", "surface-dim": "#cbdbf5", "on-tertiary": "#ffffff", "secondary": "#545f73", "surface-variant": "#d3e4fe", "secondary-fixed": "#d8e3fb", "secondary-fixed-dim": "#bcc7de", "surface-container-low": "#eff4ff", "on-secondary-fixed-variant": "#3c475a", "on-primary-fixed-variant": "#005320", "tertiary": "#0051d5", "on-tertiary-fixed-variant": "#003ea8", "secondary-container": "#d5e0f8", "error-container": "#ffdad6", "inverse-primary": "#62df7d", "on-surface": "#0b1c30", "tertiary-fixed": "#dbe1ff", "outline": "#6e7b6c", "surface-container": "#e5eeff", "on-secondary-container": "#586377", "inverse-on-surface": "#eaf1ff", "on-secondary-fixed": "#111c2d", "surface": "#f8f9ff", "on-secondary": "#ffffff", "primary-fixed": "#7ffc97", "surface-tint": "#006e2d", "on-background": "#0b1c30", "surface-container-lowest": "#ffffff", "tertiary-container": "#316bf3" }, borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" }, spacing: { "space-sm": "0.5rem", "margin-mobile": "1rem", "space-xl": "2.5rem", "margin": "2rem", "space-xs": "0.25rem", "space-md": "1rem", "gutter-mobile": "1rem", "gutter": "1.5rem", "space-lg": "1.5rem" }, fontFamily: { "kpi-display": ["Inter"], "label-sm": ["Inter"], "body-sm": ["Inter"], "headline-xl-mobile": ["Inter"], "body-lg": ["Inter"], "headline-lg": ["Inter"], "headline-xl": ["Inter"], "label-md": ["Inter"], "body-md": ["Inter"], "headline-lg-mobile": ["Inter"], "headline-md": ["Inter"] }, fontSize: { "kpi-display": ["32px", { lineHeight: "38px", letterSpacing: "-0.03em", fontWeight: "700" }], "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.04em", fontWeight: "600" }], "body-sm": ["12px", { lineHeight: "16px", fontWeight: "400" }], "headline-xl-mobile": ["28px", { lineHeight: "36px", letterSpacing: "-0.01em", fontWeight: "700" }], "body-lg": ["16px", { lineHeight: "24px", fontWeight: "400" }], "headline-lg": ["28px", { lineHeight: "36px", letterSpacing: "-0.02em", fontWeight: "600" }], "headline-xl": ["36px", { lineHeight: "44px", letterSpacing: "-0.02em", fontWeight: "700" }], "label-md": ["13px", { lineHeight: "18px", letterSpacing: "0.01em", fontWeight: "500" }], "body-md": ["14px", { lineHeight: "20px", fontWeight: "400" }], "headline-lg-mobile": ["22px", { lineHeight: "30px", letterSpacing: "-0.01em", fontWeight: "600" }], "headline-md": ["20px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "600" }] } } } };</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"><aside class="fixed left-0 top-0 h-full w-[250px] bg-surface-container-lowest z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col flex-1 min-h-0"><div class="h-16 px-space-md flex items-center gap-space-sm bg-surface-container-lowest"><img alt="HYCANE Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3L21UVH924VPcz5w4_EBOU1inRo072yec9dsK24gBFGqkWxy6qtF5fJRomTxQwLbyX2_n5ToxSaYcGwtv5jFTjzWPMUXE1U08qa-TB-0KCos0HjJtdY8l8KDFFquLyCgst2GL2oc9o9YnStxELWiofYdVkoANwsTinPFdlXufRlJpbUTVFrJ4mjbJDhi6Jf1qg7Vyo6CFVmK8Sq_xin7LywUUQZRt210fjiXhbtM"/><div class="flex flex-col min-w-0 leading-tight"><span class="font-headline-md text-headline-md text-primary tracking-tight truncate">HYCANE</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Smart Hydroponic</span></div></div><div class="flex-1 overflow-y-auto px-space-sm py-space-sm"><nav class="space-y-space-sm" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-xl"><div class="px-space-sm pt-space-xs pb-space-xs"><span class="font-label-sm text-label-sm uppercase text-outline tracking-wider">Main</span></div><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-label-md text-label-md">Dashboard</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="live-monitoring" href="#"><span class="material-symbols-outlined text-[20px]">sensors</span><span class="font-label-md text-label-md">Live Monitoring</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="my-crops" href="#"><span class="material-symbols-outlined text-[20px]">potted_plant</span><span class="font-label-md text-label-md">My Crops</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="ai-recommendation" href="#"><span class="material-symbols-outlined text-[20px]">psychology</span><span class="font-label-md text-label-md">AI Recommendation</span></a><div class="px-space-sm pt-space-sm pb-space-xs"><span class="font-label-sm text-label-sm uppercase text-outline tracking-wider">Explore</span></div><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="marketplace" href="#"><span class="material-symbols-outlined text-[20px]">storefront</span><span class="font-label-md text-label-md">Marketplace</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="education" href="#"><span class="material-symbols-outlined text-[20px]">school</span><span class="font-label-md text-label-md">Education</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="community" href="#"><span class="material-symbols-outlined text-[20px]">forum</span><span class="font-label-md text-label-md">Community</span></a><div class="px-space-sm pt-space-sm pb-space-xs"><span class="font-label-sm text-label-sm uppercase text-outline tracking-wider">Activity</span></div><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="orders" href="#"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span class="font-label-md text-label-md">Orders</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="notifications" href="#"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="font-label-md text-label-md">Notifications</span></a><div class="px-space-sm pt-space-sm pb-space-xs"><span class="font-label-sm text-label-sm uppercase text-outline tracking-wider">Account</span></div><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="profile" href="#"><span class="material-symbols-outlined text-[20px]">person</span><span class="font-label-md text-label-md">Profile</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span class="font-label-md text-label-md">Settings</span></a></nav></div></div><div class="p-space-sm bg-surface-container-lowest flex flex-col gap-space-sm"><div class="bg-surface-container-low px-space-sm py-2 rounded-xl flex items-center justify-between"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span><span class="font-label-sm text-label-sm text-primary">Demo Mode: FESTAFORA 2026</span></div></div><div class="flex items-center justify-between px-space-xs pt-1"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="flex flex-col min-w-0"><span class="font-label-md text-label-md text-on-surface truncate">AgriOperator</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Smart Farm A</span></div></div><a class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container-low hover:text-error transition-colors" data-path="login" href="#" title="Logout"><span class="material-symbols-outlined text-[20px]">logout</span></a></div></div></aside><div class="pl-[250px]"><header class="fixed top-0 left-[250px] right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-md z-40 px-space-lg flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-sm"><img alt="HYCANE Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3L21UVH924VPcz5w4_EBOU1inRo072yec9dsK24gBFGqkWxy6qtF5fJRomTxQwLbyX2_n5ToxSaYcGwtv5jFTjzWPMUXE1U08qa-TB-0KCos0HjJtdY8l8KDFFquLyCgst2GL2oc9o9YnStxELWiofYdVkoANwsTinPFdlXufRlJpbUTVFrJ4mjbJDhi6Jf1qg7Vyo6CFVmK8Sq_xin7LywUUQZRt210fjiXhbtM"/><nav class="flex items-center gap-space-xs text-on-surface-variant"><a class="font-label-md text-label-md hover:text-on-surface transition-colors" data-path="dashboard" href="#">HYCANE</a><span class="material-symbols-outlined text-[16px] text-outline">chevron_right</span><span class="font-label-md text-label-md text-on-surface">Ecosystem Control</span></nav></div><div class="hidden md:flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-low"><span class="w-2 h-2 rounded-full bg-primary"></span><span class="font-label-sm text-label-sm text-primary">Sistem Terhubung • Real-Time</span></div><div class="flex items-center gap-space-sm"><div class="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary-fixed/30"><span class="material-symbols-outlined text-[16px] text-primary">eco</span><span class="font-label-sm text-label-sm text-primary">15/18 Tanaman Sehat</span></div><a class="relative p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="notifications" href="#"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 bg-error rounded-full"></span></a><button class="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md" type="button"><span class="material-symbols-outlined text-[18px] text-primary">tune</span><span>Demo Tools</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 w-full min-h-screen bg-background"><div class="flex flex-col w-full">
+<!-- Interactive Script for Filtering & Quick Diagnosis Modal Preview -->
+<script>
+    function openDiagModal(title, cause, solution, step) {
+      const modal = document.getElementById('diag-modal');
+      document.getElementById('modal-title').innerText = title;
+      document.getElementById('modal-cause').innerText = cause;
+      document.getElementById('modal-solution').innerText = solution;
+      document.getElementById('modal-step').innerText = step;
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+    function closeDiagModal() {
+      const modal = document.getElementById('diag-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+    function toggleFilter(category) {
+      const allCards = document.querySelectorAll('.module-card');
+      const tabs = document.querySelectorAll('.filter-tab');
+      tabs.forEach(tab => {
+        if(tab.dataset.cat === category) {
+          tab.classList.add('bg-primary-container', 'text-on-primary-container', 'font-semibold');
+          tab.classList.remove('bg-surface-container-lowest', 'text-on-surface-variant');
+        } else {
+          tab.classList.remove('bg-primary-container', 'text-on-primary-container', 'font-semibold');
+          tab.classList.add('bg-surface-container-lowest', 'text-on-surface-variant');
+        }
+      });
+      allCards.forEach(card => {
+        if(category === 'all' || card.dataset.category === category) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+  </script>
+<!-- Main Container with 8pt rhythm & clean padding -->
+<div class="px-space-md md:px-margin py-space-lg max-w-[1440px] mx-auto w-full space-y-space-xl">
+<!-- SECTION 1: HEADER & LEARNING HERO BANNER -->
+<section class="space-y-space-md">
+<!-- Breadcrumb & Mode Tag -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-primary">school</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold">Akademi Tani Mandiri</span>
+<span class="text-outline">/</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Modul Pemula</span>
+</div>
+<div class="flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span>FESTAFORA 2026 Interactive Learning Sandbox</span>
+</div>
+</div>
+<!-- Main Headline + Editorial Copy -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="space-y-space-xs max-w-3xl">
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">
+            Pusat Edukasi Hidroponik Ramah Pemula
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+            Belajar Hidroponik dari Nol. Pahami apa yang terjadi pada air, nutrisi, dan tanamanmu tanpa rumus biologi rumit atau istilah lab yang membingungkan.
+          </p>
+</div>
+<!-- Quick Stats Pill -->
+<div class="flex items-center gap-space-sm bg-surface-container-low px-space-md py-space-sm rounded-xl shrink-0 self-start md:self-auto">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+</div>
+<div>
+<div class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Target Capaian</div>
+<div class="font-headline-md text-headline-md text-on-surface leading-none">Panen Mandiri 30 Hari</div>
+</div>
+</div>
+</div>
+<!-- Hero Card: Learning Journey Progress with Rich Organic Texture -->
+<div class="relative overflow-hidden rounded-2xl bg-surface-container-lowest shadow-sm p-space-lg md:p-space-xl flex flex-col lg:flex-row gap-space-lg items-stretch justify-between">
+<!-- Ambient Botanical Accent -->
+<div class="absolute -right-16 -top-16 w-80 h-80 rounded-full bg-primary-fixed/20 blur-3xl pointer-events-none"></div>
+<div class="absolute right-1/3 -bottom-20 w-64 h-64 rounded-full bg-secondary-fixed/40 blur-3xl pointer-events-none"></div>
+<!-- Left Column: Progress Telemetry & Current Status -->
+<div class="flex-1 space-y-space-md z-10 flex flex-col justify-between">
+<div class="space-y-space-sm">
+<div class="flex flex-wrap items-center gap-2">
+<span class="px-2.5 py-1 rounded-full bg-primary-fixed/40 text-on-primary-fixed-variant font-label-sm text-label-sm font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px]">military_tech</span>
+                Level: Petani Pemula Tangguh (Siap Panen Pertama)
+              </span>
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px]">workspace_premium</span>
+                Sertifikat Mini Mandiri FESTAFORA 2026
+              </span>
+</div>
+<div class="flex items-baseline justify-between pt-2">
+<span class="font-headline-md text-headline-md text-on-surface">Perjalanan Belajarmu</span>
+<span class="font-label-md text-label-md font-semibold text-primary">6 dari 18 Modul Selesai (33%)</span>
+</div>
+<!-- Custom Emerald Segmented Progress Bar -->
+<div class="w-full bg-surface-container-high h-3 rounded-full overflow-hidden p-0.5 flex">
+<div class="h-full bg-primary rounded-full transition-all duration-700 ease-out" style="width: 33.3%;"></div>
+</div>
+<div class="flex justify-between items-center text-outline font-body-sm text-body-sm">
+<span>Dasar Hidroponik (100%)</span>
+<span>Air &amp; Nutrisi (25%)</span>
+<span>Ampas Tebu (50%)</span>
+<span>AI IoT (0%)</span>
+</div>
+</div>
+<!-- Bottom Micro-Card: Next Step Prompt -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary-container text-on-primary-container flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[26px]">play_lesson</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase text-outline tracking-wider block">Lanjutkan Modul Tertunda:</span>
+<span class="font-headline-md text-headline-md text-on-surface">Apa itu pH &amp; Cara Menstabilkannya (Modul #03)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Membahas mengapa daun selada kerdil saat pH di atas 7.0</span>
+</div>
+</div>
+<a class="inline-flex items-center justify-center gap-2 px-space-lg py-3 rounded-xl bg-primary hover:bg-primary-container text-on-primary transition-colors shadow-sm font-label-md text-label-md whitespace-nowrap" href="#">
+<span>Lanjut Belajar (3 Menit)</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Right Visual Mosaic Card: Botanical Context Photo -->
+<div class="w-full lg:w-80 shrink-0 flex flex-col justify-between rounded-xl bg-surface-container-low p-space-md relative overflow-hidden z-10">
+<div class="relative w-full h-44 rounded-lg overflow-hidden shadow-sm mb-space-sm">
+<img class="w-full h-full object-cover" data-alt="Close up bright shot of vibrant green hydroponic butterhead lettuce growing cleanly in biodegradable sugarcane bagasse substrate with healthy white roots clearly exposed to circulating nutrient water, gentle morning natural sunlight, modern urban indoor greenhouse setup." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzSh20RZEzh9TUQdT4LWnYOWSZSTbcz0i7D5d3GNC1M4onN_xUY-SUZWS79sh_Nz7tqemD70CAXeQZUgIlRdrK1nZkPUzStDNu20_Y8c3T2IuaIs6jwr1MDpOUcrcaNDeHOyIWxGNX_c4RjLidXKaK09HlTcUPYW6dMjsEN8HGoRw8LOXsOWoI647KJDO_C1y45b6l2Jl0yyMJmTWNzrsQbyEiXgRgPm_mq1wr9YY"/>
+<div class="absolute bottom-2 left-2 bg-inverse-surface/80 backdrop-blur-sm text-inverse-on-surface px-2 py-0.5 rounded text-[11px] font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px] text-primary-fixed">spa</span>
+              Substrat Tebu HYCANE
+            </div>
+</div>
+<div class="space-y-1">
+<div class="font-label-sm text-label-sm uppercase tracking-wide text-primary font-semibold">Tips Hari Ini</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              "Akar putih salju adalah tanda tanaman menyerap oksigen maksimal. Jika air hangat &gt;27°C, segera beri peneduh!"
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: QUICK DIAGNOSIS SHORTCUT - "TANAMANMU BERMASALAH?" -->
+<section class="space-y-space-md">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-space-xs">
+<div>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-error animate-ping"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-error font-bold">Pertolongan Pertama Tanaman</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+            Tanamanmu Bermasalah? Diagnosis Cepat
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Petani pemula sering panik saat daun berubah warna. Pilih gejala di bawah untuk mengetahui kemungkinan penyebabnya:
+          </p>
+</div>
+<div class="font-label-sm text-label-sm text-outline text-right shrink-0">
+          *Panduan darurat non-kimiawi
+        </div>
+</div>
+<!-- 4 Interactive Problem Diagnostic Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Card 1: Daun Menguning -->
+<div class="rounded-2xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-2 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">warning</span>
+                Sering Terjadi
+              </span>
+<span class="material-symbols-outlined text-outline text-[20px]">psychiatry</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Daun Menguning (Klorosis)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Urat daun tetap hijau tapi helai menguning dari daun tua terbawah.</p>
+</div>
+<!-- Indikasi -->
+<div class="p-space-sm rounded-xl bg-surface-container-low space-y-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline block">Kemungkinan Penyebab:</span>
+<span class="font-body-sm text-body-sm font-medium text-on-surface block">Defisiensi Nitrogen atau pH terkunci di atas 6.8 sehingga nutrisi tak terserap.</span>
+</div>
+</div>
+<button class="w-full py-2.5 px-space-sm rounded-xl bg-surface-container-high hover:bg-primary hover:text-on-primary text-on-surface transition-colors font-label-md text-label-md flex items-center justify-center gap-2" onclick="openDiagModal('Daun Menguning (Klorosis)', 'pH Larutan di atas 6.8 mengunci unsur N (Nitrogen) dan Fe (Besi). Tanaman lapar walau air bernutrisi.', 'Turunkan pH larutan ke rentang ideal 5.8 - 6.2 dengan pH Down organik atau tambahkan takaran AB Mix sesuai usia tanaman.', '1. Ukur pH dengan probe Hycane\n2. Teteskan 2ml larutan pH down\n3. Sirkulasikan 10 menit lalu periksa kembali')" type="button">
+<span>Cek Solusi 3 Langkah</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+<!-- Card 2: Akar Kecokelatan & Berbau -->
+<div class="rounded-2xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-2 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">dangerous</span>
+                Kritis (Akar)
+              </span>
+<span class="material-symbols-outlined text-outline text-[20px]">water_damage</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Akar Kecokelatan &amp; Bau</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Akar tidak lagi putih kenyal, terasa berlendir, dan air tandon berbau apek.</p>
+</div>
+<!-- Indikasi -->
+<div class="p-space-sm rounded-xl bg-surface-container-low space-y-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline block">Kemungkinan Penyebab:</span>
+<span class="font-body-sm text-body-sm font-medium text-on-surface block">Root Rot (Busuk Akar) akibat suhu tandon &gt;28°C dan Oksigen Terlarut (DO) rendah.</span>
+</div>
+</div>
+<button class="w-full py-2.5 px-space-sm rounded-xl bg-surface-container-high hover:bg-primary hover:text-on-primary text-on-surface transition-colors font-label-md text-label-md flex items-center justify-center gap-2" onclick="openDiagModal('Akar Kecokelatan &amp; Berbau', 'Bakteri anaerob Pythium berkembang biak pesat saat air tandon kekurangan oksigen terlarut (DO &lt; 4 ppm) dan suhu siang hari melonjak.', 'Kuras reservoir segera, semprot akar dengan larutan H2O2 3% encer, pasang aerator tambahan (air stone), dan isolasi tandon dari sinar matahari.', '1. Ganti 100% air tandon dengan air baru\n2. Tambahkan batu aerator oksigen\n3. Lapisi tandon dengan aluminium foil penahan panas')" type="button">
+<span>Cek Solusi 3 Langkah</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+<!-- Card 3: Tanaman Layu Siang Hari -->
+<div class="rounded-2xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-2 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">thermostat</span>
+                Transpirasi
+              </span>
+<span class="material-symbols-outlined text-outline text-[20px]">sunny</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Tanaman Layu Siang Hari</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Batang terkulai lemas di pukul 11:00-14:00 namun segar kembali saat sore.</p>
+</div>
+<!-- Indikasi -->
+<div class="p-space-sm rounded-xl bg-surface-container-low space-y-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline block">Kemungkinan Penyebab:</span>
+<span class="font-body-sm text-body-sm font-medium text-on-surface block">Laju penguapan melebihi serapan akar, EC terlalu pekat, atau aliran pipa tersumbat.</span>
+</div>
+</div>
+<button class="w-full py-2.5 px-space-sm rounded-xl bg-surface-container-high hover:bg-primary hover:text-on-primary text-on-surface transition-colors font-label-md text-label-md flex items-center justify-center gap-2" onclick="openDiagModal('Tanaman Layu di Siang Hari', 'Evapotranspirasi ekstrem karena suhu udara tinggi. Bila EC terlalu pekat (&gt;1400 ppm), air sulit masuk ke sel tanaman melalui osmosis.', 'Turunkan nilai EC dengan menambahkan 20% air baku murni, cek pompa pipa NFT/DFT apakah debit lancar, dan pasang paranet peneduh 50%.', '1. Ukur EC tandon - encerkan jika &gt;1200 ppm\n2. Periksa pipa inlet dari kotoran/akar nyangkut\n3. Bentangkan kain peneduh di atas instalasi')" type="button">
+<span>Cek Solusi 3 Langkah</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+<!-- Card 4: Lumut Hijau di Pipa/Reservoir -->
+<div class="rounded-2xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-2 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">water_drop</span>
+                Sanitasi
+              </span>
+<span class="material-symbols-outlined text-outline text-[20px]">grass</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Lumut Hijau di Pipa</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Dinding netpot, lubang paralon, atau dasar tangki tertutup lapisan berlumut hijau.</p>
+</div>
+<!-- Indikasi -->
+<div class="p-space-sm rounded-xl bg-surface-container-low space-y-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline block">Kemungkinan Penyebab:</span>
+<span class="font-body-sm text-body-sm font-medium text-on-surface block">Pipa/reservoir tembus cahaya matahari langsung, memicu fotosintesis alga liar.</span>
+</div>
+</div>
+<button class="w-full py-2.5 px-space-sm rounded-xl bg-surface-container-high hover:bg-primary hover:text-on-primary text-on-surface transition-colors font-label-md text-label-md flex items-center justify-center gap-2" onclick="openDiagModal('Lumut Hijau di Pipa &amp; Reservoir', 'Alga memanfaatkan nutrisi AB Mix dan sinar UV yang menembus plastik pipa transparan/putih tipis. Alga menyedot nutrisi tanaman.', 'Tutup celah cahaya! Bungkus pipa putih dengan isolasi hitam/cat gelap, tutup rapat wadah tandon penampung, dan bersihkan sisa lumut saat jeda panen.', '1. Tutup tandon dengan penutup kedap sinar\n2. Gunakan netpot hitam pekat\n3. Bilas sistem dengan air bersih berkala')" type="button">
+<span>Cek Solusi 3 Langkah</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- SECTION 3: 4 PILAR KURIKULUM TERSTRUKTUR -->
+<section class="space-y-space-lg">
+<!-- Curriculum Section Header & Filtering Tabs -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<div class="flex items-center gap-space-xs text-primary font-label-sm text-label-sm font-bold uppercase tracking-wider">
+<span>Silabus Berjenjang</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+            4 Pilar Kurikulum Terstruktur
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Disusun bertahap mulai dari pemahaman fisik, kimia air, media ramah lingkungan hingga otomasi IoT.
+          </p>
+</div>
+<!-- Filter Pill Chips -->
+<div class="flex flex-wrap items-center gap-2 bg-surface-container-low p-1.5 rounded-2xl">
+<button class="filter-tab px-3.5 py-1.5 rounded-xl font-label-md text-label-md bg-primary-container text-on-primary-container font-semibold transition-all shadow-sm" data-cat="all" onclick="toggleFilter('all')" type="button">
+            Semua (10 Modul)
+          </button>
+<button class="filter-tab px-3.5 py-1.5 rounded-xl font-label-md text-label-md bg-surface-container-lowest text-on-surface-variant hover:text-on-surface transition-all" data-cat="pilar-1" onclick="toggleFilter('pilar-1')" type="button">
+            1. Dasar
+          </button>
+<button class="filter-tab px-3.5 py-1.5 rounded-xl font-label-md text-label-md bg-surface-container-lowest text-on-surface-variant hover:text-on-surface transition-all" data-cat="pilar-2" onclick="toggleFilter('pilar-2')" type="button">
+            2. Air &amp; Nutrisi
+          </button>
+<button class="filter-tab px-3.5 py-1.5 rounded-xl font-label-md text-label-md bg-surface-container-lowest text-on-surface-variant hover:text-on-surface transition-all" data-cat="pilar-3" onclick="toggleFilter('pilar-3')" type="button">
+            3. Ampas Tebu
+          </button>
+<button class="filter-tab px-3.5 py-1.5 rounded-xl font-label-md text-label-md bg-surface-container-lowest text-on-surface-variant hover:text-on-surface transition-all" data-cat="pilar-4" onclick="toggleFilter('pilar-4')" type="button">
+            4. AI &amp; IoT
+          </button>
+</div>
+</div>
+<!-- Kategori Grid Container -->
+<div class="space-y-space-xl">
+<!-- PILAR 1: DASAR HIDROPONIK -->
+<div class="space-y-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="w-7 h-7 rounded-lg bg-primary-container text-on-primary-container font-headline-md text-headline-md flex items-center justify-center text-sm font-bold">1</span>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Pilar 1: Dasar Hidroponik (Start Here)</h3>
+<p class="font-body-sm text-body-sm text-outline">Fondasi awal: konsep bertanam tanpa tanah, pemanfaatan sudut sempit, dan perbandingan sistem.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Modul 01: Selesai -->
+<div class="module-card rounded-2xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col justify-between hover:shadow-md transition-all" data-category="pilar-1">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-full bg-primary-fixed/40 text-on-primary-fixed-variant font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                    Selesai Dipelajari
+                  </span>
+<span class="font-body-sm text-body-sm text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+                    4 Menit Baca
+                  </span>
+</div>
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Modul #01</span>
+<h4 class="font-headline-md text-headline-md text-on-surface">Apa itu Hidroponik &amp; Mengapa Cocok untuk Rumah Kota?</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Memahami siklus sirkulasi air tertutup, efisiensi 90% air dibanding media tanah, dan opsi penempatan balkon rumah.</p>
+</div>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-primary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[18px]">workspace_premium</span>
+<span>Skor Kuis: 100/100</span>
+</div>
+<button class="px-space-md py-2 rounded-xl bg-surface-container-high hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1" type="button">
+<span>Buka Ringkasan</span>
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+</button>
+</div>
+</div>
+<!-- Modul 02: Selesai -->
+<div class="module-card rounded-2xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col justify-between hover:shadow-md transition-all" data-category="pilar-1">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-full bg-primary-fixed/40 text-on-primary-fixed-variant font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                    Selesai Dipelajari
+                  </span>
+<span class="font-body-sm text-body-sm text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+                    5 Menit Baca
+                  </span>
+</div>
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Modul #02</span>
+<h4 class="font-headline-md text-headline-md text-on-surface">Sistem Hidroponik Populer: NFT vs DFT vs Wick (Kelebihan &amp; Biaya)</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Panduan memilih sistem pemula. Mengapa DFT lebih aman bila listrik padam dan kapan beralih ke NFT modular HYCANE.</p>
+</div>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-primary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[18px]">workspace_premium</span>
+<span>Skor Kuis: 95/100</span>
+</div>
+<button class="px-space-md py-2 rounded-xl bg-surface-container-high hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1" type="button">
+<span>Buka Ringkasan</span>
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- PILAR 2: AIR & NUTRISI (INTI SUKSES) -->
+<div class="space-y-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="w-7 h-7 rounded-lg bg-primary-container text-on-primary-container font-headline-md text-headline-md flex items-center justify-center text-sm font-bold">2</span>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Pilar 2: Air &amp; Nutrisi (Inti Sukses Bertanam)</h3>
+<p class="font-body-sm text-body-sm text-outline">Kunci hidup tanaman: memahami derajat keasaman (pH), kepekatan pupuk AB Mix, dan oksigen perakaran.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Modul 03: SEDANG DIPELAJARI (HIGHLIGHTED WITH SOFT COLOR & ACCENT) -->
+<div class="module-card rounded-2xl bg-surface-container-lowest p-space-md shadow-md flex flex-col justify-between relative overflow-hidden group" data-category="pilar-2">
+<!-- Left indicator bar -->
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-primary"></div>
+<div class="space-y-space-sm pl-1">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] animate-spin">sync</span>
+                    Sedang Dipelajari
+                  </span>
+<span class="font-body-sm text-body-sm text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+                    3 Menit
+                  </span>
+</div>
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider">Modul #03 • Target Aktif</span>
+<h4 class="font-headline-md text-headline-md text-on-surface">Apa itu pH Air? Mengapa Mempengaruhi Selera Makan Tanaman?</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Ibarat perut manusia: pH 5.5-6.5 membuat akar bisa menyerap kalsium dan nitrogen secara seimbang.</p>
+</div>
+<!-- Inline Mini Visual Chart: pH Scale -->
+<div class="p-space-sm rounded-xl bg-surface-container-low space-y-1.5">
+<div class="flex justify-between text-[11px] font-semibold text-outline">
+<span>Asam (&lt;5.0)</span>
+<span class="text-primary font-bold">Ideal (5.8 - 6.2)</span>
+<span>Basa (&gt;7.0)</span>
+</div>
+<div class="w-full h-2 rounded-full bg-gradient-to-r from-error via-primary to-tertiary"></div>
+</div>
+</div>
+<div class="pt-space-md pl-1">
+<a class="w-full py-2.5 rounded-xl bg-primary hover:bg-primary-container text-on-primary transition-colors font-label-md text-label-md flex items-center justify-center gap-2 shadow-sm" href="#">
+<span>Lanjutkan Baca Sekarang</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Modul 04: Belum -->
+<div class="module-card rounded-2xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col justify-between hover:shadow-md transition-all" data-category="pilar-2">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-outline font-label-sm text-label-sm font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+                    Belum Dimulai
+                  </span>
+<span class="font-body-sm text-body-sm text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+                    4 Menit
+                  </span>
+</div>
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Modul #04</span>
+<h4 class="font-headline-md text-headline-md text-on-surface">Membaca TDS &amp; EC Tanpa Rumus: Kepekatan AB Mix</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Memahami part per million (PPM) seperti menakar manisnya teh: kangkung butuh 1000-1400 PPM, selada cukup 600-800 PPM.</p>
+</div>
+</div>
+<div class="pt-space-md">
+<button class="w-full py-2 rounded-xl bg-surface-container-high hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors flex items-center justify-center gap-1" type="button">
+<span>Mulai Modul</span>
+<span class="material-symbols-outlined text-[16px]">play_arrow</span>
+</button>
+</div>
+</div>
+<!-- Modul 05: Belum -->
+<div class="module-card rounded-2xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col justify-between hover:shadow-md transition-all" data-category="pilar-2">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-outline font-label-sm text-label-sm font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+                    Belum Dimulai
+                  </span>
+<span class="font-body-sm text-body-sm text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+                    3 Menit
+                  </span>
+</div>
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Modul #05</span>
+<h4 class="font-headline-md text-headline-md text-on-surface">Suhu Reservoir &amp; Dissolved Oxygen (DO)</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Makin dingin air, makin banyak oksigen tertampung. Mengapa air hangat di atas 28°C bisa membuat perakaran tercekik.</p>
+</div>
+</div>
+<div class="pt-space-md">
+<button class="w-full py-2 rounded-xl bg-surface-container-high hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors flex items-center justify-center gap-1" type="button">
+<span>Mulai Modul</span>
+<span class="material-symbols-outlined text-[16px]">play_arrow</span>
+</button>
+</div>
+</div>
+<!-- Modul 06: Belum -->
+<div class="module-card rounded-2xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col justify-between hover:shadow-md transition-all" data-category="pilar-2">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-outline font-label-sm text-label-sm font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+                    Belum Dimulai
+                  </span>
+<span class="font-body-sm text-body-sm text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+                    5 Menit
+                  </span>
+</div>
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Modul #06</span>
+<h4 class="font-headline-md text-headline-md text-on-surface">Larutan Buffer &amp; Kalibrasi Probe Sensor HYCANE</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Panduan video sederhana: mencelupkan elektroda ke sachet pH 4.01 dan 6.86 agar angka monitor tetap akurat setiap 30 hari.</p>
+</div>
+</div>
+<div class="pt-space-md">
+<button class="w-full py-2 rounded-xl bg-surface-container-high hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors flex items-center justify-center gap-1" type="button">
+<span>Mulai Modul</span>
+<span class="material-symbols-outlined text-[16px]">play_arrow</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- PILAR 3: MEDIA AMPAS TEBU & SIRKULARITAS HYCANE -->
+<div class="space-y-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="w-7 h-7 rounded-lg bg-primary-container text-on-primary-container font-headline-md text-headline-md flex items-center justify-center text-sm font-bold">3</span>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Pilar 3: Media Ampas Tebu &amp; Sirkularitas HYCANE</h3>
+<p class="font-body-sm text-body-sm text-outline">Inovasi sirkular lokal: menggantikan rockwool impor karsinogenik dengan ampas tebu olahan petani Nusantara.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Modul 07: Selesai -->
+<div class="module-card rounded-2xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col justify-between hover:shadow-md transition-all" data-category="pilar-3">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-full bg-primary-fixed/40 text-on-primary-fixed-variant font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                    Selesai Dipelajari
+                  </span>
+<span class="font-body-sm text-body-sm text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+                    3 Menit
+                  </span>
+</div>
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Modul #07</span>
+<h4 class="font-headline-md text-headline-md text-on-surface">Mengapa Memakai Ampas Tebu (Bagasse) Dibandingkan Rockwool?</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Bebas serat kaca mikro yang gatal di kulit, biaya 65% lebih hemat, dan tidak menumpuk limbah anorganik di tempat pembuangan.</p>
+</div>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-primary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[18px]">recycling</span>
+<span>Impact: 0.4kg CO₂ Terselamatkan</span>
+</div>
+<button class="px-space-md py-2 rounded-xl bg-surface-container-high hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1" type="button">
+<span>Lihat Catatan</span>
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+</button>
+</div>
+</div>
+<!-- Modul 08: Selesai -->
+<div class="module-card rounded-2xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col justify-between hover:shadow-md transition-all" data-category="pilar-3">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-full bg-primary-fixed/40 text-on-primary-fixed-variant font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                    Selesai Dipelajari
+                  </span>
+<span class="font-body-sm text-body-sm text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+                    4 Menit
+                  </span>
+</div>
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Modul #08</span>
+<h4 class="font-headline-md text-headline-md text-on-surface">Daya Serap Air, Biodegradabilitas 60 Hari &amp; Cara Semai Benih</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Langkah perendaman bagasse plug, kedalaman lubang benih 3mm, dan cara mengomposkan sisa media bersama akar setelah panen.</p>
+</div>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-primary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[18px]">compost</span>
+<span>Kompos Alami 60 Hari</span>
+</div>
+<button class="px-space-md py-2 rounded-xl bg-surface-container-high hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1" type="button">
+<span>Lihat Catatan</span>
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- PILAR 4: IOT & AI RECOMMENDATION HYCANE -->
+<div class="space-y-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="w-7 h-7 rounded-lg bg-primary-container text-on-primary-container font-headline-md text-headline-md flex items-center justify-center text-sm font-bold">4</span>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Pilar 4: IoT &amp; AI Recommendation HYCANE</h3>
+<p class="font-body-sm text-body-sm text-outline">Bagaimana teknologi bekerja tanpa repot: otomatisasi sensor dan asisten cerdas berkebun.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Modul 09: Belum -->
+<div class="module-card rounded-2xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col justify-between hover:shadow-md transition-all" data-category="pilar-4">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-outline font-label-sm text-label-sm font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+                    Belum Dimulai
+                  </span>
+<span class="font-body-sm text-body-sm text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+                    3 Menit
+                  </span>
+</div>
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Modul #09</span>
+<h4 class="font-headline-md text-headline-md text-on-surface">Bagaimana Sensor ESP32 Mengambil Data Setiap 1 Detik</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Memahami alur data dari probe air ke cloud dashboard tanpa perlu paham coding atau mikrokontroler rumit.</p>
+</div>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<div class="flex items-center gap-1 text-outline font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px]">memory</span>
+<span>Modul Hardware Ramah Pemula</span>
+</div>
+<button class="px-space-md py-2 rounded-xl bg-surface-container-high hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1" type="button">
+<span>Mulai Modul</span>
+<span class="material-symbols-outlined text-[16px]">play_arrow</span>
+</button>
+</div>
+</div>
+<!-- Modul 10: Belum -->
+<div class="module-card rounded-2xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col justify-between hover:shadow-md transition-all" data-category="pilar-4">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-outline font-label-sm text-label-sm font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+                    Belum Dimulai
+                  </span>
+<span class="font-body-sm text-body-sm text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+                    4 Menit
+                  </span>
+</div>
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Modul #10</span>
+<h4 class="font-headline-md text-headline-md text-on-surface">Menerjemahkan Notifikasi AI Menjadi Tindakan Sederhana</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Cara membaca rekomendasi presisi seperti: "Tambahkan 150ml air baku untuk menurunkan kepekatan 80 PPM".</p>
+</div>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<div class="flex items-center gap-1 text-primary font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px]">auto_awesome</span>
+<span>AI Smart Assistant Preview</span>
+</div>
+<button class="px-space-md py-2 rounded-xl bg-surface-container-high hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1" type="button">
+<span>Mulai Modul</span>
+<span class="material-symbols-outlined text-[16px]">play_arrow</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: EDUCATIONAL CALLOUT / ASK COMMUNITY & AGRONOMIST -->
+<section class="rounded-2xl bg-surface-container-low p-space-lg md:p-space-xl relative overflow-hidden">
+<div class="flex flex-col md:flex-row items-center justify-between gap-space-lg relative z-10">
+<div class="space-y-space-sm max-w-2xl">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold">Tanya Mentor &amp; Komunitas Urban</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface">
+            Masih ada pertanyaan yang belum terjawab di materi modul?
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Kamu tidak berkebun sendirian! Bergabunglah dengan ribuan pembudidaya perkotaan di forum diskusi atau chat langsung agronomis HYCANE untuk konsultasi foto daun &amp; dosis pupuk.
+          </p>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-space-sm w-full md:w-auto shrink-0">
+<a class="w-full sm:w-auto px-space-lg py-3 rounded-xl bg-surface-container-lowest hover:bg-surface-container text-on-surface transition-colors shadow-sm font-label-md text-label-md flex items-center justify-center gap-2" href="#">
+<span class="material-symbols-outlined text-[20px] text-tertiary">forum</span>
+<span>Masuk Komunitas</span>
+</a>
+<a class="w-full sm:w-auto px-space-lg py-3 rounded-xl bg-primary hover:bg-primary-container text-on-primary transition-colors shadow-sm font-label-md text-label-md flex items-center justify-center gap-2" href="#">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+<span>Tanya Agronomis HYCANE</span>
+</a>
+</div>
+</div>
+</section>
+</div>
+<!-- POPUP MODAL: Interactive Quick Diagnosis Solution Step Preview -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-sm hidden items-center justify-center p-space-md" id="diag-modal">
+<div class="bg-surface-container-lowest rounded-2xl max-w-lg w-full p-space-lg shadow-xl space-y-space-md relative">
+<div class="flex items-start justify-between">
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Solusi Langkah Cepat</span>
+<h3 class="font-headline-md text-headline-md text-on-surface" id="modal-title">Judul Diagnosis</h3>
+</div>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-outline hover:bg-surface-container-low transition-colors" onclick="closeDiagModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="space-y-space-sm">
+<div class="p-space-sm rounded-xl bg-surface-container-low space-y-1">
+<div class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Akar Masalah:</div>
+<div class="font-body-md text-body-md text-on-surface" id="modal-cause">Penyebab tanaman bermasalah</div>
+</div>
+<div class="p-space-sm rounded-xl bg-primary-fixed/20 space-y-1">
+<div class="font-label-sm text-label-sm text-primary font-semibold uppercase tracking-wider">Tindakan Rekomendasi:</div>
+<div class="font-body-md text-body-md text-on-surface" id="modal-solution">Rekomendasi tindakan</div>
+</div>
+<div class="space-y-1.5 pt-1">
+<div class="font-label-sm text-label-sm text-on-surface-variant font-medium">3 Langkah Tindakan di Lapangan:</div>
+<pre class="font-body-sm text-body-sm text-on-surface bg-surface-container-low p-space-sm rounded-xl whitespace-pre-wrap font-sans" id="modal-step">Langkah 1...</pre>
+</div>
+</div>
+<div class="pt-2 flex justify-end gap-space-sm">
+<button class="px-space-md py-2 rounded-xl bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-colors" onclick="closeDiagModal()" type="button">
+          Paham, Terapkan Sekarang
+        </button>
+</div>
+</div>
+</div>
+</div></main></div></body></html>
