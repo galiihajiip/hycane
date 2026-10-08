@@ -1,0 +1,29 @@
+{
+  "user": {
+    "id": "demo-user-001",
+    "name": "Galih Aji",
+    "email": "demo@hycane.id",
+    "city": "Surabaya",
+    "experienceLevel": "Beginner Grower",
+    "joinedAt": "2026-01-01",
+    "deviceCount": 1,
+    "healthyPlants": 15
+  },
+  "device": {
+    "deviceId": "HYCANE-001",
+    "name": "HYCANE Smart Kit #01",
+    "ph": 6.2,
+    "tds": 880,
+    "ec": 1.25,
+    "temperature": 26.4,
+    "waterLevel": 78,
+    "pumpOn": true,
+    "lightOn": true,
+    "sensorHealth": {
+      "ph": 98,
+      "tds": 96,
+      "temperature": 99,
+      "waterLevel": 97
+    }
+  }
+}
