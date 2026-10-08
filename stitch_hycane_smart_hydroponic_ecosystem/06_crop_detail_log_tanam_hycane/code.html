@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-primary-container": "#f7fff2", "primary-fixed-dim": "#62df7d", "on-primary-fixed": "#002109", "tertiary-fixed-dim": "#b4c5ff", "primary": "#006b2c", "on-surface-variant": "#3e4a3d", "surface-bright": "#f8f9ff", "on-error-container": "#93000a", "on-tertiary-container": "#fefcff", "on-error": "#ffffff", "surface-container-highest": "#d3e4fe", "inverse-surface": "#213145", "on-tertiary-fixed": "#00174b", "surface-container-high": "#dce9ff", "error": "#ba1a1a", "on-primary": "#ffffff", "outline-variant": "#bdcaba", "primary-container": "#00873a", "background": "#f8f9ff", "surface-dim": "#cbdbf5", "on-tertiary": "#ffffff", "secondary": "#545f73", "surface-variant": "#d3e4fe", "secondary-fixed": "#d8e3fb", "secondary-fixed-dim": "#bcc7de", "surface-container-low": "#eff4ff", "on-secondary-fixed-variant": "#3c475a", "on-primary-fixed-variant": "#005320", "tertiary": "#0051d5", "on-tertiary-fixed-variant": "#003ea8", "secondary-container": "#d5e0f8", "error-container": "#ffdad6", "inverse-primary": "#62df7d", "on-surface": "#0b1c30", "tertiary-fixed": "#dbe1ff", "outline": "#6e7b6c", "surface-container": "#e5eeff", "on-secondary-container": "#586377", "inverse-on-surface": "#eaf1ff", "on-secondary-fixed": "#111c2d", "surface": "#f8f9ff", "on-secondary": "#ffffff", "primary-fixed": "#7ffc97", "surface-tint": "#006e2d", "on-background": "#0b1c30", "surface-container-lowest": "#ffffff", "tertiary-container": "#316bf3" }, borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" }, spacing: { "space-sm": "0.5rem", "margin-mobile": "1rem", "space-xl": "2.5rem", "margin": "2rem", "space-xs": "0.25rem", "space-md": "1rem", "gutter-mobile": "1rem", "gutter": "1.5rem", "space-lg": "1.5rem" }, fontFamily: { "kpi-display": ["Inter"], "label-sm": ["Inter"], "body-sm": ["Inter"], "headline-xl-mobile": ["Inter"], "body-lg": ["Inter"], "headline-lg": ["Inter"], "headline-xl": ["Inter"], "label-md": ["Inter"], "body-md": ["Inter"], "headline-lg-mobile": ["Inter"], "headline-md": ["Inter"] }, fontSize: { "kpi-display": ["32px", { lineHeight: "38px", letterSpacing: "-0.03em", fontWeight: "700" }], "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.04em", fontWeight: "600" }], "body-sm": ["12px", { lineHeight: "16px", fontWeight: "400" }], "headline-xl-mobile": ["28px", { lineHeight: "36px", letterSpacing: "-0.01em", fontWeight: "700" }], "body-lg": ["16px", { lineHeight: "24px", fontWeight: "400" }], "headline-lg": ["28px", { lineHeight: "36px", letterSpacing: "-0.02em", fontWeight: "600" }], "headline-xl": ["36px", { lineHeight: "44px", letterSpacing: "-0.02em", fontWeight: "700" }], "label-md": ["13px", { lineHeight: "18px", letterSpacing: "0.01em", fontWeight: "500" }], "body-md": ["14px", { lineHeight: "20px", fontWeight: "400" }], "headline-lg-mobile": ["22px", { lineHeight: "30px", letterSpacing: "-0.01em", fontWeight: "600" }], "headline-md": ["20px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "600" }] } } } };</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"><aside class="fixed left-0 top-0 h-full w-[250px] bg-surface-container-lowest z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col flex-1 min-h-0"><div class="h-16 px-space-md flex items-center gap-space-sm bg-surface-container-lowest"><img alt="HYCANE Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3L21UVH924VPcz5w4_EBOU1inRo072yec9dsK24gBFGqkWxy6qtF5fJRomTxQwLbyX2_n5ToxSaYcGwtv5jFTjzWPMUXE1U08qa-TB-0KCos0HjJtdY8l8KDFFquLyCgst2GL2oc9o9YnStxELWiofYdVkoANwsTinPFdlXufRlJpbUTVFrJ4mjbJDhi6Jf1qg7Vyo6CFVmK8Sq_xin7LywUUQZRt210fjiXhbtM"/><div class="flex flex-col min-w-0 leading-tight"><span class="font-headline-md text-headline-md text-primary tracking-tight truncate">HYCANE</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Smart Hydroponic</span></div></div><div class="flex-1 overflow-y-auto px-space-sm py-space-sm"><nav class="space-y-space-sm" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-xl"><div class="px-space-sm pt-space-xs pb-space-xs"><span class="font-label-sm text-label-sm uppercase text-outline tracking-wider">Main</span></div><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-label-md text-label-md">Dashboard</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="live-monitoring" href="#"><span class="material-symbols-outlined text-[20px]">sensors</span><span class="font-label-md text-label-md">Live Monitoring</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="my-crops" href="#"><span class="material-symbols-outlined text-[20px]">potted_plant</span><span class="font-label-md text-label-md">My Crops</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="ai-recommendation" href="#"><span class="material-symbols-outlined text-[20px]">psychology</span><span class="font-label-md text-label-md">AI Recommendation</span></a><div class="px-space-sm pt-space-sm pb-space-xs"><span class="font-label-sm text-label-sm uppercase text-outline tracking-wider">Explore</span></div><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="marketplace" href="#"><span class="material-symbols-outlined text-[20px]">storefront</span><span class="font-label-md text-label-md">Marketplace</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="education" href="#"><span class="material-symbols-outlined text-[20px]">school</span><span class="font-label-md text-label-md">Education</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="community" href="#"><span class="material-symbols-outlined text-[20px]">forum</span><span class="font-label-md text-label-md">Community</span></a><div class="px-space-sm pt-space-sm pb-space-xs"><span class="font-label-sm text-label-sm uppercase text-outline tracking-wider">Activity</span></div><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="orders" href="#"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span class="font-label-md text-label-md">Orders</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="notifications" href="#"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="font-label-md text-label-md">Notifications</span></a><div class="px-space-sm pt-space-sm pb-space-xs"><span class="font-label-sm text-label-sm uppercase text-outline tracking-wider">Account</span></div><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="profile" href="#"><span class="material-symbols-outlined text-[20px]">person</span><span class="font-label-md text-label-md">Profile</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span class="font-label-md text-label-md">Settings</span></a></nav></div></div><div class="p-space-sm bg-surface-container-lowest flex flex-col gap-space-sm"><div class="bg-surface-container-low px-space-sm py-2 rounded-xl flex items-center justify-between"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span><span class="font-label-sm text-label-sm text-primary">Demo Mode: FESTAFORA 2026</span></div></div><div class="flex items-center justify-between px-space-xs pt-1"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="flex flex-col min-w-0"><span class="font-label-md text-label-md text-on-surface truncate">AgriOperator</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Smart Farm A</span></div></div><a class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container-low hover:text-error transition-colors" data-path="login" href="#" title="Logout"><span class="material-symbols-outlined text-[20px]">logout</span></a></div></div></aside><div class="pl-[250px]"><header class="fixed top-0 left-[250px] right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-md z-40 px-space-lg flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-sm"><img alt="HYCANE Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3L21UVH924VPcz5w4_EBOU1inRo072yec9dsK24gBFGqkWxy6qtF5fJRomTxQwLbyX2_n5ToxSaYcGwtv5jFTjzWPMUXE1U08qa-TB-0KCos0HjJtdY8l8KDFFquLyCgst2GL2oc9o9YnStxELWiofYdVkoANwsTinPFdlXufRlJpbUTVFrJ4mjbJDhi6Jf1qg7Vyo6CFVmK8Sq_xin7LywUUQZRt210fjiXhbtM"/><nav class="flex items-center gap-space-xs text-on-surface-variant"><a class="font-label-md text-label-md hover:text-on-surface transition-colors" data-path="dashboard" href="#">HYCANE</a><span class="material-symbols-outlined text-[16px] text-outline">chevron_right</span><span class="font-label-md text-label-md text-on-surface">Ecosystem Control</span></nav></div><div class="hidden md:flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-low"><span class="w-2 h-2 rounded-full bg-primary"></span><span class="font-label-sm text-label-sm text-primary">Sistem Terhubung • Real-Time</span></div><div class="flex items-center gap-space-sm"><div class="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary-fixed/30"><span class="material-symbols-outlined text-[16px] text-primary">eco</span><span class="font-label-sm text-label-sm text-primary">15/18 Tanaman Sehat</span></div><a class="relative p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="notifications" href="#"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 bg-error rounded-full"></span></a><button class="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md" type="button"><span class="material-symbols-outlined text-[18px] text-primary">tune</span><span>Demo Tools</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 w-full min-h-screen bg-background"><div class="flex flex-col w-full">
+<!-- Interactive Script for Tab/Filter and Checkboxes -->
+<script>
+    function toggleStep(element) {
+      const icon = element.querySelector('.step-check-icon');
+      const text = element.querySelector('.step-text');
+      const isCompleted = element.getAttribute('data-completed') === 'true';
+
+      if (isCompleted) {
+        element.setAttribute('data-completed', 'false');
+        icon.innerText = 'radio_button_unchecked';
+        icon.className = 'material-symbols-outlined text-[18px] text-outline step-check-icon';
+        text.classList.remove('line-through', 'text-on-surface-variant');
+        text.classList.add('text-on-surface');
+      } else {
+        element.setAttribute('data-completed', 'true');
+        icon.innerText = 'check_circle';
+        icon.className = 'material-symbols-outlined text-[18px] text-primary step-check-icon';
+        text.classList.add('line-through', 'text-on-surface-variant');
+        text.classList.remove('text-on-surface');
+      }
+    }
+  </script>
+<!-- Top Hero / Banner & Quick Navigation Bar -->
+<div class="px-space-md lg:px-margin pt-space-md pb-space-sm flex flex-col gap-space-sm">
+<!-- Breadcrumb & Back Link -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant">
+<a class="hover:text-primary transition-colors flex items-center gap-1 font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined text-[16px]">arrow_back</span>
+<span>Kembali ke Daftar Tanaman (My Crops)</span>
+</a>
+<span class="text-outline">/</span>
+<span class="text-outline font-label-md text-label-md">Budidaya</span>
+<span class="text-outline">/</span>
+<span class="text-on-surface font-semibold font-label-md text-label-md">Batch #01: Pakcoy Nauli F1</span>
+</div>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+          IoT ESP32 Aktif: 4 Detik Lalu
+        </span>
+<span class="hidden sm:inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-low text-secondary font-label-sm">
+<span class="material-symbols-outlined text-[14px]">cloud_download</span>
+          Sync: Cloud Server Malang
+        </span>
+</div>
+</div>
+<!-- Title & Action Button Group -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md pt-space-xs">
+<div>
+<div class="flex flex-wrap items-center gap-space-sm mb-1.5">
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">Detail Batch #01: Pakcoy Nauli F1</h1>
+<span class="px-3 py-1 rounded-full bg-primary-fixed/40 text-on-primary-fixed-variant font-label-md text-label-md flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[16px] text-primary">eco</span>
+            Hari ke-24
+          </span>
+</div>
+<!-- Batch Meta Badges -->
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-lowest shadow-sm text-primary font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+            Fase Vegetatif Akhir
+          </span>
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-lowest shadow-sm text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[15px] text-secondary">inventory_2</span>
+            Media: Ampas Tebu PG Kebonagung
+          </span>
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-lowest shadow-sm text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[15px] text-tertiary">memory</span>
+            Kit: 18-Plant Smart Edition #HYCANE-ESP32-001
+          </span>
+</div>
+</div>
+<!-- Quick Action Buttons -->
+<div class="flex flex-wrap items-center gap-space-xs">
+<button class="inline-flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl bg-surface-container-lowest hover:bg-surface-container-low text-on-surface shadow-sm transition-all font-label-md text-label-md" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">download</span>
+<span>Unduh Laporan Siklus</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl bg-surface-container-lowest hover:bg-surface-container-low text-on-surface shadow-sm transition-all font-label-md text-label-md" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary">event</span>
+<span>Jadwalkan Panen</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-primary text-on-primary hover:bg-primary-container shadow-sm transition-all font-label-md text-label-md font-semibold" type="button">
+<span class="material-symbols-outlined text-[18px]">add_photo_alternate</span>
+<span>Catat Jurnal / Foto Tanaman (+)</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Top Agronomic Scoreboard (4 Key Bento Cards) -->
+<div class="px-space-md lg:px-margin pt-space-sm pb-space-md">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Card 1: Health Index -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between pb-space-sm">
+<span class="font-label-md text-label-md text-secondary">Health Index (Indeks Kesehatan)</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed/30 text-on-primary-fixed-variant font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Optimal
+          </span>
+</div>
+<div class="flex items-baseline gap-space-xs py-space-xs">
+<span class="font-kpi-display text-kpi-display text-on-surface tracking-tight">92</span>
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">/ 100</span>
+<span class="ml-auto font-label-sm text-label-sm font-semibold text-primary flex items-center">
+<span class="material-symbols-outlined text-[16px]">trending_up</span> +4 pts
+          </span>
+</div>
+<!-- Metric status bar -->
+<div class="w-full bg-surface-container-low h-2 rounded-full overflow-hidden my-space-xs">
+<div class="bg-primary h-full rounded-full transition-all duration-700" style="width: 92%;"></div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+          Pulih dari klorosis tepi daun pasca koreksi pH Up 2 hari lalu.
+        </p>
+</div>
+<!-- Card 2: Biomass & Yield Estimate -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between pb-space-sm">
+<span class="font-label-md text-label-md text-secondary">Estimasi Hasil Panen</span>
+<span class="p-1 rounded-lg bg-surface-container text-primary flex items-center">
+<span class="material-symbols-outlined text-[16px]">scale</span>
+</span>
+</div>
+<div class="flex items-baseline gap-space-xs py-space-xs">
+<span class="font-kpi-display text-kpi-display text-on-surface tracking-tight">3.4 - 3.8</span>
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">kg Total</span>
+</div>
+<div class="flex items-center gap-2 my-space-xs">
+<span class="px-2 py-0.5 rounded-md bg-surface-container-low text-secondary font-label-sm text-label-sm font-medium">18 Netpot Aktif</span>
+<span class="font-body-sm text-body-sm text-primary font-semibold">~190g / lubang</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+          Tingkat kerapatan tajuk 94%, deviasi berat per lubang seragam (&lt;5%).
+        </p>
+</div>
+<!-- Card 3: Water & Nutrient Efficiency -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between pb-space-sm">
+<span class="font-label-md text-label-md text-secondary">Konsumsi Air &amp; Nutrisi</span>
+<span class="p-1 rounded-lg bg-secondary-container/50 text-secondary flex items-center">
+<span class="material-symbols-outlined text-[16px]">water_drop</span>
+</span>
+</div>
+<div class="flex items-baseline gap-space-xs py-space-xs">
+<span class="font-kpi-display text-kpi-display text-on-surface tracking-tight">18.2</span>
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">Liter Total</span>
+</div>
+<div class="flex items-center gap-1.5 my-space-xs">
+<span class="font-label-sm text-label-sm text-primary font-semibold flex items-center">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Tertutup &amp; Hemat
+          </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">• 0.75 L / hari</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+          Substrat ampas tebu menahan kelembaban akar 40% lebih efisien.
+        </p>
+</div>
+<!-- Card 4: Harvest Countdown -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between pb-space-sm">
+<span class="font-label-md text-label-md text-secondary">Masa Tanam Tersisa</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed/50 text-on-secondary-fixed font-label-sm text-label-sm font-semibold">
+            H-6
+          </span>
+</div>
+<div class="flex items-baseline gap-space-xs py-space-xs">
+<span class="font-kpi-display text-kpi-display text-primary tracking-tight">6</span>
+<span class="font-headline-md text-headline-md text-on-surface">Hari Lagi</span>
+</div>
+<div class="w-full bg-surface-container-low h-2 rounded-full overflow-hidden my-space-xs">
+<div class="bg-primary-container h-full rounded-full transition-all duration-700" style="width: 80%;"></div>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant">
+<span>Target Panen:</span>
+<span class="font-semibold text-on-surface">30 Okt 2026</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Grid Layout (Left 65% / Right 35%) -->
+<div class="px-space-md lg:px-margin pb-space-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- ================= LEFT COLUMN (Col span 8 / ~65%) ================= -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- 1. Morphological Growth & Photo Journal Milestones -->
+<section class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-xs">
+<div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">photo_library</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Morfologi &amp; Riwayat Visual Tumbuh</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                Dokumentasi pembentukan tajuk dan adaptasi perakaran pada bio-media ampas tebu HYCANE.
+              </p>
+</div>
+<button class="inline-flex items-center gap-1 font-label-md text-label-md text-tertiary hover:underline self-start sm:self-auto" type="button">
+<span>Buka Galeri Penuh (14 Foto)</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+<!-- 4 Milestone Visual Comparison Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-space-sm">
+<!-- Milestone 1: Day 5 -->
+<div class="flex flex-col rounded-xl overflow-hidden bg-surface-container-low/70 transition-transform hover:-translate-y-1 duration-200">
+<div class="relative h-44 w-full bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Close up photography of tiny Pakcoy green sprouts emerging from eco-friendly sugar cane bagasse fibrous substrate in hydroponic netpot, crisp natural morning light with tiny white root fibers piercing through biodegradable organic fiber, botanical laboratory aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBflDvxJiY28gM9n5IBwaL_EaAQrfb1Rpo55PCRx8FIm-bsG46s66OYEAFQXNzRbLFVXOt0Rwpoi62Il1XC09REvcn1u7cn0RgZm4udN0WO90Q9EXms10yzoqkyesHG0ebTvcA5fitMmsVW_9jglQ0HrORgzaQe7TE_TVe9VPq5ogQ-dRsDcAbvdq1_4qRF_-7LrzZ3OLjAtifAF3nOiy9ya66GD96MS7hfsZ8nH6U"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-md bg-inverse-surface/80 backdrop-blur-sm text-inverse-on-surface font-label-sm text-label-sm font-semibold">
+                  Hari 05
+                </span>
+<span class="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-surface-container-lowest/90 text-on-surface font-label-sm text-[10px]">
+                  05 Okt
+                </span>
+</div>
+<div class="p-space-sm flex flex-col flex-1 justify-between">
+<div>
+<h3 class="font-label-md text-label-md text-on-surface font-semibold mb-1">Semai Bagasse Plug</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+                    Akar serabut putih mulai tembus matriks serat ampas tebu tebal, aerasi mikro optimal.
+                  </p>
+</div>
+<div class="pt-2 mt-2 flex items-center justify-between text-secondary font-label-sm text-[10px]">
+<span>EC: 0.8 mS</span>
+<span>Tinggi: 3.2 cm</span>
+</div>
+</div>
+</div>
+<!-- Milestone 2: Day 12 -->
+<div class="flex flex-col rounded-xl overflow-hidden bg-surface-container-low/70 transition-transform hover:-translate-y-1 duration-200">
+<div class="relative h-44 w-full bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Young vibrant green pakchoi plants with four true leaves thriving inside clean hydroponic NFT PVC pipeline system with gentle running nutrient film, bright diffused daylight, clean agriculture tech photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWIVdjY1LNfDXM8L0ImK55ZPGj0-4PphKSB1--sI06pFNoq3iqTC4eVripRhRFnM_X0Ky6IMhrlNl3dPJRSxevD0Zm8s2v1HdCHKqfzOkm_guGc5MAx4lRpzYrAUBuG_1zAuX8Xns6Q55adltOtkeG1IjaQo6r9pzb2Xcrx9bYmtp_bo5YOiAHTeUmJ6HavG2dliB-ji32aySlP0y2TODCBAJLNm72JU_rEWBBN_8"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-md bg-inverse-surface/80 backdrop-blur-sm text-inverse-on-surface font-label-sm text-label-sm font-semibold">
+                  Hari 12
+                </span>
+<span class="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-surface-container-lowest/90 text-on-surface font-label-sm text-[10px]">
+                  12 Okt
+                </span>
+</div>
+<div class="p-space-sm flex flex-col flex-1 justify-between">
+<div>
+<h3 class="font-label-md text-label-md text-on-surface font-semibold mb-1">Pindah Pipa NFT</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+                    4 helai daun sejati, batang kokoh, transisi ke sirkulasi nutrisi kontinyu tanpa layu kejut.
+                  </p>
+</div>
+<div class="pt-2 mt-2 flex items-center justify-between text-secondary font-label-sm text-[10px]">
+<span>EC: 1.2 mS</span>
+<span>Tinggi: 7.5 cm</span>
+</div>
+</div>
+</div>
+<!-- Milestone 3: Day 18 -->
+<div class="flex flex-col rounded-xl overflow-hidden bg-surface-container-low/70 transition-transform hover:-translate-y-1 duration-200">
+<div class="relative h-44 w-full bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Dense green vegetative hydroponic bok choy cabbage cluster in modular vertical grow channel, healthy broad glossy leaves, fresh droplets of water, clean white hydroponic kit background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEYXjj73Kc6WshV8vrm728lFxPgoO9H9j4HbE-ha2Z8mPblc-t_6-gAeRQU5rstMTwNJiD_4PcupxCYLjSlI5UHizAiBYM7k-IIiV8N8NjyvkAjdzgvqKqVuFJ-J8fPdswkZcRVrPwOqtOrVTHbz469CZPoiDoNXaxNlJplTwD4p5OZpidEjsZxSvsEhH2IUMv75VQqlvCQ34jwes4SlErHxAkv9UpvHYEAMNCS6s"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-md bg-inverse-surface/80 backdrop-blur-sm text-inverse-on-surface font-label-sm text-label-sm font-semibold">
+                  Hari 18
+                </span>
+<span class="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-surface-container-lowest/90 text-on-surface font-label-sm text-[10px]">
+                  18 Okt
+                </span>
+</div>
+<div class="p-space-sm flex flex-col flex-1 justify-between">
+<div>
+<h3 class="font-label-md text-label-md text-on-surface font-semibold mb-1">Fase Vegetatif Aktif</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+                    Tajuk melebar cepat, warna hijau zamrud merata, fotosintesis tajuk menyerap 850 PPFD.
+                  </p>
+</div>
+<div class="pt-2 mt-2 flex items-center justify-between text-secondary font-label-sm text-[10px]">
+<span>EC: 1.6 mS</span>
+<span>Tinggi: 14.1 cm</span>
+</div>
+</div>
+</div>
+<!-- Milestone 4: Day 24 (Current) -->
+<div class="flex flex-col rounded-xl overflow-hidden bg-surface-container-low/70 transition-transform hover:-translate-y-1 duration-200">
+<div class="relative h-44 w-full bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Top-down vibrant high-resolution photography of crisp lush ripe pakcoy cabbage in modern hydroponic netpot, pristine dark emerald leaves, flawless leaf margins with healthy turgid cell structure, soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgeQrIMMw99SXZJE_vLJpg8gkiC9IA5QA6y9kHJT4150mVJ-FZgpJpMDYOoDS3N5B7vqohQSIXiVLOLB7u6lRT4UEWmMEelwMJrJgDS4w2l-5QkWFUAdSeSd9gGtrkopbvdHDTsXGWkw5jRbeo2QWk2gAPifewAu2SezRY4QeWcafVXa8fdZveKCtRY061NbMl7FiDKzutHO-HsJf7R_PI1pQ9YJqjxjyqDcPnqBk"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-md bg-primary text-on-primary font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-white animate-ping"></span> Hari 24 (Kini)
+                </span>
+<span class="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-surface-container-lowest/90 text-on-surface font-label-sm text-[10px]">
+                  Hari Ini
+                </span>
+</div>
+<div class="p-space-sm flex flex-col flex-1 justify-between">
+<div>
+<h3 class="font-label-md text-label-md text-on-surface font-semibold mb-1">Vegetatif Akhir (Klimaks)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+                    10-12 helai daun rimbun, klorosis tepi daun lubang A4 teratasi tuntas setelah pH Up.
+                  </p>
+</div>
+<div class="pt-2 mt-2 flex items-center justify-between text-primary font-label-sm text-[10px] font-semibold">
+<span>EC: 1.8 mS</span>
+<span>Tinggi: 19.8 cm</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. Telemetry & Growth Velocity Correlation (Interactive Visualization) -->
+<section class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-xs">
+<div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[22px]">ssid_chart</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Korelasi Biosensor &amp; Laju Tumbuh (14 Hari Terakhir)</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                Monitoring parameter dinamis nutrisi vs respon pembesaran kanopi tanaman.
+              </p>
+</div>
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface-variant px-2.5 py-1 rounded-lg bg-surface-container-low">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span> pH Larutan
+              </span>
+<span class="inline-flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface-variant px-2.5 py-1 rounded-lg bg-surface-container-low">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span> TDS (ppm)
+              </span>
+<span class="inline-flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface-variant px-2.5 py-1 rounded-lg bg-surface-container-low">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span> Suhu Air (°C)
+              </span>
+</div>
+</div>
+<!-- Visual Chart Canvas via Inline SVG (Responsive, Light Agronomic Grid) -->
+<div class="relative w-full h-64 bg-surface-container-low/40 rounded-xl p-space-md flex flex-col justify-between overflow-hidden">
+<!-- Background guideline labels -->
+<div class="absolute inset-0 p-space-md flex flex-col justify-between pointer-events-none opacity-40">
+<div class="w-full flex justify-between text-outline font-label-sm text-[10px]"><span>Target Atas (pH 6.5 / 1000 ppm)</span><span>28°C</span></div>
+<div class="w-full flex justify-between text-outline font-label-sm text-[10px]"><span>Median Ideal (pH 6.2 / 850 ppm)</span><span>26°C</span></div>
+<div class="w-full flex justify-between text-outline font-label-sm text-[10px]"><span>Target Bawah (pH 5.8 / 750 ppm)</span><span>24°C</span></div>
+</div>
+<!-- SVG Curves Representation -->
+<svg class="w-full h-full overflow-visible z-10" preserveaspectratio="none" viewbox="0 0 700 200">
+<!-- Safe Target Zone Band for pH (5.8 - 6.5) -->
+<rect class="text-primary/5" fill="currentColor" height="70" width="700" x="0" y="50"></rect>
+<line class="text-primary/20" stroke="currentColor" stroke-dasharray="4,4" stroke-width="1.5" x1="0" x2="700" y1="85" y2="85"></line>
+<!-- Annotation Marker: 23 Okt pH Correction Event -->
+<line class="text-error/50" stroke="currentColor" stroke-dasharray="3,3" stroke-width="1.5" x1="480" x2="480" y1="10" y2="190"></line>
+<circle class="fill-error text-error" cx="480" cy="142" r="5"></circle>
+<!-- Trend Curve 1: TDS / EC in Blue (ppm rising from 750 -> 840) -->
+<path class="text-tertiary" d="M 0,130 C 100,125 200,115 320,110 C 420,105 520,95 700,88" fill="none" stroke="currentColor" stroke-width="2.5"></path>
+<!-- Trend Curve 2: Water Reservoir Temp in Gray (Stable ~26C) -->
+<path class="text-secondary opacity-70" d="M 0,150 C 120,148 240,155 380,149 C 480,152 600,146 700,148" fill="none" stroke="currentColor" stroke-width="2"></path>
+<!-- Trend Curve 3: pH Value with Dip at Day 22 (H-2) then corrected back to 6.2 -->
+<path class="text-primary" d="M 0,90 C 120,86 240,88 380,95 C 440,110 480,142 530,95 C 600,82 660,84 700,82" fill="none" stroke="currentColor" stroke-width="3"></path>
+<!-- Realtime Dot -->
+<circle class="fill-primary text-primary" cx="700" cy="82" r="6"></circle>
+<circle class="fill-tertiary text-tertiary" cx="700" cy="88" r="5"></circle>
+</svg>
+<!-- Bottom Day Labels -->
+<div class="w-full flex justify-between font-label-sm text-[11px] text-on-surface-variant pt-2 z-10">
+<span>H-14 (10 Okt)</span>
+<span>H-11</span>
+<span>H-8</span>
+<span>H-5</span>
+<span class="text-error font-semibold">H-2 (23 Okt: Koreksi pH)</span>
+<span>H-1</span>
+<span class="font-bold text-primary">Hari 24 (Hari Ini)</span>
+</div>
+</div>
+<!-- AI Agronomic Companion Insight Box -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px] text-on-primary">psychology</span>
+</div>
+<div class="flex flex-col gap-1 min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md font-semibold text-primary">HYCANE Agronomist Intelligence</span>
+<span class="px-2 py-0.5 rounded bg-primary-fixed/50 text-on-primary-fixed-variant font-label-sm text-[10px] font-bold">REKOMENDASI TERVERIFIKASI</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+                “Kondisi osmoregulasi perakaran telah kembali prima pasca koreksi pH tanggal 23 Okt (dari 5.4 naik stabil ke 6.2). Laju penyerapan nitrogen dan kalium meningkat pesat, terbukti dari pertambahan biomassa tajuk sebesar <strong class="text-primary">+14% dalam 48 jam terakhir</strong>. Siap masuk fase flushing dalam 4 hari ke depan.”
+              </p>
+</div>
+</div>
+</section>
+<!-- 3. Daily Log & Grower Audit Trail -->
+<section class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-xs">
+<div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">history_edu</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Log Harian &amp; Jurnal Aktivitas Petani</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                Audit trail lengkap intervensi manusia, otomatisasi aktuator, dan pencatatan sensor.
+              </p>
+</div>
+<button class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-label-md text-label-md" type="button">
+<span class="material-symbols-outlined text-[16px]">filter_list</span>
+<span>Filter Aktivitas</span>
+</button>
+</div>
+<!-- Vertical Timeline Steps -->
+<div class="relative pl-6 flex flex-col gap-space-lg before:content-[''] before:absolute before:left-2.5 before:top-3 before:bottom-3 before:w-0.5 before:bg-surface-container-high">
+<!-- Log Entry 1: Today -->
+<div class="relative flex flex-col gap-1.5">
+<div class="absolute -left-[29px] top-1 w-4 h-4 rounded-full bg-primary flex items-center justify-center">
+<span class="w-1.5 h-1.5 rounded-full bg-on-primary"></span>
+</div>
+<div class="flex flex-wrap items-center justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Hari 24 — Pemeliharaan Rutin Nutrisi</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed/30 text-primary font-label-sm text-[11px] font-semibold">Hari Ini, 08:30 WIB</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">person</span> AgriOperator
+                </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface">
+                Penambahan air baku 3 liter ke dalam reservoir penampung + injeksi manual 15ml stok pekat AB Mix. Konduktivitas listrik (EC) terjaga konsisten pada rentang 1.8 mS/cm.
+              </p>
+<div class="flex items-center gap-2 pt-1 font-label-sm text-label-sm text-secondary">
+<span class="px-2 py-0.5 rounded bg-surface-container-low">Reservoir Vol: 22L</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low">Suhu Nutrisi: 26.5°C</span>
+</div>
+</div>
+<!-- Log Entry 2: Day 22 -->
+<div class="relative flex flex-col gap-1.5">
+<div class="absolute -left-[29px] top-1 w-4 h-4 rounded-full bg-error flex items-center justify-center">
+<span class="w-1.5 h-1.5 rounded-full bg-on-error"></span>
+</div>
+<div class="flex flex-wrap items-center justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Hari 22 — Koreksi Asiditas (pH Drift Lockout)</span>
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-[11px] font-semibold">23 Okt 2026, 16:15 WIB</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-1 font-medium">
+<span class="material-symbols-outlined text-[14px]">smart_toy</span> AI Guided
+                </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface">
+                Pemberian larutan buffer pH Up (KOH) sebanyak 6 ml setelah notifikasi sistem mendeteksi pH drop ke level 5.4. Diskusi forum komunitas menyarankan dosis bertahap untuk mencegah kejutan osmosa.
+              </p>
+<div class="flex items-center gap-2 pt-1 font-label-sm text-label-sm">
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-error font-medium">pH Sebelum: 5.4</span>
+<span class="material-symbols-outlined text-[14px] text-outline">arrow_forward</span>
+<span class="px-2 py-0.5 rounded bg-primary-fixed/40 text-on-primary-fixed-variant font-medium">pH Stabil: 6.2 (dalam 30 mnt)</span>
+</div>
+</div>
+<!-- Log Entry 3: Day 15 -->
+<div class="relative flex flex-col gap-1.5">
+<div class="absolute -left-[29px] top-1 w-4 h-4 rounded-full bg-surface-container-highest flex items-center justify-center">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+<div class="flex flex-wrap items-center justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Hari 15 — Perawatan Mekanis Sistem NFT</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-[11px]">16 Okt 2026, 10:00 WIB</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Rutin Siklus</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface">
+                Pembersihan filter sponge pompa celup ultra-silent 12V DC. Debit sirkulasi film air pipa NFT dipastikan konstan pada 1.8 liter/menit tanpa hambatan endapan garam hara.
+              </p>
+</div>
+<!-- Log Entry 4: Day 01 -->
+<div class="relative flex flex-col gap-1.5">
+<div class="absolute -left-[29px] top-1 w-4 h-4 rounded-full bg-primary-fixed-dim flex items-center justify-center">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+</div>
+<div class="flex flex-wrap items-center justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Hari 01 — Semai Awal &amp; Inisiasi Media Ampas Tebu</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-[11px]">01 Okt 2026, 07:00 WIB</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Start Batch</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface">
+                Penanaman 18 bibit bersertifikat Pakcoy Nauli F1 ke dalam Bagasse Plugs steril (produk samping limbah giling PG Kebonagung). Sterilisasi biochar ampas tebu dengan larutan fungisida nabati.
+              </p>
+</div>
+</div>
+</section>
+</div>
+<!-- ================= RIGHT COLUMN (Col span 4 / ~35%) ================= -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- 1. Biosystem Parameter Live IoT Widget -->
+<section class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">sensors</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Biosistem Live IoT</h2>
+</div>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary-fixed/30 text-primary font-label-sm text-[10px] font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span> SINKRON
+            </span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Parameter 1: pH Level -->
+<div class="p-space-sm rounded-xl bg-surface-container-low/60 flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">science</span> pH Derajat Keasaman
+                </span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed/40 text-on-primary-fixed-variant font-label-sm text-[11px] font-bold">
+                  Optimal
+                </span>
+</div>
+<div class="flex items-baseline justify-between">
+<span class="font-kpi-display text-kpi-display text-on-surface leading-none">6.2</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Target: 6.0 – 6.5</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 72%;"></div>
+</div>
+</div>
+<!-- Parameter 2: TDS / EC -->
+<div class="p-space-sm rounded-xl bg-surface-container-low/60 flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">grain</span> Kepekatan Nutrisi (TDS / EC)
+                </span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed/40 text-on-primary-fixed-variant font-label-sm text-[11px] font-bold">
+                  Sesuai
+                </span>
+</div>
+<div class="flex items-baseline justify-between">
+<div class="flex items-baseline gap-1">
+<span class="font-kpi-display text-kpi-display text-on-surface leading-none">840</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ppm</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Target: 800 – 1000 ppm</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 60%;"></div>
+</div>
+</div>
+<!-- Parameter 3: Water Reservoir Temp -->
+<div class="p-space-sm rounded-xl bg-surface-container-low/60 flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">thermostat</span> Suhu Reservoir Air
+                </span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed/40 text-on-primary-fixed-variant font-label-sm text-[11px] font-bold">
+                  Ideal
+                </span>
+</div>
+<div class="flex items-baseline justify-between">
+<div class="flex items-baseline gap-1">
+<span class="font-kpi-display text-kpi-display text-on-surface leading-none">26.5</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">°C</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Target: 24.0 – 28.0°C</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 55%;"></div>
+</div>
+</div>
+<!-- Parameter 4: Ambient Microclimate -->
+<div class="p-space-sm rounded-xl bg-surface-container-low/60 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">air</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Iklim Mikro Kebun</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Suhu Udara &amp; RH</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-md text-label-md font-bold text-on-surface">29°C / 68% RH</span>
+<span class="block font-label-sm text-label-sm text-primary font-medium">VPD: 1.1 kPa (Sehat)</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. Harvest Readiness SOP & Interactive Checklist -->
+<section class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">fact_check</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">SOP Menjelang Panen (H-6)</h2>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">
+              FESTAFORA 2026
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Ikuti protokol agronomi untuk memaksimalkan rasa manis, kerenyahan tangkai, dan meminimalkan akumulasi nitrat.
+          </p>
+<div class="flex flex-col gap-space-xs">
+<!-- Checklist Item 1 (Done) -->
+<div class="p-space-sm rounded-xl bg-surface-container-low/50 hover:bg-surface-container-low transition-colors cursor-pointer flex items-start gap-space-sm select-none" data-completed="true" onclick="toggleStep(this)">
+<span class="material-symbols-outlined text-[18px] text-primary mt-0.5 step-check-icon">check_circle</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface-variant line-through font-semibold step-text">Monitor warna tajuk &amp; tekstur daun</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Klorosis lubang A4 pulih sempurna, daun tebal turgor penuh.</span>
+</div>
+</div>
+<!-- Checklist Item 2 (Pending H-2) -->
+<div class="p-space-sm rounded-xl bg-surface-container-low/50 hover:bg-surface-container-low transition-colors cursor-pointer flex items-start gap-space-sm select-none" data-completed="false" onclick="toggleStep(this)">
+<span class="material-symbols-outlined text-[18px] text-outline mt-0.5 step-check-icon">radio_button_unchecked</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold step-text">H-2 (28 Okt): Lakukan Flushing Nutrisi</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Ganti larutan nutrisi dengan air RO bersih 20L untuk membersihkan residu hara garam dan meningkatkan kerenyahan.</span>
+</div>
+</div>
+<!-- Checklist Item 3 (Pending H-0) -->
+<div class="p-space-sm rounded-xl bg-surface-container-low/50 hover:bg-surface-container-low transition-colors cursor-pointer flex items-start gap-space-sm select-none" data-completed="false" onclick="toggleStep(this)">
+<span class="material-symbols-outlined text-[18px] text-outline mt-0.5 step-check-icon">radio_button_unchecked</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold step-text">H-0 (30 Okt): Panen Pagi Hari (&lt;08:00 WIB)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Panen sebelum terik matahari langsung agar tingkat kelembaban sel stomata maksimal dan tidak layu.</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. Circular Economy & Upcycling Bagasse (HYCANE Closed-Loop Pitch) -->
+<section class="p-space-lg rounded-xl bg-surface-container-high/60 shadow-sm flex flex-col gap-space-md relative overflow-hidden">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">recycling</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Sirkularitas Pasca-Panen</h2>
+</div>
+<div class="rounded-xl overflow-hidden bg-surface-container h-36 w-full relative">
+<img class="w-full h-full object-cover" data-alt="Close up photography of organic compost made from pulverized sugarcane bagasse fiber and spent hydroponic roots mixed with black rich garden soil, high quality organic agricultural sustainability presentation" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAntZpowmuqbqvcgaazf1YLRAGGkV29l10C51-LRIKIkePRLvPwDMRy7kSatY6SPVHEo2v4qmM0mGaCYKlj8HIYNpTo_OVtzyurk5QTrELHxtaeXxSc2nobamgkFIqZqqNnLyHTnQq0g2nVjUFc_IkqWWR9QjUFdCh3TPLwQSdbYuOn5voAWowmLLrKQ-4Fy42G79QUZXNOtSrw_Xk7PmF5LF7YIpUUXcjyUnd_dPw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent flex items-end p-space-sm">
+<span class="text-inverse-on-surface font-label-sm text-label-sm font-semibold">100% Zero-Waste Ampas Tebu (Bebas Rockwool)</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed">
+            Setelah panen selesai, <strong>Bagasse Plugs</strong> bekas dapat langsung dicacah dan dikomposkan ke pot tanaman hias atau dibuang ke tempat sampah organik tanpa mencemari tanah selayaknya wol batu (rockwool) sintetis.
+          </p>
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<button class="w-full py-2.5 px-space-md rounded-xl bg-primary text-on-primary hover:bg-primary-container transition-colors font-label-md text-label-md font-semibold flex items-center justify-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px]">psychology</span>
+<span>Siapkan Media Semai Batch #03</span>
+</button>
+<button class="w-full py-2.5 px-space-md rounded-xl bg-surface-container-lowest hover:bg-surface-container-low text-on-surface transition-colors font-label-md text-label-md flex items-center justify-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px] text-tertiary">storefront</span>
+<span>Tawarkan ke Komunitas / Marketplace</span>
+</button>
+</div>
+</section>
+</div>
+</div>
+</div>
+</div></main></div></body></html>
