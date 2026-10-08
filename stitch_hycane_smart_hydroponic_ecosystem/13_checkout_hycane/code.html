@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-primary-container": "#f7fff2", "primary-fixed-dim": "#62df7d", "on-primary-fixed": "#002109", "tertiary-fixed-dim": "#b4c5ff", "primary": "#006b2c", "on-surface-variant": "#3e4a3d", "surface-bright": "#f8f9ff", "on-error-container": "#93000a", "on-tertiary-container": "#fefcff", "on-error": "#ffffff", "surface-container-highest": "#d3e4fe", "inverse-surface": "#213145", "on-tertiary-fixed": "#00174b", "surface-container-high": "#dce9ff", "error": "#ba1a1a", "on-primary": "#ffffff", "outline-variant": "#bdcaba", "primary-container": "#00873a", "background": "#f8f9ff", "surface-dim": "#cbdbf5", "on-tertiary": "#ffffff", "secondary": "#545f73", "surface-variant": "#d3e4fe", "secondary-fixed": "#d8e3fb", "secondary-fixed-dim": "#bcc7de", "surface-container-low": "#eff4ff", "on-secondary-fixed-variant": "#3c475a", "on-primary-fixed-variant": "#005320", "tertiary": "#0051d5", "on-tertiary-fixed-variant": "#003ea8", "secondary-container": "#d5e0f8", "error-container": "#ffdad6", "inverse-primary": "#62df7d", "on-surface": "#0b1c30", "tertiary-fixed": "#dbe1ff", "outline": "#6e7b6c", "surface-container": "#e5eeff", "on-secondary-container": "#586377", "inverse-on-surface": "#eaf1ff", "on-secondary-fixed": "#111c2d", "surface": "#f8f9ff", "on-secondary": "#ffffff", "primary-fixed": "#7ffc97", "surface-tint": "#006e2d", "on-background": "#0b1c30", "surface-container-lowest": "#ffffff", "tertiary-container": "#316bf3" }, borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" }, spacing: { "space-sm": "0.5rem", "margin-mobile": "1rem", "space-xl": "2.5rem", "margin": "2rem", "space-xs": "0.25rem", "space-md": "1rem", "gutter-mobile": "1rem", "gutter": "1.5rem", "space-lg": "1.5rem" }, fontFamily: { "kpi-display": ["Inter"], "label-sm": ["Inter"], "body-sm": ["Inter"], "headline-xl-mobile": ["Inter"], "body-lg": ["Inter"], "headline-lg": ["Inter"], "headline-xl": ["Inter"], "label-md": ["Inter"], "body-md": ["Inter"], "headline-lg-mobile": ["Inter"], "headline-md": ["Inter"] }, fontSize: { "kpi-display": ["32px", { lineHeight: "38px", letterSpacing: "-0.03em", fontWeight: "700" }], "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.04em", fontWeight: "600" }], "body-sm": ["12px", { lineHeight: "16px", fontWeight: "400" }], "headline-xl-mobile": ["28px", { lineHeight: "36px", letterSpacing: "-0.01em", fontWeight: "700" }], "body-lg": ["16px", { lineHeight: "24px", fontWeight: "400" }], "headline-lg": ["28px", { lineHeight: "36px", letterSpacing: "-0.02em", fontWeight: "600" }], "headline-xl": ["36px", { lineHeight: "44px", letterSpacing: "-0.02em", fontWeight: "700" }], "label-md": ["13px", { lineHeight: "18px", letterSpacing: "0.01em", fontWeight: "500" }], "body-md": ["14px", { lineHeight: "20px", fontWeight: "400" }], "headline-lg-mobile": ["22px", { lineHeight: "30px", letterSpacing: "-0.01em", fontWeight: "600" }], "headline-md": ["20px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "600" }] } } } };</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"><aside class="fixed left-0 top-0 h-full w-[250px] bg-surface-container-lowest z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col flex-1 min-h-0"><div class="h-16 px-space-md flex items-center gap-space-sm bg-surface-container-lowest"><img alt="HYCANE Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3L21UVH924VPcz5w4_EBOU1inRo072yec9dsK24gBFGqkWxy6qtF5fJRomTxQwLbyX2_n5ToxSaYcGwtv5jFTjzWPMUXE1U08qa-TB-0KCos0HjJtdY8l8KDFFquLyCgst2GL2oc9o9YnStxELWiofYdVkoANwsTinPFdlXufRlJpbUTVFrJ4mjbJDhi6Jf1qg7Vyo6CFVmK8Sq_xin7LywUUQZRt210fjiXhbtM"/><div class="flex flex-col min-w-0 leading-tight"><span class="font-headline-md text-headline-md text-primary tracking-tight truncate">HYCANE</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Smart Hydroponic</span></div></div><div class="flex-1 overflow-y-auto px-space-sm py-space-sm"><nav class="space-y-space-sm" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-xl"><div class="px-space-sm pt-space-xs pb-space-xs"><span class="font-label-sm text-label-sm uppercase text-outline tracking-wider">Main</span></div><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-label-md text-label-md">Dashboard</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="live-monitoring" href="#"><span class="material-symbols-outlined text-[20px]">sensors</span><span class="font-label-md text-label-md">Live Monitoring</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="my-crops" href="#"><span class="material-symbols-outlined text-[20px]">potted_plant</span><span class="font-label-md text-label-md">My Crops</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="ai-recommendation" href="#"><span class="material-symbols-outlined text-[20px]">psychology</span><span class="font-label-md text-label-md">AI Recommendation</span></a><div class="px-space-sm pt-space-sm pb-space-xs"><span class="font-label-sm text-label-sm uppercase text-outline tracking-wider">Explore</span></div><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="marketplace" href="#"><span class="material-symbols-outlined text-[20px]">storefront</span><span class="font-label-md text-label-md">Marketplace</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="education" href="#"><span class="material-symbols-outlined text-[20px]">school</span><span class="font-label-md text-label-md">Education</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="community" href="#"><span class="material-symbols-outlined text-[20px]">forum</span><span class="font-label-md text-label-md">Community</span></a><div class="px-space-sm pt-space-sm pb-space-xs"><span class="font-label-sm text-label-sm uppercase text-outline tracking-wider">Activity</span></div><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="orders" href="#"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span class="font-label-md text-label-md">Orders</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="notifications" href="#"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="font-label-md text-label-md">Notifications</span></a><div class="px-space-sm pt-space-sm pb-space-xs"><span class="font-label-sm text-label-sm uppercase text-outline tracking-wider">Account</span></div><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="profile" href="#"><span class="material-symbols-outlined text-[20px]">person</span><span class="font-label-md text-label-md">Profile</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span class="font-label-md text-label-md">Settings</span></a></nav></div></div><div class="p-space-sm bg-surface-container-lowest flex flex-col gap-space-sm"><div class="bg-surface-container-low px-space-sm py-2 rounded-xl flex items-center justify-between"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span><span class="font-label-sm text-label-sm text-primary">Demo Mode: FESTAFORA 2026</span></div></div><div class="flex items-center justify-between px-space-xs pt-1"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="flex flex-col min-w-0"><span class="font-label-md text-label-md text-on-surface truncate">AgriOperator</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Smart Farm A</span></div></div><a class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container-low hover:text-error transition-colors" data-path="login" href="#" title="Logout"><span class="material-symbols-outlined text-[20px]">logout</span></a></div></div></aside><div class="pl-[250px]"><header class="fixed top-0 left-[250px] right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-md z-40 px-space-lg flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-sm"><img alt="HYCANE Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3L21UVH924VPcz5w4_EBOU1inRo072yec9dsK24gBFGqkWxy6qtF5fJRomTxQwLbyX2_n5ToxSaYcGwtv5jFTjzWPMUXE1U08qa-TB-0KCos0HjJtdY8l8KDFFquLyCgst2GL2oc9o9YnStxELWiofYdVkoANwsTinPFdlXufRlJpbUTVFrJ4mjbJDhi6Jf1qg7Vyo6CFVmK8Sq_xin7LywUUQZRt210fjiXhbtM"/><nav class="flex items-center gap-space-xs text-on-surface-variant"><a class="font-label-md text-label-md hover:text-on-surface transition-colors" data-path="dashboard" href="#">HYCANE</a><span class="material-symbols-outlined text-[16px] text-outline">chevron_right</span><span class="font-label-md text-label-md text-on-surface">Ecosystem Control</span></nav></div><div class="hidden md:flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-low"><span class="w-2 h-2 rounded-full bg-primary"></span><span class="font-label-sm text-label-sm text-primary">Sistem Terhubung • Real-Time</span></div><div class="flex items-center gap-space-sm"><div class="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary-fixed/30"><span class="material-symbols-outlined text-[16px] text-primary">eco</span><span class="font-label-sm text-label-sm text-primary">15/18 Tanaman Sehat</span></div><a class="relative p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="notifications" href="#"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 bg-error rounded-full"></span></a><button class="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md" type="button"><span class="material-symbols-outlined text-[18px] text-primary">tune</span><span>Demo Tools</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 w-full min-h-screen bg-background"><div class="flex flex-col w-full">
+<div class="px-margin py-space-lg max-w-[1440px] w-full mx-auto">
+<!-- Header & Pitching Context Badge -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md mb-space-lg">
+<div class="space-y-space-xs">
+<nav class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<span class="hover:text-primary transition-colors cursor-pointer">HYCANE</span>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<span class="hover:text-primary transition-colors cursor-pointer">Marketplace</span>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<span class="hover:text-primary transition-colors cursor-pointer">Keranjang</span>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<span class="text-primary font-bold">Pembayaran Demo</span>
+</nav>
+<div class="flex items-center gap-space-sm pt-1">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Pemesanan &amp; Pembayaran Demo</h1>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+            Simulasi Live
+          </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Simulasi alur transaksi lengkap untuk presentasi Pitching FESTAFORA 2026.
+        </p>
+</div>
+<div class="self-start lg:self-center flex items-center gap-space-sm bg-surface-container-high px-space-md py-2.5 rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">verified_user</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Mode Demonstrasi Juri</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Tidak ada tagihan riil / Sandbox Environment</span>
+</div>
+</div>
+</div>
+<!-- Main Grid: 64% Flow, 36% Sticky Summary -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- LEFT COLUMN (64% -> lg:col-span-8 approx 66.6% standard responsive 12-col) -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- STEP 1: Informasi Penerima & Lokasi Kebun -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="w-7 h-7 rounded-full bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center font-bold">1</span>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Informasi Penerima &amp; Lokasi Kebun</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Data penerima disinkronkan otomatis dengan profil farm</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-low text-primary font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+              Tervalidasi
+            </span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="space-y-1.5">
+<label class="block font-label-md text-label-md text-on-surface font-medium" for="fullName">Nama Lengkap</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-3 text-on-surface-variant text-[20px]">person</span>
+<input class="w-full bg-surface-container-lowest text-on-surface font-body-md text-body-md pl-10 pr-3 py-2.5 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all" id="fullName" type="text" value="Galih Aji Pangestu"/>
+</div>
+</div>
+<div class="space-y-1.5">
+<label class="block font-label-md text-label-md text-on-surface font-medium" for="phone">Nomor Telepon (WhatsApp Terhubung)</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-3 text-on-surface-variant text-[20px]">call</span>
+<input class="w-full bg-surface-container-lowest text-on-surface font-body-md text-body-md pl-10 pr-3 py-2.5 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all" id="phone" type="text" value="0812-3456-7890"/>
+</div>
+</div>
+<div class="md:col-span-2 space-y-1.5">
+<label class="block font-label-md text-label-md text-on-surface font-medium" for="email">Email Notifikasi Telemetri &amp; Invoice</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-3 text-on-surface-variant text-[20px]">alternate_email</span>
+<input class="w-full bg-surface-container-lowest text-on-surface font-body-md text-body-md pl-10 pr-3 py-2.5 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all" id="email" type="email" value="galih@smartfarm.id"/>
+</div>
+</div>
+<div class="md:col-span-2 space-y-1.5">
+<label class="block font-label-md text-label-md text-on-surface font-medium" for="address">Alamat Pengiriman Kebun Hidroponik</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-3 text-on-surface-variant text-[20px]">location_on</span>
+<textarea class="w-full bg-surface-container-lowest text-on-surface font-body-md text-body-md pl-10 pr-3 py-2.5 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all resize-none" id="address" rows="2">Jl. Mulyorejo No. 45, Rungkut, Surabaya, Jawa Timur 60115</textarea>
+</div>
+</div>
+<div class="md:col-span-2 space-y-1.5">
+<label class="block font-label-md text-label-md text-on-surface font-medium" for="shippingNotes">Catatan Logistik &amp; Penanganan</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-3 text-on-surface-variant text-[20px]">warning</span>
+<input class="w-full bg-surface-container-lowest text-on-surface font-body-md text-body-md pl-10 pr-3 py-2.5 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all text-on-surface" id="shippingNotes" type="text" value="Mohon handle modul sensor IoT dengan hati-hati (Fragile)"/>
+</div>
+</div>
+</div>
+</section>
+<!-- STEP 2: Pilih Layanan Pengiriman -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center gap-space-sm mb-space-md">
+<span class="w-7 h-7 rounded-full bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center font-bold">2</span>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Pilih Layanan Pengiriman</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Proteksi komponen hidroponik &amp; sensor modular</span>
+</div>
+</div>
+<div class="grid grid-cols-1 gap-space-sm" id="shippingOptions">
+<!-- Option 1: J&T Cargo / SiCepat (Selected) -->
+<label class="relative flex items-start gap-space-md p-space-md rounded-xl bg-surface-container-low cursor-pointer transition-all hover:bg-surface-container">
+<input checked="" class="mt-1 w-4 h-4 text-primary focus:ring-primary accent-primary" name="shipping_service" type="radio" value="cargo"/>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between flex-wrap gap-2">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md font-semibold text-on-surface">J&amp;T Cargo / SiCepat Ekspedisi</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold">Estimasi 1-2 Hari</span>
+</div>
+<div class="text-right">
+<span class="font-headline-md text-headline-md text-primary font-bold">Rp 0</span>
+<span class="block font-body-sm text-body-sm text-outline line-through">Rp 75.000</span>
+</div>
+</div>
+<div class="mt-2 text-on-surface-variant font-body-sm text-body-sm flex items-center gap-2 flex-wrap">
+<span class="inline-flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+                    Diskon Promo Bebas Ongkir Jawa Timur (FESTAFORA 2026)
+                  </span>
+<span class="text-outline">•</span>
+<span>Proteksi Packing Kayu untuk Rangka Hidroponik &amp; Bubble wrap sensor tebal</span>
+</div>
+</div>
+</label>
+<!-- Option 2: Kurir Instan Ramah Lingkungan -->
+<label class="relative flex items-start gap-space-md p-space-md rounded-xl bg-surface-container-lowest cursor-pointer transition-all hover:bg-surface-container-low">
+<input class="mt-1 w-4 h-4 text-primary focus:ring-primary accent-primary" name="shipping_service" type="radio" value="instant"/>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between flex-wrap gap-2">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Kurir Instan Ramah Lingkungan</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Khusus Area Surabaya/Sidoarjo (3 Jam)</span>
+</div>
+<span class="font-headline-md text-headline-md text-on-surface font-semibold">Rp 25.000</span>
+</div>
+<p class="mt-1 text-on-surface-variant font-body-sm text-body-sm">
+                  Pengiriman armada motor listrik langsung dari Hub Urban Farming Rungkut ke lokasi instalasi.
+                </p>
+</div>
+</label>
+</div>
+</section>
+<!-- STEP 3: Metode Pembayaran Demo -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="w-7 h-7 rounded-full bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center font-bold">3</span>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Metode Pembayaran Demo</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Gerbang pembayaran virtual interaktif untuk pitching</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Sandbox Mode</span>
+</div>
+<!-- Radio Options -->
+<div class="space-y-space-sm" id="paymentOptions">
+<!-- Radio 1: QRIS (Selected) -->
+<div class="rounded-xl bg-surface-container-low p-space-md">
+<label class="flex items-center justify-between cursor-pointer">
+<div class="flex items-center gap-space-sm">
+<input checked="" class="w-4 h-4 text-primary accent-primary" name="payment_method" type="radio" value="qris"/>
+<div>
+<span class="font-label-md text-label-md font-bold text-on-surface">QRIS Terpadu Indonesia</span>
+<span class="block font-body-sm text-body-sm text-on-surface-variant">GoPay, OVO, Dana, ShopeePay, BCA Mobile &amp; Livin'</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5 bg-surface-container px-2 py-1 rounded">
+<span class="font-label-sm text-label-sm font-semibold text-primary">INSTANT SCAN</span>
+</div>
+</label>
+<!-- Mockup QR Code Box -->
+<div class="mt-space-md pt-space-md bg-surface-container-lowest rounded-xl p-space-md flex flex-col md:flex-row items-center gap-space-lg" id="qrisDetail">
+<!-- QR Visual SVG mockup -->
+<div class="p-3 bg-surface-container-lowest rounded-xl shadow-sm shrink-0 flex flex-col items-center">
+<div class="w-36 h-36 bg-surface-container-high rounded-lg flex items-center justify-center relative overflow-hidden p-2">
+<!-- Crisp decorative QR graphic -->
+<svg class="w-full h-full text-on-surface" fill="currentColor" viewbox="0 0 100 100">
+<!-- Corner Top Left -->
+<rect fill="none" height="28" rx="2" stroke="currentColor" stroke-width="6" width="28" x="5" y="5"></rect>
+<rect height="12" width="12" x="13" y="13"></rect>
+<!-- Corner Top Right -->
+<rect fill="none" height="28" rx="2" stroke="currentColor" stroke-width="6" width="28" x="67" y="5"></rect>
+<rect height="12" width="12" x="75" y="13"></rect>
+<!-- Corner Bottom Left -->
+<rect fill="none" height="28" rx="2" stroke="currentColor" stroke-width="6" width="28" x="5" y="67"></rect>
+<rect height="12" width="12" x="13" y="75"></rect>
+<!-- Random QR Pattern Elements -->
+<rect height="12" width="6" x="40" y="8"></rect>
+<rect height="6" width="8" x="52" y="16"></rect>
+<rect height="6" width="14" x="42" y="28"></rect>
+<rect height="8" width="12" x="8" y="42"></rect>
+<rect height="8" width="8" x="28" y="44"></rect>
+<rect height="12" width="12" x="44" y="44"></rect>
+<rect height="14" width="8" x="64" y="40"></rect>
+<rect height="6" width="12" x="80" y="46"></rect>
+<rect height="16" width="8" x="44" y="64"></rect>
+<rect height="8" width="16" x="60" y="66"></rect>
+<rect height="18" width="10" x="82" y="68"></rect>
+<rect height="10" width="12" x="64" y="82"></rect>
+</svg>
+<!-- Center Badge -->
+<div class="absolute inset-0 m-auto w-8 h-8 rounded-full bg-primary flex items-center justify-center text-on-primary shadow">
+<span class="material-symbols-outlined text-[16px]">eco</span>
+</div>
+</div>
+<span class="mt-2 font-label-sm text-label-sm text-outline font-semibold tracking-wider">NMID: ID102938472910</span>
+</div>
+<!-- QR Info Details -->
+<div class="flex-1 space-y-2 text-center md:text-left">
+<div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">qr_code_scanner</span>
+                    Simulasi QRIS FESTAFORA 2026
+                  </div>
+<h3 class="font-headline-sm font-bold text-on-surface">Merchant: HYCANE Agrotech Indonesia</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                    Scan untuk demonstrasi visual. QRIS statis dengan integrasi gateway dummy yang langsung mengirim callback webhook.
+                  </p>
+<div class="bg-surface-container-low p-2 rounded-lg inline-block">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Nominal Transaksi:</span>
+<span class="font-label-md text-label-md font-bold text-primary ml-1.5">Rp 1.417.600</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Radio 2: Virtual Account -->
+<label class="flex items-center justify-between p-space-md rounded-xl bg-surface-container-lowest hover:bg-surface-container-low cursor-pointer transition-all">
+<div class="flex items-center gap-space-sm">
+<input class="w-4 h-4 text-primary accent-primary" name="payment_method" type="radio" value="va"/>
+<div>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Transfer Bank Virtual Account</span>
+<span class="block font-body-sm text-body-sm text-on-surface-variant">BCA (014), Mandiri (008), BRI (002), BNI (009)</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Verifikasi Otomatis</span>
+</label>
+<!-- Radio 3: COD -->
+<label class="flex items-center justify-between p-space-md rounded-xl bg-surface-container-lowest hover:bg-surface-container-low cursor-pointer transition-all">
+<div class="flex items-center gap-space-sm">
+<input class="w-4 h-4 text-primary accent-primary" name="payment_method" type="radio" value="cod"/>
+<div>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Cash on Delivery (COD)</span>
+<span class="block font-body-sm text-body-sm text-on-surface-variant">Mitra Komunitas Petani Hidroponik Surabaya &amp; Sekitarnya</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Bayar di Tempat</span>
+</label>
+</div>
+<!-- Auto-save Toggle -->
+<div class="mt-space-md pt-space-md bg-surface-container-low/60 rounded-xl p-space-md flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px]">sync</span>
+<div class="flex flex-col">
+<label class="font-label-md text-label-md font-semibold text-on-surface cursor-pointer" for="autoOrderSync">
+                  Simpan data transaksi ke Riwayat Pesanan (Orders)
+                </label>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+                  Sinkronisasi langsung untuk pelacakan instalasi sensor di Dashboard Kebun.
+                </span>
+</div>
+</div>
+<input checked="" class="w-5 h-5 text-primary accent-primary rounded cursor-pointer shrink-0" id="autoOrderSync" type="checkbox"/>
+</div>
+</section>
+<!-- STEP 4: Integrasi Ekosistem Otomatis (Key Differentiator) -->
+<section class="bg-primary/5 rounded-xl p-space-lg shadow-sm">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-xl bg-primary text-on-primary flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[24px]">hub</span>
+</div>
+<div class="space-y-space-xs">
+<div class="flex items-center gap-2 flex-wrap">
+<h3 class="font-headline-md text-headline-md text-primary font-bold">Integrasi Ekosistem Otomatis</h3>
+<span class="px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">HYCANE Unique Edge</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+                Setelah transaksi berhasil dikonfirmasi, modul sensor kit akan otomatis terdaftar di akun Anda dengan Device ID <span class="font-semibold text-primary">#HYCANE-ESP32-001</span>. Aktivasi garansi firmware dan kalibrasi sensor IoT selama 6 bulan akan langsung aktif di tab <em>Live Monitoring</em>.
+              </p>
+<div class="flex items-center gap-space-md pt-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">check_circle</span>
+                  Auto Cloud Provisioning
+                </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">check_circle</span>
+                  AI Guidance Ready
+                </span>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- RIGHT COLUMN (36% -> Sticky Order Summary & Execution) -->
+<aside class="lg:col-span-4 sticky top-20 flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-md">
+<!-- Card Header -->
+<div class="flex items-center justify-between pb-space-md">
+<h2 class="font-headline-md text-headline-md text-on-surface">Rincian Pesanan</h2>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold">3 Item</span>
+</div>
+<!-- Mini Item List with visuals -->
+<div class="space-y-space-md pb-space-md">
+<!-- Item 1: Modular Bundle -->
+<div class="flex items-center gap-space-sm">
+<img class="w-14 h-14 rounded-lg object-cover shrink-0 bg-surface-container" data-alt="A compact indoor vertical hydroponic kit tower made with sleek white conduits, LED grow lights, and vibrant green butterhead lettuce plants growing inside modular cups in a clean modern kitchen." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAmNrAs-pbwjRNgbWvNz0_ii3eO5toou-Zw46K168CyJ-JnQSZqM10R89JYM1esC24FFuRDJWw35eFzfj58Jilxm2QCGl4hTfVvwus13abEDczl7SqhIrnCVqAiRDo4x4-tLyRcKVonbUQf6us0Y_KtbqGEKqEBJ92KB88vMfFKnHbVe06_7fDQXyJjDCeLvvLCnljG2noU8SMlL_eC7A_iHRFVxqnHxYgn0UUQKo"/>
+<div class="flex-1 min-w-0">
+<h4 class="font-label-md text-label-md font-semibold text-on-surface truncate">HYCANE Modular Smart Bundle</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">1x Unit 18-Plant Tower + Sensor</p>
+<span class="font-label-md text-label-md text-primary font-bold">Rp 1.287.600</span>
+</div>
+</div>
+<!-- Item 2: Bagasse Media Refill -->
+<div class="flex items-center gap-space-sm">
+<img class="w-14 h-14 rounded-lg object-cover shrink-0 bg-surface-container" data-alt="Eco friendly organic plant growing plugs made of compressed sugarcane bagasse fibers, arranged neatly in an egg-crate style organic tray with green sprouts emerging." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVm7lgUZY_Wd2ejJ7O7YS7RVgvfoocNAVMweeVB8-182nvybDsYKzzZbw4pcIwSXyX0A1NsMXAkreipznTG6YTivNPGOiEwsVlfV9quZtNYew94l67HfKNEh7BSqN42VbxhgW-AMaG2DrNjCEr9bpK7shTF9LOAcF6hS2QV74Rl3KvMyb1tpsEf6acK3GSgB77vzlu2X4NkH1VyKIj0woBOoN7_s1dOLQlXeCYeIY"/>
+<div class="flex-1 min-w-0">
+<h4 class="font-label-md text-label-md font-semibold text-on-surface truncate">Bagasse Media Refill 36 Plugs</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">1x Kompos Ampas Tebu Steril</p>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Rp 82.000</span>
+</div>
+</div>
+<!-- Item 3: pH Balancer -->
+<div class="flex items-center gap-space-sm">
+<img class="w-14 h-14 rounded-lg object-cover shrink-0 bg-surface-container" data-alt="A precision amber dropper bottle containing agricultural hydroponic nutrient balancer solution on a clean laboratory wooden table surrounded by mint leaves." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcQEdVB61s2-2UZlC72kSoRr738nKWlKidfH9sHmtOpGSP7-zfSejquO39OJUrPtXNicLwSIUPpsR70_43f8VGgtUZrB2aw8zTLXsy4KJSTJZvpvjYUxTh3kCl_qooLFgCeZGdhkqthAm4D5SoTPPWqfDIoHnNpZNDm6fsLQK6A1IfMhnKDbQnDkx4YKGrqZ0kD-sdBwA4yEEKvoXwnI6tD4epaI83mwUqIOR2Q_k"/>
+<div class="flex-1 min-w-0">
+<h4 class="font-label-md text-label-md font-semibold text-on-surface truncate">pH Balancer Pack 250ml</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">1x Formulasi Organik Buffer</p>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Rp 48.000</span>
+</div>
+</div>
+</div>
+<!-- Rincian Biaya -->
+<div class="py-space-md space-y-2 bg-surface-container-low/50 rounded-xl p-space-md mb-space-md">
+<div class="flex justify-between font-body-sm text-body-sm text-on-surface-variant">
+<span>Subtotal Produk</span>
+<span class="text-on-surface font-medium">Rp 1.417.600</span>
+</div>
+<div class="flex justify-between font-body-sm text-body-sm text-on-surface-variant">
+<span class="flex items-center gap-1">
+                Biaya Kirim &amp; Packing Kayu
+                <span class="material-symbols-outlined text-[14px] text-primary" title="Bebas ongkir FESTAFORA 2026">info</span>
+</span>
+<span class="text-primary font-semibold">Rp 0 (Subsidi)</span>
+</div>
+<div class="flex justify-between font-body-sm text-body-sm text-on-surface-variant">
+<span>Biaya Layanan Aplikasi</span>
+<span class="text-primary font-semibold">Rp 0</span>
+</div>
+<div class="flex justify-between font-body-sm text-body-sm text-primary">
+<span>Diskon FESTAFORA 2026</span>
+<span class="font-medium">-Rp 50.000 (Terpotong)</span>
+</div>
+<!-- Total Line -->
+<div class="pt-2 mt-2 flex justify-between items-baseline">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">Total Pembayaran</span>
+<span class="font-headline-lg text-headline-lg text-primary font-bold">Rp 1.417.600</span>
+</div>
+</div>
+<!-- Pitching Metric Callout (Venture/Investor lens) -->
+<div class="mb-space-md p-space-sm bg-surface-container rounded-xl">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5">analytics</span>
+<div class="text-on-surface">
+<span class="font-label-sm text-label-sm uppercase font-bold text-tertiary block tracking-wider">Unit Economics Highlight</span>
+<p class="font-body-sm text-body-sm mt-0.5 text-on-surface-variant leading-tight">
+<span class="font-medium text-on-surface">COGS:</span> Rp 964.000 • <span class="font-medium text-on-surface">Gross Margin:</span> 32% • <span class="font-medium text-on-surface">Repeat Cycle:</span> 30-45 Hari (Bagasse Media &amp; Nutrisi Bio-Circular).
+                </p>
+</div>
+</div>
+</div>
+<!-- Primary Action Button -->
+<button class="w-full h-12 bg-primary hover:bg-primary-container text-on-primary rounded-xl font-label-md text-label-md font-bold shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 group" id="btnConfirmOrder" type="button">
+<span class="material-symbols-outlined text-[20px] group-hover:scale-110 transition-transform">check_circle</span>
+<span>Konfirmasi Pemesanan Demo (Place Demo Order)</span>
+</button>
+<!-- Sub-helper & Navigation -->
+<p class="text-center font-body-sm text-body-sm text-on-surface-variant mt-2 px-1">
+            Tombol ini akan mensimulasikan status pembayaran <strong class="text-primary font-semibold">Lunas (Paid)</strong> dan mengarahkan ke halaman Riwayat Pesanan.
+          </p>
+<div class="mt-space-md pt-space-sm flex justify-center">
+<a class="inline-flex items-center gap-1.5 font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors py-1" href="#">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span>Kembali ke Keranjang</span>
+</a>
+</div>
+</div>
+<!-- Trust Badges & Guarantee Mini Box -->
+<div class="bg-surface-container-lowest/60 rounded-xl p-space-md shadow-sm flex items-center justify-around gap-2 text-center text-on-surface-variant">
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-primary text-[22px]">verified</span>
+<span class="font-label-sm text-label-sm mt-1">Garansi 6 Bulan</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-primary text-[22px]">eco</span>
+<span class="font-label-sm text-label-sm mt-1">100% Organik Bagasse</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-primary text-[22px]">support_agent</span>
+<span class="font-label-sm text-label-sm mt-1">Panduan Ahli IoT</span>
+</div>
+</div>
+</aside>
+</div>
+</div>
+<!-- Interactive Feedback Dialog (Triggered on Checkout Button) -->
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-on-background/40 backdrop-blur-sm" id="demoSuccessModal">
+<div class="bg-surface-container-lowest rounded-xl max-w-md w-full p-space-lg shadow-xl space-y-space-md text-center transform transition-all scale-95 duration-200">
+<div class="w-16 h-16 rounded-full bg-primary-fixed text-primary mx-auto flex items-center justify-center">
+<span class="material-symbols-outlined text-[36px]">check_circle</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Simulasi Berhasil!</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+          Status Pembayaran: <strong class="text-primary">Lunas (Paid)</strong>.<br/>
+          Device ID <strong class="text-on-surface">#HYCANE-ESP32-001</strong> berhasil dipasangkan ke akun Farm Anda.
+        </p>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg text-left text-body-sm font-body-sm text-on-surface-variant">
+<div class="flex justify-between">
+<span>No. Referensi:</span>
+<span class="font-semibold text-on-surface">HYC-FESTA-2026-098</span>
+</div>
+<div class="flex justify-between mt-1">
+<span>Waktu Transaksi:</span>
+<span class="font-semibold text-on-surface">Real-Time Simulation</span>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<button class="w-full h-11 bg-primary text-on-primary rounded-xl font-label-md text-label-md font-semibold hover:bg-primary-container transition-colors" id="btnModalClose" type="button">
+          Buka Riwayat Pesanan (Orders)
+        </button>
+<button class="w-full h-10 text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-colors" id="btnModalDismiss" type="button">
+          Tutup Simulasi
+        </button>
+</div>
+</div>
+</div>
+<!-- Inline Script for Interactive Demo Behavior -->
+<script>
+    (function() {
+      const confirmBtn = document.getElementById('btnConfirmOrder');
+      const modal = document.getElementById('demoSuccessModal');
+      const closeBtn = document.getElementById('btnModalClose');
+      const dismissBtn = document.getElementById('btnModalDismiss');
+      const qrisDetail = document.getElementById('qrisDetail');
+      const paymentRadios = document.querySelectorAll('input[name="payment_method"]');
+
+      if (confirmBtn && modal) {
+        confirmBtn.addEventListener('click', function() {
+          modal.classList.remove('hidden');
+          setTimeout(() => {
+            modal.querySelector('div').classList.remove('scale-95');
+            modal.querySelector('div').classList.add('scale-100');
+          }, 10);
+        });
+      }
+
+      function closeModal() {
+        if (!modal) return;
+        modal.classList.add('hidden');
+      }
+
+      if (closeBtn) {
+        closeBtn.addEventListener('click', function() {
+          closeModal();
+          // Find orders navigation or alert
+          const ordersLink = document.querySelector('a[data-path="orders"]');
+          if (ordersLink) {
+            ordersLink.click();
+          }
+        });
+      }
+
+      if (dismissBtn) {
+        dismissBtn.addEventListener('click', closeModal);
+      }
+
+      // Dynamic toggle for QRIS container visibility
+      paymentRadios.forEach(radio => {
+        radio.addEventListener('change', function(e) {
+          if (qrisDetail) {
+            if (e.target.value === 'qris') {
+              qrisDetail.classList.remove('hidden');
+            } else {
+              qrisDetail.classList.add('hidden');
+            }
+          }
+        });
+      });
+    })();
+  </script>
+</div></main></div></body></html>
