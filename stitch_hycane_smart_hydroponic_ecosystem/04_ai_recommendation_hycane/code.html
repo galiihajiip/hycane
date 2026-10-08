@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-primary-container": "#f7fff2", "primary-fixed-dim": "#62df7d", "on-primary-fixed": "#002109", "tertiary-fixed-dim": "#b4c5ff", "primary": "#006b2c", "on-surface-variant": "#3e4a3d", "surface-bright": "#f8f9ff", "on-error-container": "#93000a", "on-tertiary-container": "#fefcff", "on-error": "#ffffff", "surface-container-highest": "#d3e4fe", "inverse-surface": "#213145", "on-tertiary-fixed": "#00174b", "surface-container-high": "#dce9ff", "error": "#ba1a1a", "on-primary": "#ffffff", "outline-variant": "#bdcaba", "primary-container": "#00873a", "background": "#f8f9ff", "surface-dim": "#cbdbf5", "on-tertiary": "#ffffff", "secondary": "#545f73", "surface-variant": "#d3e4fe", "secondary-fixed": "#d8e3fb", "secondary-fixed-dim": "#bcc7de", "surface-container-low": "#eff4ff", "on-secondary-fixed-variant": "#3c475a", "on-primary-fixed-variant": "#005320", "tertiary": "#0051d5", "on-tertiary-fixed-variant": "#003ea8", "secondary-container": "#d5e0f8", "error-container": "#ffdad6", "inverse-primary": "#62df7d", "on-surface": "#0b1c30", "tertiary-fixed": "#dbe1ff", "outline": "#6e7b6c", "surface-container": "#e5eeff", "on-secondary-container": "#586377", "inverse-on-surface": "#eaf1ff", "on-secondary-fixed": "#111c2d", "surface": "#f8f9ff", "on-secondary": "#ffffff", "primary-fixed": "#7ffc97", "surface-tint": "#006e2d", "on-background": "#0b1c30", "surface-container-lowest": "#ffffff", "tertiary-container": "#316bf3" }, borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" }, spacing: { "space-sm": "0.5rem", "margin-mobile": "1rem", "space-xl": "2.5rem", "margin": "2rem", "space-xs": "0.25rem", "space-md": "1rem", "gutter-mobile": "1rem", "gutter": "1.5rem", "space-lg": "1.5rem" }, fontFamily: { "kpi-display": ["Inter"], "label-sm": ["Inter"], "body-sm": ["Inter"], "headline-xl-mobile": ["Inter"], "body-lg": ["Inter"], "headline-lg": ["Inter"], "headline-xl": ["Inter"], "label-md": ["Inter"], "body-md": ["Inter"], "headline-lg-mobile": ["Inter"], "headline-md": ["Inter"] }, fontSize: { "kpi-display": ["32px", { lineHeight: "38px", letterSpacing: "-0.03em", fontWeight: "700" }], "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.04em", fontWeight: "600" }], "body-sm": ["12px", { lineHeight: "16px", fontWeight: "400" }], "headline-xl-mobile": ["28px", { lineHeight: "36px", letterSpacing: "-0.01em", fontWeight: "700" }], "body-lg": ["16px", { lineHeight: "24px", fontWeight: "400" }], "headline-lg": ["28px", { lineHeight: "36px", letterSpacing: "-0.02em", fontWeight: "600" }], "headline-xl": ["36px", { lineHeight: "44px", letterSpacing: "-0.02em", fontWeight: "700" }], "label-md": ["13px", { lineHeight: "18px", letterSpacing: "0.01em", fontWeight: "500" }], "body-md": ["14px", { lineHeight: "20px", fontWeight: "400" }], "headline-lg-mobile": ["22px", { lineHeight: "30px", letterSpacing: "-0.01em", fontWeight: "600" }], "headline-md": ["20px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "600" }] } } } };</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"><aside class="fixed left-0 top-0 h-full w-[250px] bg-surface-container-lowest z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col flex-1 min-h-0"><div class="h-16 px-space-md flex items-center gap-space-sm bg-surface-container-lowest"><img alt="HYCANE Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3L21UVH924VPcz5w4_EBOU1inRo072yec9dsK24gBFGqkWxy6qtF5fJRomTxQwLbyX2_n5ToxSaYcGwtv5jFTjzWPMUXE1U08qa-TB-0KCos0HjJtdY8l8KDFFquLyCgst2GL2oc9o9YnStxELWiofYdVkoANwsTinPFdlXufRlJpbUTVFrJ4mjbJDhi6Jf1qg7Vyo6CFVmK8Sq_xin7LywUUQZRt210fjiXhbtM"/><div class="flex flex-col min-w-0 leading-tight"><span class="font-headline-md text-headline-md text-primary tracking-tight truncate">HYCANE</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Smart Hydroponic</span></div></div><div class="flex-1 overflow-y-auto px-space-sm py-space-sm"><nav class="space-y-space-sm" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-xl"><div class="px-space-sm pt-space-xs pb-space-xs"><span class="font-label-sm text-label-sm uppercase text-outline tracking-wider">Main</span></div><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-label-md text-label-md">Dashboard</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="live-monitoring" href="#"><span class="material-symbols-outlined text-[20px]">sensors</span><span class="font-label-md text-label-md">Live Monitoring</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="my-crops" href="#"><span class="material-symbols-outlined text-[20px]">potted_plant</span><span class="font-label-md text-label-md">My Crops</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-2 transition-colors bg-primary-container text-on-primary-container font-semibold rounded-xl" data-path="ai-recommendation" href="#"><span class="material-symbols-outlined text-[20px]">psychology</span><span class="font-label-md text-label-md">AI Recommendation</span></a><div class="px-space-sm pt-space-sm pb-space-xs"><span class="font-label-sm text-label-sm uppercase text-outline tracking-wider">Explore</span></div><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="marketplace" href="#"><span class="material-symbols-outlined text-[20px]">storefront</span><span class="font-label-md text-label-md">Marketplace</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="education" href="#"><span class="material-symbols-outlined text-[20px]">school</span><span class="font-label-md text-label-md">Education</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="community" href="#"><span class="material-symbols-outlined text-[20px]">forum</span><span class="font-label-md text-label-md">Community</span></a><div class="px-space-sm pt-space-sm pb-space-xs"><span class="font-label-sm text-label-sm uppercase text-outline tracking-wider">Activity</span></div><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="orders" href="#"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span class="font-label-md text-label-md">Orders</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="notifications" href="#"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="font-label-md text-label-md">Notifications</span></a><div class="px-space-sm pt-space-sm pb-space-xs"><span class="font-label-sm text-label-sm uppercase text-outline tracking-wider">Account</span></div><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="profile" href="#"><span class="material-symbols-outlined text-[20px]">person</span><span class="font-label-md text-label-md">Profile</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span class="font-label-md text-label-md">Settings</span></a></nav></div></div><div class="p-space-sm bg-surface-container-lowest flex flex-col gap-space-sm"><div class="bg-surface-container-low px-space-sm py-2 rounded-xl flex items-center justify-between"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span><span class="font-label-sm text-label-sm text-primary">Demo Mode: FESTAFORA 2026</span></div></div><div class="flex items-center justify-between px-space-xs pt-1"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="flex flex-col min-w-0"><span class="font-label-md text-label-md text-on-surface truncate">AgriOperator</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Smart Farm A</span></div></div><a class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container-low hover:text-error transition-colors" data-path="login" href="#" title="Logout"><span class="material-symbols-outlined text-[20px]">logout</span></a></div></div></aside><div class="pl-[250px]"><header class="fixed top-0 left-[250px] right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-md z-40 px-space-lg flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-sm"><img alt="HYCANE Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3L21UVH924VPcz5w4_EBOU1inRo072yec9dsK24gBFGqkWxy6qtF5fJRomTxQwLbyX2_n5ToxSaYcGwtv5jFTjzWPMUXE1U08qa-TB-0KCos0HjJtdY8l8KDFFquLyCgst2GL2oc9o9YnStxELWiofYdVkoANwsTinPFdlXufRlJpbUTVFrJ4mjbJDhi6Jf1qg7Vyo6CFVmK8Sq_xin7LywUUQZRt210fjiXhbtM"/><nav class="flex items-center gap-space-xs text-on-surface-variant"><a class="font-label-md text-label-md hover:text-on-surface transition-colors" data-path="dashboard" href="#">HYCANE</a><span class="material-symbols-outlined text-[16px] text-outline">chevron_right</span><span class="font-label-md text-label-md text-on-surface">Ecosystem Control</span></nav></div><div class="hidden md:flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-low"><span class="w-2 h-2 rounded-full bg-primary"></span><span class="font-label-sm text-label-sm text-primary">Sistem Terhubung • Real-Time</span></div><div class="flex items-center gap-space-sm"><div class="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary-fixed/30"><span class="material-symbols-outlined text-[16px] text-primary">eco</span><span class="font-label-sm text-label-sm text-primary">15/18 Tanaman Sehat</span></div><a class="relative p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="notifications" href="#"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 bg-error rounded-full"></span></a><button class="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md" type="button"><span class="material-symbols-outlined text-[18px] text-primary">tune</span><span>Demo Tools</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 w-full min-h-screen bg-background"><div class="flex flex-col w-full">
+<div class="px-gutter py-space-lg flex flex-col gap-space-xl max-w-[1400px] mx-auto w-full">
+<!-- Top Editorial Header & Agro Credibility Note -->
+<header class="flex flex-col gap-space-md">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-primary-fixed text-on-primary-fixed">
+<span class="material-symbols-outlined text-[18px]">psychology</span>
+</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">Agronomic Translation Engine</span>
+<span class="text-outline text-body-sm">•</span>
+<span class="font-label-sm text-label-sm text-secondary">Batch 04: Selada Romaine &amp; Pakcoy</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">Biar angka tidak hanya jadi angka.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+            HYCANE menerjemahkan kondisi sensor menjadi tindakan nyata yang mudah dipahami pemula.
+          </p>
+</div>
+<!-- System Diagnostic Timestamp & Quick Filter -->
+<div class="flex items-center gap-space-sm self-start md:self-auto bg-surface-container-low px-space-md py-2.5 rounded-xl">
+<span class="relative flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary"></span>
+</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sinkronisasi Bio-Telemetry</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">1 Menit Lalu • Modul R-02</span>
+</div>
+</div>
+</div>
+<!-- Credibility Disclaimer Callout -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex items-start gap-space-md shadow-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-highest text-primary flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">verified</span>
+</div>
+<div class="flex flex-col gap-0.5 text-on-surface">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md font-bold text-primary">AI Recommendation Engine Demo</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant">FESTAFORA 2026 Edition</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Menggunakan rule-based agronomy logic &amp; parameter batas toleransi tanaman untuk memandu pemula sebelum model prediktif multi-sensor skala penuh diimplementasikan.
+          </p>
+</div>
+</div>
+</header>
+<!-- Main Active Telemetry & Critical Recommendation (Bento Split) -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Primary Active Recommendation Card (Warning State) -->
+<div class="lg:col-span-8 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-lg relative overflow-hidden">
+<!-- Top Status Bar Indicator -->
+<div class="absolute top-0 left-0 right-0 h-1.5 bg-secondary-container">
+<div class="h-full bg-error rounded-r-full" style="width: 38%"></div>
+</div>
+<!-- Header: Severity & Identity -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-error-container text-on-error-container">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span class="font-label-sm text-label-sm tracking-wide">Perhatian (Warning) • Prioritas Tinggi</span>
+</div>
+<div class="flex items-center gap-space-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">access_time</span>
+<span class="font-label-sm text-label-sm">Terdeteksi: Hari Ini, 14:12 WIB</span>
+</div>
+</div>
+<!-- Title & Sensor Comparison KPI Module -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md bg-surface-container-low p-space-md rounded-xl">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-error text-[24px]">thermostat_carbon</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">pH Air Mulai Terlalu Rendah (5.5)</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Reservoir Zona Alpha • Modul Hidroponik Deep Water Culture (DWC)</p>
+</div>
+<!-- KPI comparison badge -->
+<div class="flex items-center gap-space-md shrink-0 bg-surface-container-lowest px-space-md py-space-sm rounded-lg shadow-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Nilai Saat Ini</span>
+<span class="font-kpi-display text-kpi-display text-error">5.5</span>
+</div>
+<div class="w-px h-8 bg-surface-container-high"></div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary">Rentang Aman</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">5.6 – 6.8</span>
+</div>
+</div>
+</div>
+<!-- Telemetry Visualization Gauge Snippet -->
+<div class="flex flex-col gap-2">
+<div class="flex justify-between items-center font-label-sm text-label-sm">
+<span class="text-error font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">arrow_downward</span> Terlalu Asam (&lt; 5.6)
+            </span>
+<span class="text-primary font-semibold">Zona Optimal Pertumbuhan (5.6 - 6.8)</span>
+<span class="text-secondary font-semibold">Terlalu Basa (&gt; 6.8)</span>
+</div>
+<!-- Gauge Segment Graphic -->
+<div class="w-full h-3 rounded-full bg-surface-container-high flex overflow-hidden p-0.5 gap-1">
+<div class="h-full bg-error-container rounded-l-full relative flex items-center justify-end" style="width: 35%">
+<div class="w-2.5 h-2.5 bg-error rounded-full shadow-sm -mr-1"></div>
+</div>
+<div class="h-full bg-primary-fixed" style="width: 45%"></div>
+<div class="h-full bg-secondary-fixed rounded-r-full" style="width: 20%"></div>
+</div>
+</div>
+<!-- 3-Step Educational Breakdown (THE HYCANE CORE PHILOSOPHY) -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center gap-2 pb-1">
+<span class="material-symbols-outlined text-[20px] text-primary">menu_book</span>
+<h3 class="font-label-md text-label-md uppercase tracking-wider text-on-surface font-bold">Logika Agronomi: 3 Tahap Edukasi Cerdas</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Step 1: Apa yang terjadi -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-2 text-primary font-bold">
+<span class="w-6 h-6 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center font-label-sm text-label-sm">1</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wide">Apa Yang Terjadi</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mt-1 leading-snug">
+                  Sensor mendeteksi pH air turun ke level 5.5 dalam 3 jam terakhir, berada di bawah batas normal tanaman Pakcoy dan Selada.
+                </p>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm pt-2">
+<span class="material-symbols-outlined text-[16px] text-outline">timeline</span>
+<span>Tren: Turun lambat (-0.3/jam)</span>
+</div>
+</div>
+<!-- Step 2: Kenapa Penting -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-2 text-primary font-bold">
+<span class="w-6 h-6 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center font-label-sm text-label-sm">2</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wide">Kenapa Penting</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mt-1 leading-snug">
+                  pH yang terlalu asam menghambat kemampuan akar menyerap unsur hara penting seperti Fosfor, Kalsium, dan Magnesium, yang dapat menyebabkan daun menguning dan pertumbuhan kerdil.
+                </p>
+</div>
+<div class="flex items-center gap-1.5 text-error font-label-sm text-label-sm pt-2 font-medium">
+<span class="material-symbols-outlined text-[16px]">warning</span>
+<span>Risiko Klorosis: Sedang</span>
+</div>
+</div>
+<!-- Step 3: Apa yang harus dilakukan -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-2 text-primary font-bold">
+<span class="w-6 h-6 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center font-label-sm text-label-sm">3</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wide">Apa Harus Dilakukan</span>
+</div>
+<ul class="space-y-2 mt-1">
+<li class="flex items-start gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-primary shrink-0 mt-0.5">check_circle</span>
+<span>Pastikan sensor bersih dan celup sempurna di reservoir.</span>
+</li>
+<li class="flex items-start gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-primary shrink-0 mt-0.5">check_circle</span>
+<span>Tambahkan larutan pH Up sebanyak 5–10 ml secara bertahap ke dalam reservoir air.</span>
+</li>
+<li class="flex items-start gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-primary shrink-0 mt-0.5">check_circle</span>
+<span>Nyalakan pompa sirkulasi selama 15 menit, lalu periksa kembali pembacaan pH.</span>
+</li>
+</ul>
+</div>
+<div class="flex items-center gap-1.5 text-primary font-label-sm text-label-sm pt-2 font-semibold">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span>Waktu Tindakan: ~20 Menit</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Expected Outcome Box -->
+<div class="bg-primary-fixed/20 p-space-md rounded-xl flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">auto_graph</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wide text-primary font-bold">Hasil Yang Diharapkan (Expected Outcome)</span>
+<span class="font-headline-md text-headline-md text-on-surface font-semibold">pH air kembali ke rentang 6.0 – 6.4 dalam waktu 30 menit.</span>
+</div>
+</div>
+<!-- Action Toolbar & Interactive CTAs -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-space-md pt-space-xs">
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="px-space-md py-3 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-primary-container transition-all flex items-center justify-center gap-2 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">menu_book</span>
+<span>Lihat Panduan Lengkap pH &amp; Penanganannya</span>
+</button>
+<button class="px-space-md py-3 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md font-semibold hover:bg-surface-container-high transition-all flex items-center justify-center gap-2" id="mark-done-btn" onclick="this.innerHTML='&lt;span class=\'material-symbols-outlined text-[18px]\'&gt;check&lt;/span&gt; Selesai Dikerjakan'; this.classList.add('bg-primary-fixed','text-on-primary-fixed');" type="button">
+<span class="material-symbols-outlined text-[18px]">done_all</span>
+<span>Tandai Sudah Dikerjakan ✓</span>
+</button>
+</div>
+<!-- Contextual Marketplace Link Card -->
+<a class="group flex items-center justify-between gap-3 px-space-md py-2.5 rounded-lg bg-tertiary-fixed/40 text-on-tertiary-fixed hover:bg-tertiary-fixed transition-all" data-path="marketplace" href="#">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[20px]">shopping_bag</span>
+<div class="flex flex-col text-left">
+<span class="font-label-sm text-label-sm text-tertiary font-bold">Butuh Larutan pH Up?</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Beli di Marketplace HYCANE (Rp 25.000)</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[18px] text-tertiary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Right Column: Crop Vitals & Biological Context -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- Visual Telemetry & Crop Photo Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Tanaman Terdampak</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Pakcoy Putih &amp; Selada</h3>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold">Hari ke-18</span>
+</div>
+<div class="relative w-full h-44 rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Close up photograph of lush green vibrant hydroponic pak choi and romaine lettuce growing vigorously in clean white PVC channels with pure moving water nutrient mist under daylight, agricultural macro photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsn0hdSsYQaRiOPtvRqmCaD9ThAm3GtpMfMpjh5cH30jn9GUwP5nWqSQuy3u6fUxnZT4cShtjdzaudmAc3vEfheY0GQ7TIIYEUGMVcvgAlKNtsfzISR6HPYFKxPJyDFY3hdXf1DwZWtHRRNVEZHu1rAhMNbagry1uU7mFW9hzwYZtEOegutzXFn8pl7WEMFqtGgsgab5PDpXfcjIxFKTrB8gVg8VRDTYCnLr_inhs"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-on-primary">
+<span class="font-label-sm text-label-sm">Akumulasi Nutrisi: AB Mix (1.2 mS/cm)</span>
+<span class="font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-primary-fixed"></span> 92% Sehat
+              </span>
+</div>
+</div>
+<!-- Micro-Telemetry Grid -->
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs">
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Suhu Reservoir</span>
+<span class="font-headline-md text-headline-md text-on-surface font-semibold">24.8°C</span>
+<span class="font-label-sm text-label-sm text-primary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">check</span> Ideal
+              </span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Dissolved Oxygen</span>
+<span class="font-headline-md text-headline-md text-on-surface font-semibold">6.9 mg/L</span>
+<span class="font-label-sm text-label-sm text-primary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">check</span> Cukup
+              </span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">EC (Konduktivitas)</span>
+<span class="font-headline-md text-headline-md text-on-surface font-semibold">1,240 µS</span>
+<span class="font-label-sm text-label-sm text-primary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">check</span> Stabil
+              </span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Laju Sirkulasi</span>
+<span class="font-headline-md text-headline-md text-on-surface font-semibold">4.2 L/m</span>
+<span class="font-label-sm text-label-sm text-primary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">check</span> Normal
+              </span>
+</div>
+</div>
+</div>
+<!-- Educational Micro Tip Companion -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">lightbulb</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">Tips Agronomis HYCANE</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Menambahkan larutan pH Up sebaiknya dilarutkan dulu dalam 500ml air bersih sebelum dituangkan ke reservoir utama agar tidak mengejutkan mikroorganisme perakaran.
+          </p>
+</div>
+</div>
+</section>
+<!-- Secondary Recommendations Grid (Other System States) -->
+<section class="flex flex-col gap-space-md pt-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold">Status Ekosistem Lainnya</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Rekomendasi Pemeliharaan Rutin</h2>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">3 Sensor Terpantau Aktif</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Secondary Card 1: Ketinggian Air (Aman) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between gap-space-md transition-all hover:shadow-md">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary-fixed/30 text-on-primary-fixed">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-label-sm text-label-sm font-semibold">Optimal • Aman</span>
+</div>
+<span class="material-symbols-outlined text-[20px] text-primary">water_drop</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="font-headline-md text-headline-md text-on-surface">Ketinggian Air Reservoir</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-snug">
+                Level air reservoir cukup untuk 4 hari ke depan. Tidak ada tindakan darurat yang diperlukan.
+              </p>
+</div>
+<!-- Visual Bar Level -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col gap-1.5">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Volume Tersisa</span>
+<span class="font-bold text-primary">78 Liter (82%)</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 82%"></div>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span>Konsumsi harian: ~4.5 L/hari</span>
+<span class="text-primary font-medium">Auto-fill siaga</span>
+</div>
+</div>
+<!-- Secondary Card 2: Penggantian Media Tanam -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between gap-space-md transition-all hover:shadow-md">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm font-semibold">Terjadwal • Persiapan</span>
+</div>
+<span class="material-symbols-outlined text-[20px] text-secondary">compost</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="font-headline-md text-headline-md text-on-surface">Penggantian Media Tanam</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-snug">
+                Waktunya persiapan media ampas tebu untuk batch panen berikutnya (Est. 5 hari).
+              </p>
+</div>
+<!-- Timeline Card Detail -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-surface-container text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">calendar_today</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Target Panen Batch 04</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">12 November 2026</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<a class="text-tertiary font-label-md text-label-md font-medium hover:underline flex items-center gap-1" data-path="education" href="#">
+<span>SOP Sterilisasi Ampas Tebu</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Secondary Card 3: Pembersihan Lumut Pipa -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between gap-space-md transition-all hover:shadow-md">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+<span class="font-label-sm text-label-sm font-semibold">Siklus 30 Hari</span>
+</div>
+<span class="material-symbols-outlined text-[20px] text-secondary">cleaning_services</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="font-headline-md text-headline-md text-on-surface">Pembersihan Lumut Pipa</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-snug">
+                Pembersihan pipa berkala disarankan setiap 30 hari tanam untuk menjaga higienitas &amp; aliran air.
+              </p>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Terakhir Dibersihkan</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">22 Hari Lalu</span>
+</div>
+<span class="px-2 py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">8 Hari Tersisa</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<button class="text-primary font-label-md text-label-md font-medium hover:underline flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">event</span>
+<span>Jadwalkan Pengingat</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Agronomy Knowledge Base Quick Strip -->
+<section class="bg-surface-container-low rounded-xl p-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-highest text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[28px]">school</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-md text-headline-md text-on-surface">Ingin memahami korelasi EC, pH, dan D.O secara mendalam?</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Akses modul gratis Akademi Agronomi HYCANE dirancang khusus untuk pemula urban farming.</p>
+</div>
+</div>
+<a class="px-space-lg py-3 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md font-semibold hover:bg-surface-container-high transition-all shrink-0 flex items-center gap-2 shadow-sm" data-path="education" href="#">
+<span>Buka Modul Belajar</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</section>
+</div>
+</div></main></div></body></html>
